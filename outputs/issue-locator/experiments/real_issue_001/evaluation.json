@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "case": {
+    "case_id": "real_issue_001",
+    "issue_url": "https://github.com/pallets/click/issues/3802",
+    "base_commit": "b47c0529e99129d4785fecc2cb39a8ec8b4aa5f8",
+    "fix_commit": "00f257bb8e714064bea16425007543bbc0800445",
+    "expected_files": [
+      "src/click/core.py"
+    ]
+  },
+  "mode": "offline",
+  "ranked_files": [
+    "src/click/_termui_impl.py",
+    "src/click/core.py",
+    "src/click/utils.py",
+    "src/click/termui.py",
+    "src/click/exceptions.py",
+    "src/click/_compat.py"
+  ],
+  "matched_files": [
+    "src/click/core.py"
+  ],
+  "missed_files": [],
+  "metrics": {
+    "top_1_hit": false,
+    "top_3_hit": true,
+    "first_relevant_rank": 2,
+    "reciprocal_rank": 0.5,
+    "file_recall": 1.0
+  },
+  "limitations": [
+    "File-level evaluation only; line accuracy and root cause are not scored.",
+    "Commit metadata and labels are user-supplied, not independently verified."
+  ],
+  "inputs_sha256": {
+    "result": "32092145f91ae6e0dfbcf1048bc56c1f6d134038a57f0dfd494d21b6ca21cf5a",
+    "case": "c8b432f41112e10e9730ab739e625e359a0d6a1bd87a825e25ef05bf02038514"
+  }
+}

@@ -1,0 +1,5166 @@
+[
+  {
+    "tool": "search_code",
+    "query": "PermissionError",
+    "result": {
+      "query": "PermissionError",
+      "matches": [],
+      "truncated": false
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "Windows",
+    "result": {
+      "query": "Windows",
+      "matches": [
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 28,
+          "snippet": "          - {name: Windows, python: '3.9', os: windows-latest, tox: py39}"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 48,
+          "snippet": "-   Pass ``windows_expand_args=False`` when calling the main command to"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 49,
+          "snippet": "    disable pattern expansion on Windows. There is no way to escape"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 60,
+          "snippet": "-   Colorama is always installed on Windows in order to provide style"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 83,
+          "snippet": "    Windows. :issue:`1590`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 229,
+          "snippet": "-   Allow styled output in Jupyter on Windows. :issue:`1271`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 246,
+          "snippet": "-   ``Path`` ``resolve_path`` resolves symlinks on Windows Python < 3.8."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 251,
+          "snippet": "-   When taking arguments from ``sys.argv`` on Windows, glob patterns,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 283,
+          "snippet": "    on Windows. Instead, the string must be quoted manually as it should"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 308,
+          "snippet": "-   Expand testing around termui, especially getchar on Windows."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 310,
+          "snippet": "-   Fix output on Windows Python 2.7 built with MSVC 14. :pr:`1342`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 312,
+          "snippet": "-   Fix ``OSError`` when redirecting to ``NUL`` stream on Windows."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 314,
+          "snippet": "-   Fix memory leak when parsing Unicode arguments on Windows."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 398,
+          "snippet": "-   ``click.getchar()`` returns Unicode in Python 3 on Windows,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 439,
+          "snippet": "-   Fix crash on Windows console. :issue:`744`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 455,
+          "snippet": "-   Fix 16k character limit of ``click.echo`` on Windows. :issue:`816`,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 458,
+          "snippet": "    Windows 7. :issue:`825`, :pr:`830`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 519,
+          "snippet": "    project on Windows. :issue:`1068`, :pr:`1069`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 534,
+          "snippet": "-   Deal with broken Windows environments such as Google App Engine's."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 562,
+          "snippet": "    Windows."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 601,
+          "snippet": "-   For Windows users on Python 2, Click will now handle Unicode more"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 608,
+          "snippet": "-   For users running Python on Windows the ``echo`` and ``prompt``"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 610,
+          "snippet": "    windows console by emulating an output stream. This also applies to"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 702,
+          "snippet": "-   Fix bug in ``clear()`` on Windows when colorama is installed."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 817,
+          "snippet": "-   Add support for ansi code stripping on Windows if colorama is not"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 838,
+          "snippet": "-   Fixed the :func:`launch` function on windows."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 839,
+          "snippet": "-   Improved the colorama support on windows to try hard to not screw up"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 841,
+          "snippet": "-   Fixed windows terminals incorrectly being reported to be 80"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 844,
+          "snippet": "    dimensions of a windows terminal."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 855,
+          "snippet": "-   Added support for opening stdin/stdout on Windows in binary mode"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 885,
+          "snippet": "    DOS/Windows style arguments."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 886,
+          "snippet": "-   Added :func:`pause` which works similar to the Windows ``pause`` cmd"
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 104,
+          "snippet": "    On Windows, activating is different."
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 281,
+          "snippet": "you use Windows-style parameters where ``/`` is the prefix character), you"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 729,
+          "snippet": "every colon (``:``), and for Windows, on every semicolon (``;``)."
+        },
+        {
+          "path": "docs/quickstart.rst",
+          "line": 44,
+          "snippet": "If you are on Windows (or none of the above methods worked) you must install"
+        },
+        {
+          "path": "docs/quickstart.rst",
+          "line": 66,
+          "snippet": "If you are a Windows user, the following command is for you::"
+        },
+        {
+          "path": "docs/quickstart.rst",
+          "line": 171,
+          "snippet": "Windows, colorama is automatically installed and used. See"
+        },
+        {
+          "path": "docs/quickstart.rst",
+          "line": 286,
+          "snippet": "wrappers for Windows so your command line utilities work on Windows too."
+        },
+        {
+          "path": "docs/setuptools.rst",
+          "line": 25,
+          "snippet": "    the executable bit set).  This however does not work on Windows."
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "using",
+    "result": {
+      "query": "using",
+      "matches": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+          "line": 14,
+          "snippet": "such as by subclassing or using an extension?"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 43,
+          "snippet": "    ``default_map`` lookups. When using patterns like ``AliasedGroup``,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 82,
+          "snippet": "-   ``echo()`` will not fail when using pytest's ``capsys`` fixture on"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 86,
+          "snippet": "    ``Context.invoked_subcommand`` consistent when using patterns like"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 136,
+          "snippet": "-   When using ``CliRunner.invoke()``, the replaced ``stdin`` file has"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 244,
+          "snippet": "    ``Context.meta``. This is useful for extensions using ``meta`` to"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 255,
+          "snippet": "-   Writing invalid characters  to ``stderr`` when using the test runner"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 264,
+          "snippet": "-   Fix issues with ``CliRunner`` output when using ``echo_stdin=True``."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 329,
+          "snippet": "-   When using the test ``CliRunner`` with ``mix_stderr=False``, if"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 334,
+          "snippet": "-   Fix ``TypeError`` raised when using bool flags and specifying"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 646,
+          "snippet": "    using ``CliRunner``."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 655,
+          "snippet": "-   Click will now warn if users are using ``unicode_literals``."
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "line": 17,
+          "snippet": "* Using welcoming and inclusive language"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "line": 20,
+          "snippet": "* Focusing on what is best for the community"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "line": 50,
+          "snippet": "representing a project or community include using an official project e-mail"
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 12,
+          "snippet": "following resources for questions about using Click or issues with your"
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 19,
+          "snippet": "-   Ask on `Stack Overflow`_. Search with Google first using:"
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 55,
+          "snippet": "    automatically if you install `pre-commit`_ using the instructions"
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 130,
+          "snippet": ".. _username: https://docs.github.com/en/github/using-git/setting-your-username-in-git"
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 157,
+          "snippet": "-   Using your favorite editor, make your changes,"
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 196,
+          "snippet": "where to start contributing. Run ``pytest`` using ``coverage`` and"
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 213,
+          "snippet": "Build the docs in the ``docs`` directory using Sphinx."
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 422,
+          "snippet": "cleaned up after use. The standard way to do this in Python is by using"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 472,
+          "snippet": "one using something from :mod:`contextlib`. If that's not possible, use"
+        },
+        {
+          "path": "docs/arguments.rst",
+          "line": 132,
+          "snippet": "Instead, you should be using the :class:`Path` type, which automatically"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 187,
+          "snippet": "In addition to using :func:`click.group`, you can also build your own"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 316,
+          "snippet": "When using multi command chaining you can only have one command (the last)"
+        },
+        {
+          "path": "docs/complex.rst",
+          "line": 12,
+          "snippet": "When using Celery with Django, there are two tools that need to interact with"
+        },
+        {
+          "path": "docs/documentation.rst",
+          "line": 42,
+          "snippet": "follow the general convention of Unix tools of using arguments for only"
+        },
+        {
+          "path": "docs/Makefile",
+          "line": 17,
+          "snippet": "# Catch-all target: route all unknown targets to Sphinx using the new"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 140,
+          "snippet": "As you can see that by using `nargs` set to a specific number each item in"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 159,
+          "snippet": "By using a tuple literal as type, `nargs` gets automatically set to the"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 661,
+          "snippet": "When using ``auto_envvar_prefix`` with command groups, the command name"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 778,
+          "snippet": "Note that if you are using ``/`` as prefix character and you want to use a"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 808,
+          "snippet": "When using :class:`FloatRange`, ``clamp`` can only be enabled if both"
+        },
+        {
+          "path": "docs/parameters.rst",
+          "line": 31,
+          "snippet": "arguments (defaults to 1), or they may be specified multiple times using"
+        },
+        {
+          "path": "docs/quickstart.rst",
+          "line": 70,
+          "snippet": "Either way, you should now be using your virtualenv (notice how the prompt of"
+        },
+        {
+          "path": "docs/quickstart.rst",
+          "line": 206,
+          "snippet": "command by using the :meth:`Group.command` decorator instead.  The above"
+        },
+        {
+          "path": "docs/quickstart.rst",
+          "line": 233,
+          "snippet": "Instead of using the ``@group.command()`` decorator, commands can be"
+        },
+        {
+          "path": "docs/quickstart.rst",
+          "line": 299,
+          "snippet": "be using setuptools."
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "echo_via_pager",
+    "result": {
+      "query": "echo_via_pager",
+      "matches": [
+        {
+          "path": "CHANGES.rst",
+          "line": 685,
+          "snippet": "    autodetection (with the exception of the ``echo_via_pager``"
+        },
+        {
+          "path": "docs/api.rst",
+          "line": 42,
+          "snippet": ".. autofunction:: echo_via_pager"
+        },
+        {
+          "path": "docs/utils.rst",
+          "line": 93,
+          "snippet": ":func:`echo_via_pager` function which works similarly to the :func:`echo`"
+        },
+        {
+          "path": "docs/utils.rst",
+          "line": 102,
+          "snippet": "        click.echo_via_pager(\"\\n\".join(f\"Line {idx}\" for idx in range(200)))"
+        },
+        {
+          "path": "docs/utils.rst",
+          "line": 113,
+          "snippet": "        click.echo_via_pager(_generate_output())"
+        },
+        {
+          "path": "examples/termui/termui.py",
+          "line": 28,
+          "snippet": "    click.echo_via_pager(\"\\n\".join(lines))"
+        },
+        {
+          "path": "src/click/__init__.py",
+          "line": 42,
+          "snippet": "from .termui import echo_via_pager as echo_via_pager"
+        },
+        {
+          "path": "src/click/termui.py",
+          "line": 273,
+          "snippet": "def echo_via_pager("
+        },
+        {
+          "path": "tests/test_utils.py",
+          "line": 185,
+          "snippet": "def test_echo_via_pager(monkeypatch, capfd, cat, test):"
+        },
+        {
+          "path": "tests/test_utils.py",
+          "line": 192,
+          "snippet": "    click.echo_via_pager(test_input)"
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "python",
+    "result": {
+      "query": "python",
+      "matches": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 26,
+          "snippet": "- Python version:"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "line": 7,
+          "snippet": "    url: https://stackoverflow.com/questions/tagged/python-click?tab=Frequent"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 27,
+          "snippet": "          - {name: Linux, python: '3.9', os: ubuntu-latest, tox: py39}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 28,
+          "snippet": "          - {name: Windows, python: '3.9', os: windows-latest, tox: py39}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 29,
+          "snippet": "          - {name: Mac, python: '3.9', os: macos-latest, tox: py39}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 30,
+          "snippet": "          - {name: '3.8', python: '3.8', os: ubuntu-latest, tox: py38}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 31,
+          "snippet": "          - {name: '3.7', python: '3.7', os: ubuntu-latest, tox: py37}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 32,
+          "snippet": "          - {name: '3.6', python: '3.6', os: ubuntu-latest, tox: py36}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 33,
+          "snippet": "          - {name: 'PyPy', python: pypy3, os: ubuntu-latest, tox: pypy3}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 34,
+          "snippet": "          - {name: Typing, python: '3.9', os: ubuntu-latest, tox: typing}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 37,
+          "snippet": "      - uses: actions/setup-python@v2"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 39,
+          "snippet": "          python-version: ${{ matrix.python }}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 44,
+          "snippet": "          python -m pip install -U pip"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 52,
+          "snippet": "          key: pip|${{ runner.os }}|${{ matrix.python }}|${{ hashFiles('setup.py') }}|${{ hashFiles('requirements/*.txt') }}"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 57,
+          "snippet": "          key: mypy|${{ matrix.python }}|${{ hashFiles('setup.cfg') }}"
+        },
+        {
+          "path": ".pre-commit-config.yaml",
+          "line": 9,
+          "snippet": "  - repo: https://github.com/asottile/reorder_python_imports"
+        },
+        {
+          "path": ".pre-commit-config.yaml",
+          "line": 12,
+          "snippet": "      - id: reorder-python-imports"
+        },
+        {
+          "path": ".readthedocs.yaml",
+          "line": 2,
+          "snippet": "python:"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 17,
+          "snippet": "-   Completion does not skip Python's resource cleanup when exiting,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 30,
+          "snippet": "-   Fix some types that weren't available in Python 3.6.0. :issue:`1882`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 33,
+          "snippet": "-   The ``importlib_metadata`` backport package is installed on Python <"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 59,
+          "snippet": "-   Drop support for Python 2 and 3.5."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 71,
+          "snippet": "    name. The Python package name must match the installed package"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 94,
+          "snippet": "    ``python -m name``. :issue:`1603`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 246,
+          "snippet": "-   ``Path`` ``resolve_path`` resolves symlinks on Windows Python < 3.8."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 310,
+          "snippet": "-   Fix output on Windows Python 2.7 built with MSVC 14. :pr:`1342`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 338,
+          "snippet": "-   ``MissingParameter`` exceptions are printable in the Python"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 366,
+          "snippet": "    they match error messages from Python."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 374,
+          "snippet": "-   Drop support for Python 2.6 and 3.3. :pr:`967, 976`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 377,
+          "snippet": "-   Document that ANSI color info isn't parsed from bytearrays in Python"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 398,
+          "snippet": "-   ``click.getchar()`` returns Unicode in Python 3 on Windows,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 433,
+          "snippet": "-   Disable ``sys._getframes()`` on Python interpreters that don't"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 501,
+          "snippet": "-   Add details about Python version support. :pr:`1004`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 508,
+          "snippet": "-   Use Python sorting order for ZSH completions. :issue:`1047`,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 563,
+          "snippet": "-   Fixed a bug that cased locale detection to error out on Python 3."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 598,
+          "snippet": "-   Click used to return byte strings on Python 2 in some unit-testing"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 601,
+          "snippet": "-   For Windows users on Python 2, Click will now handle Unicode more"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 608,
+          "snippet": "-   For users running Python on Windows the ``echo`` and ``prompt``"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 609,
+          "snippet": "    functions now work with full unicode functionality in the Python"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 670,
+          "snippet": "-   Support streams with encoding set to ``None`` on Python 3 by barfing"
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "import",
+    "result": {
+      "query": "import",
+      "matches": [
+        {
+          "path": ".pre-commit-config.yaml",
+          "line": 9,
+          "snippet": "  - repo: https://github.com/asottile/reorder_python_imports"
+        },
+        {
+          "path": ".pre-commit-config.yaml",
+          "line": 12,
+          "snippet": "      - id: reorder-python-imports"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 26,
+          "snippet": "-   Mark top-level names as exported so type checking understand imports"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 33,
+          "snippet": "-   The ``importlib_metadata`` backport package is installed on Python <"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 68,
+          "snippet": "-   ``version_option`` uses ``importlib.metadata`` (or the"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 69,
+          "snippet": "    ``importlib_metadata`` backport) instead of ``pkg_resources``. The"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 493,
+          "snippet": "-   Move ``fcntl`` import. :pr:`965`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 494,
+          "snippet": "-   Fix Google App Engine ``ImportError``. :pr:`995`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 518,
+          "snippet": "-   Fix absolute import blocking Click from being vendored into a"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 88,
+          "snippet": "    import urllib"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 107,
+          "snippet": "    import urllib"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 204,
+          "snippet": "This is an important concept to understand when porting complex"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 218,
+          "snippet": "There are three exceptions to this rule which are important to know:"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 225,
+          "snippet": "    This is important for parameters that execute and exit like ``--help``"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 251,
+          "snippet": "but it is important to know how it works for some advanced cases."
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 295,
+          "snippet": "    import sys"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 296,
+          "snippet": "    from subprocess import call"
+        },
+        {
+          "path": "docs/advanced.rst",
+          "line": 323,
+          "snippet": "are important to know about how this ignoring of unhandled flag happens:"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 6,
+          "snippet": "The most important feature of Click is the concept of arbitrarily nesting"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 131,
+          "snippet": "    from functools import update_wrapper"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 195,
+          "snippet": "    import click"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 196,
+          "snippet": "    import os"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 248,
+          "snippet": "    import click"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 415,
+          "snippet": "One important thing of note is that Click shuts down the context after"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 460,
+          "snippet": "    import click"
+        },
+        {
+          "path": "docs/commands.rst",
+          "line": 502,
+          "snippet": "    import click"
+        },
+        {
+          "path": "docs/complex.rst",
+          "line": 79,
+          "snippet": "    import os"
+        },
+        {
+          "path": "docs/complex.rst",
+          "line": 80,
+          "snippet": "    import click"
+        },
+        {
+          "path": "docs/conf.py",
+          "line": 1,
+          "snippet": "from pallets_sphinx_themes import get_version"
+        },
+        {
+          "path": "docs/conf.py",
+          "line": 2,
+          "snippet": "from pallets_sphinx_themes import ProjectLink"
+        },
+        {
+          "path": "docs/conf.py",
+          "line": 4,
+          "snippet": "import click._compat"
+        },
+        {
+          "path": "docs/index.rst",
+          "line": 30,
+          "snippet": "    import click"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 240,
+          "snippet": "    import sys"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 263,
+          "snippet": "    import sys"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 303,
+          "snippet": "    import sys"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 330,
+          "snippet": "    import sys"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 451,
+          "snippet": "    import codecs"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 491,
+          "snippet": "    import os"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 505,
+          "snippet": "    import os"
+        },
+        {
+          "path": "docs/options.rst",
+          "line": 749,
+          "snippet": "    import os"
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "click",
+    "result": {
+      "query": "click",
+      "matches": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 3,
+          "snippet": "about: Report a bug in Click (not other projects which depend on Click)"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 7,
+          "snippet": "This issue tracker is a tool to address bugs in Click itself. Please use"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 27,
+          "snippet": "- Click version:"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "line": 7,
+          "snippet": "    url: https://stackoverflow.com/questions/tagged/python-click?tab=Frequent"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+          "line": 3,
+          "snippet": "about: Suggest a new feature for Click"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+          "line": 13,
+          "snippet": "would resolve. Is this problem solvable without changes to Click,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 1,
+          "snippet": ".. currentmodule:: click"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 130,
+          "snippet": "-   If only a name is passed to ``option()``, Click suggests renaming it"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 134,
+          "snippet": "-   ``click.style()`` can output 256 and RGB color codes. Most modern"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 219,
+          "snippet": "-   ``click.get_terminal_size()`` is deprecated and will be removed in"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 224,
+          "snippet": "-   ``click.confirm()`` will prompt until input is given if called with"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 254,
+          "snippet": "    applications to translate Click's built-in strings. :issue:`303`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 266,
+          "snippet": "-   Fix a bug of ``click.utils.make_default_short_help`` for which the"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 292,
+          "snippet": "-   Fix ``ClickException`` output going to stdout instead of stderr."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 301,
+          "snippet": "-   Fix PyPI package name, \"click\" is lowercase again."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 317,
+          "snippet": "-   Always return one of the passed choices for ``click.Choice``"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 319,
+          "snippet": "-   Add ``no_args_is_help`` option to ``click.Command``, defaults to"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 350,
+          "snippet": "    ``click.edit()``. :pr:`1469`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 352,
+          "snippet": "    ``click.edit`` can contains spaces. :pr:`1470`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 363,
+          "snippet": "    warning, to be removed in 8.0. This has been a warning since Click"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 375,
+          "snippet": "-   Wrap ``click.Choice``'s missing message. :issue:`202`, :pr:`1000`"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 398,
+          "snippet": "-   ``click.getchar()`` returns Unicode in Python 3 on Windows,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 402,
+          "snippet": "-   Added support for bash completion of ``type=click.Choice`` for"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 407,
+          "snippet": "-   ``click.getchar()`` correctly raises ``KeyboardInterrupt`` on \"^C\""
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 409,
+          "snippet": "-   Fix encoding issue with ``click.getchar(echo=True)`` on Linux."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 426,
+          "snippet": "-   Add bright colors support for ``click.style`` and fix the reset"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 455,
+          "snippet": "-   Fix 16k character limit of ``click.echo`` on Windows. :issue:`816`,"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 462,
+          "snippet": "-   Fixed the behavior of Click error messages with regards to Unicode"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 518,
+          "snippet": "-   Fix absolute import blocking Click from being vendored into a"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 529,
+          "snippet": "-   Make ``click.progressbar`` work with ``codecs.open`` files."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 543,
+          "snippet": "-   Fix bug in ``click.Path`` where it would crash when passed a ``-``."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 552,
+          "snippet": "-   Fix bug in bash completion where click would discard one or more"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 595,
+          "snippet": "-   Click will now attempt to aid you with debugging locale errors"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 598,
+          "snippet": "-   Click used to return byte strings on Python 2 in some unit-testing"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 601,
+          "snippet": "-   For Windows users on Python 2, Click will now handle Unicode more"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 612,
+          "snippet": "    ``click.get_text_stream(...)``."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 649,
+          "snippet": "    the linked list of contexts to allow click utilities to place state"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 655,
+          "snippet": "-   Click will now warn if users are using ``unicode_literals``."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 656,
+          "snippet": "-   Click will now ignore the ``PAGER`` environment variable if it is"
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 658,
+          "snippet": "-   The ``click-contrib`` GitHub organization was created."
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "Traceback",
+    "result": {
+      "query": "Traceback",
+      "matches": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 17,
+          "snippet": "Include the full traceback if there was an exception."
+        },
+        {
+          "path": "CHANGES.rst",
+          "line": 763,
+          "snippet": "-   The CLI runner's result object now has a traceback attached."
+        },
+        {
+          "path": "CONTRIBUTING.rst",
+          "line": 34,
+          "snippet": "-   Describe what actually happened. Include the full traceback if there"
+        },
+        {
+          "path": "docs/unicode-support.rst",
+          "line": 79,
+          "snippet": "    Traceback (most recent call last):"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 9,
+          "snippet": "from types import TracebackType"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 113,
+          "snippet": "            t.Tuple[t.Type[BaseException], BaseException, TracebackType]"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 130,
+          "snippet": "        #: The traceback"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 391,
+          "snippet": "            traceback if available."
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "CHANGES.rst",
+      "start_line": 1,
+      "end_line": 100,
+      "lines": [
+        {
+          "line": 1,
+          "text": ".. currentmodule:: click"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Version 8.0.2"
+        },
+        {
+          "line": 4,
+          "text": "-------------"
+        },
+        {
+          "line": 5,
+          "text": ""
+        },
+        {
+          "line": 6,
+          "text": "Unreleased"
+        },
+        {
+          "line": 7,
+          "text": ""
+        },
+        {
+          "line": 8,
+          "text": "-   ``is_bool_flag`` is not set to ``True`` if ``is_flag`` is ``False``."
+        },
+        {
+          "line": 9,
+          "text": "    :issue:`1925`"
+        },
+        {
+          "line": 10,
+          "text": "-   Bash version detection is locale independent. :issue:`1940`"
+        },
+        {
+          "line": 11,
+          "text": "-   Empty ``default`` value is not shown for ``multiple=True``."
+        },
+        {
+          "line": 12,
+          "text": "    :issue:`1969`"
+        },
+        {
+          "line": 13,
+          "text": "-   Fix shell completion for arguments that start with a forward slash"
+        },
+        {
+          "line": 14,
+          "text": "    such as absolute file paths. :issue:`1929`"
+        },
+        {
+          "line": 15,
+          "text": "-   ``Path`` type with ``resolve_path=True`` resolves relative symlinks"
+        },
+        {
+          "line": 16,
+          "text": "    to be relative to the containing directory. :issue:`1921`"
+        },
+        {
+          "line": 17,
+          "text": "-   Completion does not skip Python's resource cleanup when exiting,"
+        },
+        {
+          "line": 18,
+          "text": "    avoiding some unexpected warning output. :issue:`1738, 2017`"
+        },
+        {
+          "line": 19,
+          "text": ""
+        },
+        {
+          "line": 20,
+          "text": ""
+        },
+        {
+          "line": 21,
+          "text": "Version 8.0.1"
+        },
+        {
+          "line": 22,
+          "text": "-------------"
+        },
+        {
+          "line": 23,
+          "text": ""
+        },
+        {
+          "line": 24,
+          "text": "Released 2021-05-19"
+        },
+        {
+          "line": 25,
+          "text": ""
+        },
+        {
+          "line": 26,
+          "text": "-   Mark top-level names as exported so type checking understand imports"
+        },
+        {
+          "line": 27,
+          "text": "    in user projects. :issue:`1879`"
+        },
+        {
+          "line": 28,
+          "text": "-   Annotate ``Context.obj`` as ``Any`` so type checking allows all"
+        },
+        {
+          "line": 29,
+          "text": "    operations on the arbitrary object. :issue:`1885`"
+        },
+        {
+          "line": 30,
+          "text": "-   Fix some types that weren't available in Python 3.6.0. :issue:`1882`"
+        },
+        {
+          "line": 31,
+          "text": "-   Fix type checking for iterating over ``ProgressBar`` object."
+        },
+        {
+          "line": 32,
+          "text": "    :issue:`1892`"
+        },
+        {
+          "line": 33,
+          "text": "-   The ``importlib_metadata`` backport package is installed on Python <"
+        },
+        {
+          "line": 34,
+          "text": "    3.8. :issue:`1889`"
+        },
+        {
+          "line": 35,
+          "text": "-   Arguments with ``nargs=-1`` only use env var value if no command"
+        },
+        {
+          "line": 36,
+          "text": "    line values are given. :issue:`1903`"
+        },
+        {
+          "line": 37,
+          "text": "-   Flag options guess their type from ``flag_value`` if given, like"
+        },
+        {
+          "line": 38,
+          "text": "    regular options do from ``default``. :issue:`1886`"
+        },
+        {
+          "line": 39,
+          "text": "-   Added documentation that custom parameter types may be passed"
+        },
+        {
+          "line": 40,
+          "text": "    already valid values in addition to strings. :issue:`1898`"
+        },
+        {
+          "line": 41,
+          "text": "-   Resolving commands returns the name that was given, not"
+        },
+        {
+          "line": 42,
+          "text": "    ``command.name``, fixing an unintended change to help text and"
+        },
+        {
+          "line": 43,
+          "text": "    ``default_map`` lookups. When using patterns like ``AliasedGroup``,"
+        },
+        {
+          "line": 44,
+          "text": "    override ``resolve_command`` to change the name that is returned if"
+        },
+        {
+          "line": 45,
+          "text": "    needed. :issue:`1895`"
+        },
+        {
+          "line": 46,
+          "text": "-   If a default value is invalid, it does not prevent showing help"
+        },
+        {
+          "line": 47,
+          "text": "    text. :issue:`1889`"
+        },
+        {
+          "line": 48,
+          "text": "-   Pass ``windows_expand_args=False`` when calling the main command to"
+        },
+        {
+          "line": 49,
+          "text": "    disable pattern expansion on Windows. There is no way to escape"
+        },
+        {
+          "line": 50,
+          "text": "    patterns in CMD, so if the program needs to pass them on as-is then"
+        },
+        {
+          "line": 51,
+          "text": "    expansion must be disabled. :issue:`1901`"
+        },
+        {
+          "line": 52,
+          "text": ""
+        },
+        {
+          "line": 53,
+          "text": ""
+        },
+        {
+          "line": 54,
+          "text": "Version 8.0.0"
+        },
+        {
+          "line": 55,
+          "text": "-------------"
+        },
+        {
+          "line": 56,
+          "text": ""
+        },
+        {
+          "line": 57,
+          "text": "Released 2021-05-11"
+        },
+        {
+          "line": 58,
+          "text": ""
+        },
+        {
+          "line": 59,
+          "text": "-   Drop support for Python 2 and 3.5."
+        },
+        {
+          "line": 60,
+          "text": "-   Colorama is always installed on Windows in order to provide style"
+        },
+        {
+          "line": 61,
+          "text": "    and color support. :pr:`1784`"
+        },
+        {
+          "line": 62,
+          "text": "-   Adds a repr to Command, showing the command name for friendlier"
+        },
+        {
+          "line": 63,
+          "text": "    debugging. :issue:`1267`, :pr:`1295`"
+        },
+        {
+          "line": 64,
+          "text": "-   Add support for distinguishing the source of a command line"
+        },
+        {
+          "line": 65,
+          "text": "    parameter. :issue:`1264`, :pr:`1329`"
+        },
+        {
+          "line": 66,
+          "text": "-   Add an optional parameter to ``ProgressBar.update`` to set the"
+        },
+        {
+          "line": 67,
+          "text": "    ``current_item``. :issue:`1226`, :pr:`1332`"
+        },
+        {
+          "line": 68,
+          "text": "-   ``version_option`` uses ``importlib.metadata`` (or the"
+        },
+        {
+          "line": 69,
+          "text": "    ``importlib_metadata`` backport) instead of ``pkg_resources``. The"
+        },
+        {
+          "line": 70,
+          "text": "    version is detected based on the package name, not the entry point"
+        },
+        {
+          "line": 71,
+          "text": "    name. The Python package name must match the installed package"
+        },
+        {
+          "line": 72,
+          "text": "    name, or be passed with ``package_name=``. :issue:`1582`"
+        },
+        {
+          "line": 73,
+          "text": "-   If validation fails for a prompt with ``hide_input=True``, the value"
+        },
+        {
+          "line": 74,
+          "text": "    is not shown in the error message. :issue:`1460`"
+        },
+        {
+          "line": 75,
+          "text": "-   An ``IntRange`` or ``FloatRange`` option shows the accepted range in"
+        },
+        {
+          "line": 76,
+          "text": "    its help text. :issue:`1525`, :pr:`1303`"
+        },
+        {
+          "line": 77,
+          "text": "-   ``IntRange`` and ``FloatRange`` bounds can be open (``<``) instead"
+        },
+        {
+          "line": 78,
+          "text": "    of closed (``<=``) by setting ``min_open`` and ``max_open``. Error"
+        },
+        {
+          "line": 79,
+          "text": "    messages have changed to reflect this. :issue:`1100`"
+        },
+        {
+          "line": 80,
+          "text": "-   An option defined with duplicate flag names (``\"--foo/--foo\"``)"
+        },
+        {
+          "line": 81,
+          "text": "    raises a ``ValueError``. :issue:`1465`"
+        },
+        {
+          "line": 82,
+          "text": "-   ``echo()`` will not fail when using pytest's ``capsys`` fixture on"
+        },
+        {
+          "line": 83,
+          "text": "    Windows. :issue:`1590`"
+        },
+        {
+          "line": 84,
+          "text": "-   Resolving commands returns the canonical command name instead of the"
+        },
+        {
+          "line": 85,
+          "text": "    matched name. This makes behavior such as help text and"
+        },
+        {
+          "line": 86,
+          "text": "    ``Context.invoked_subcommand`` consistent when using patterns like"
+        },
+        {
+          "line": 87,
+          "text": "    ``AliasedGroup``. :issue:`1422`"
+        },
+        {
+          "line": 88,
+          "text": "-   The ``BOOL`` type accepts the values \"on\" and \"off\". :issue:`1629`"
+        },
+        {
+          "line": 89,
+          "text": "-   A ``Group`` with ``invoke_without_command=True`` will always invoke"
+        },
+        {
+          "line": 90,
+          "text": "    its result callback. :issue:`1178`"
+        },
+        {
+          "line": 91,
+          "text": "-   ``nargs == -1`` and ``nargs > 1`` is parsed and validated for"
+        },
+        {
+          "line": 92,
+          "text": "    values from environment variables and defaults. :issue:`729`"
+        },
+        {
+          "line": 93,
+          "text": "-   Detect the program name when executing a module or package with"
+        },
+        {
+          "line": 94,
+          "text": "    ``python -m name``. :issue:`1603`"
+        },
+        {
+          "line": 95,
+          "text": "-   Include required parent arguments in help synopsis of subcommands."
+        },
+        {
+          "line": 96,
+          "text": "    :issue:`1475`"
+        },
+        {
+          "line": 97,
+          "text": "-   Help for boolean flags with ``show_default=True`` shows the flag"
+        },
+        {
+          "line": 98,
+          "text": "    name instead of ``True`` or ``False``. :issue:`1538`"
+        },
+        {
+          "line": 99,
+          "text": "-   Non-string objects passed to ``style()`` and ``secho()`` will be"
+        },
+        {
+          "line": 100,
+          "text": "    converted to string. :pr:`1146`"
+        }
+      ],
+      "content": ".. currentmodule:: click\n\nVersion 8.0.2\n-------------\n\nUnreleased\n\n-   ``is_bool_flag`` is not set to ``True`` if ``is_flag`` is ``False``.\n    :issue:`1925`\n-   Bash version detection is locale independent. :issue:`1940`\n-   Empty ``default`` value is not shown for ``multiple=True``.\n    :issue:`1969`\n-   Fix shell completion for arguments that start with a forward slash\n    such as absolute file paths. :issue:`1929`\n-   ``Path`` type with ``resolve_path=True`` resolves relative symlinks\n    to be relative to the containing directory. :issue:`1921`\n-   Completion does not skip Python's resource cleanup when exiting,\n    avoiding some unexpected warning output. :issue:`1738, 2017`\n\n\nVersion 8.0.1\n-------------\n\nReleased 2021-05-19\n\n-   Mark top-level names as exported so type checking understand imports\n    in user projects. :issue:`1879`\n-   Annotate ``Context.obj`` as ``Any`` so type checking allows all\n    operations on the arbitrary object. :issue:`1885`\n-   Fix some types that weren't available in Python 3.6.0. :issue:`1882`\n-   Fix type checking for iterating over ``ProgressBar`` object.\n    :issue:`1892`\n-   The ``importlib_metadata`` backport package is installed on Python <\n    3.8. :issue:`1889`\n-   Arguments with ``nargs=-1`` only use env var value if no command\n    line values are given. :issue:`1903`\n-   Flag options guess their type from ``flag_value`` if given, like\n    regular options do from ``default``. :issue:`1886`\n-   Added documentation that custom parameter types may be passed\n    already valid values in addition to strings. :issue:`1898`\n-   Resolving commands returns the name that was given, not\n    ``command.name``, fixing an unintended change to help text and\n    ``default_map`` lookups. When using patterns like ``AliasedGroup``,\n    override ``resolve_command`` to change the name that is returned if\n    needed. :issue:`1895`\n-   If a default value is invalid, it does not prevent showing help\n    text. :issue:`1889`\n-   Pass ``windows_expand_args=False`` when calling the main command to\n    disable pattern expansion on Windows. There is no way to escape\n    patterns in CMD, so if the program needs to pass them on as-is then\n    expansion must be disabled. :issue:`1901`\n\n\nVersion 8.0.0\n-------------\n\nReleased 2021-05-11\n\n-   Drop support for Python 2 and 3.5.\n-   Colorama is always installed on Windows in order to provide style\n    and color support. :pr:`1784`\n-   Adds a repr to Command, showing the command name for friendlier\n    debugging. :issue:`1267`, :pr:`1295`\n-   Add support for distinguishing the source of a command line\n    parameter. :issue:`1264`, :pr:`1329`\n-   Add an optional parameter to ``ProgressBar.update`` to set the\n    ``current_item``. :issue:`1226`, :pr:`1332`\n-   ``version_option`` uses ``importlib.metadata`` (or the\n    ``importlib_metadata`` backport) instead of ``pkg_resources``. The\n    version is detected based on the package name, not the entry point\n    name. The Python package name must match the installed package\n    name, or be passed with ``package_name=``. :issue:`1582`\n-   If validation fails for a prompt with ``hide_input=True``, the value\n    is not shown in the error message. :issue:`1460`\n-   An ``IntRange`` or ``FloatRange`` option shows the accepted range in\n    its help text. :issue:`1525`, :pr:`1303`\n-   ``IntRange`` and ``FloatRange`` bounds can be open (``<``) instead\n    of closed (``<=``) by setting ``min_open`` and ``max_open``. Error\n    messages have changed to reflect this. :issue:`1100`\n-   An option defined with duplicate flag names (``\"--foo/--foo\"``)\n    raises a ``ValueError``. :issue:`1465`\n-   ``echo()`` will not fail when using pytest's ``capsys`` fixture on\n    Windows. :issue:`1590`\n-   Resolving commands returns the canonical command name instead of the\n    matched name. This makes behavior such as help text and\n    ``Context.invoked_subcommand`` consistent when using patterns like\n    ``AliasedGroup``. :issue:`1422`\n-   The ``BOOL`` type accepts the values \"on\" and \"off\". :issue:`1629`\n-   A ``Group`` with ``invoke_without_command=True`` will always invoke\n    its result callback. :issue:`1178`\n-   ``nargs == -1`` and ``nargs > 1`` is parsed and validated for\n    values from environment variables and defaults. :issue:`729`\n-   Detect the program name when executing a module or package with\n    ``python -m name``. :issue:`1603`\n-   Include required parent arguments in help synopsis of subcommands.\n    :issue:`1475`\n-   Help for boolean flags with ``show_default=True`` shows the flag\n    name instead of ``True`` or ``False``. :issue:`1538`\n-   Non-string objects passed to ``style()`` and ``secho()`` will be\n    converted to string. :pr:`1146`",
+      "sha256": "74a7ad9eda3fb4e9b3b0fc5e4fcb00dd011d9ae411c622c27a6bb20d226e0baf"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "CONTRIBUTING.rst",
+      "start_line": 1,
+      "end_line": 100,
+      "lines": [
+        {
+          "line": 1,
+          "text": "How to contribute to Click"
+        },
+        {
+          "line": 2,
+          "text": "=========================="
+        },
+        {
+          "line": 3,
+          "text": ""
+        },
+        {
+          "line": 4,
+          "text": "Thank you for considering contributing to Click!"
+        },
+        {
+          "line": 5,
+          "text": ""
+        },
+        {
+          "line": 6,
+          "text": ""
+        },
+        {
+          "line": 7,
+          "text": "Support questions"
+        },
+        {
+          "line": 8,
+          "text": "-----------------"
+        },
+        {
+          "line": 9,
+          "text": ""
+        },
+        {
+          "line": 10,
+          "text": "Please don't use the issue tracker for this. The issue tracker is a tool"
+        },
+        {
+          "line": 11,
+          "text": "to address bugs and feature requests in Click itself. Use one of the"
+        },
+        {
+          "line": 12,
+          "text": "following resources for questions about using Click or issues with your"
+        },
+        {
+          "line": 13,
+          "text": "own code:"
+        },
+        {
+          "line": 14,
+          "text": ""
+        },
+        {
+          "line": 15,
+          "text": "-   The ``#get-help`` channel on our Discord chat:"
+        },
+        {
+          "line": 16,
+          "text": "    https://discord.gg/pallets"
+        },
+        {
+          "line": 17,
+          "text": "-   The mailing list flask@python.org for long term discussion or larger"
+        },
+        {
+          "line": 18,
+          "text": "    issues."
+        },
+        {
+          "line": 19,
+          "text": "-   Ask on `Stack Overflow`_. Search with Google first using:"
+        },
+        {
+          "line": 20,
+          "text": "    ``site:stackoverflow.com python click {search term, exception message, etc.}``"
+        },
+        {
+          "line": 21,
+          "text": ""
+        },
+        {
+          "line": 22,
+          "text": ".. _Stack Overflow: https://stackoverflow.com/questions/tagged/python-click?tab=Frequent"
+        },
+        {
+          "line": 23,
+          "text": ""
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": "Reporting issues"
+        },
+        {
+          "line": 26,
+          "text": "----------------"
+        },
+        {
+          "line": 27,
+          "text": ""
+        },
+        {
+          "line": 28,
+          "text": "Include the following information in your post:"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "-   Describe what you expected to happen."
+        },
+        {
+          "line": 31,
+          "text": "-   If possible, include a `minimal reproducible example`_ to help us"
+        },
+        {
+          "line": 32,
+          "text": "    identify the issue. This also helps check that the issue is not with"
+        },
+        {
+          "line": 33,
+          "text": "    your own code."
+        },
+        {
+          "line": 34,
+          "text": "-   Describe what actually happened. Include the full traceback if there"
+        },
+        {
+          "line": 35,
+          "text": "    was an exception."
+        },
+        {
+          "line": 36,
+          "text": "-   List your Python and Click versions. If possible, check if this"
+        },
+        {
+          "line": 37,
+          "text": "    issue is already fixed in the latest releases or the latest code in"
+        },
+        {
+          "line": 38,
+          "text": "    the repository."
+        },
+        {
+          "line": 39,
+          "text": ""
+        },
+        {
+          "line": 40,
+          "text": ".. _minimal reproducible example: https://stackoverflow.com/help/minimal-reproducible-example"
+        },
+        {
+          "line": 41,
+          "text": ""
+        },
+        {
+          "line": 42,
+          "text": ""
+        },
+        {
+          "line": 43,
+          "text": "Submitting patches"
+        },
+        {
+          "line": 44,
+          "text": "------------------"
+        },
+        {
+          "line": 45,
+          "text": ""
+        },
+        {
+          "line": 46,
+          "text": "If there is not an open issue for what you want to submit, prefer"
+        },
+        {
+          "line": 47,
+          "text": "opening one for discussion before working on a PR. You can work on any"
+        },
+        {
+          "line": 48,
+          "text": "issue that doesn't have an open PR linked to it or a maintainer assigned"
+        },
+        {
+          "line": 49,
+          "text": "to it. These show up in the sidebar. No need to ask if you can work on"
+        },
+        {
+          "line": 50,
+          "text": "an issue that interests you."
+        },
+        {
+          "line": 51,
+          "text": ""
+        },
+        {
+          "line": 52,
+          "text": "Include the following in your patch:"
+        },
+        {
+          "line": 53,
+          "text": ""
+        },
+        {
+          "line": 54,
+          "text": "-   Use `Black`_ to format your code. This and other tools will run"
+        },
+        {
+          "line": 55,
+          "text": "    automatically if you install `pre-commit`_ using the instructions"
+        },
+        {
+          "line": 56,
+          "text": "    below."
+        },
+        {
+          "line": 57,
+          "text": "-   Include tests if your patch adds or changes code. Make sure the test"
+        },
+        {
+          "line": 58,
+          "text": "    fails without your patch."
+        },
+        {
+          "line": 59,
+          "text": "-   Update any relevant docs pages and docstrings. Docs pages and"
+        },
+        {
+          "line": 60,
+          "text": "    docstrings should be wrapped at 72 characters."
+        },
+        {
+          "line": 61,
+          "text": "-   Add an entry in ``CHANGES.rst``. Use the same style as other"
+        },
+        {
+          "line": 62,
+          "text": "    entries. Also include ``.. versionchanged::`` inline changelogs in"
+        },
+        {
+          "line": 63,
+          "text": "    relevant docstrings."
+        },
+        {
+          "line": 64,
+          "text": ""
+        },
+        {
+          "line": 65,
+          "text": ".. _Black: https://black.readthedocs.io"
+        },
+        {
+          "line": 66,
+          "text": ".. _pre-commit: https://pre-commit.com"
+        },
+        {
+          "line": 67,
+          "text": ""
+        },
+        {
+          "line": 68,
+          "text": ""
+        },
+        {
+          "line": 69,
+          "text": "First time setup"
+        },
+        {
+          "line": 70,
+          "text": "~~~~~~~~~~~~~~~~"
+        },
+        {
+          "line": 71,
+          "text": ""
+        },
+        {
+          "line": 72,
+          "text": "-   Download and install the `latest version of git`_."
+        },
+        {
+          "line": 73,
+          "text": "-   Configure git with your `username`_ and `email`_."
+        },
+        {
+          "line": 74,
+          "text": ""
+        },
+        {
+          "line": 75,
+          "text": "    .. code-block:: text"
+        },
+        {
+          "line": 76,
+          "text": ""
+        },
+        {
+          "line": 77,
+          "text": "        $ git config --global user.name 'your name'"
+        },
+        {
+          "line": 78,
+          "text": "        $ git config --global user.email 'your email'"
+        },
+        {
+          "line": 79,
+          "text": ""
+        },
+        {
+          "line": 80,
+          "text": "-   Make sure you have a `GitHub account`_."
+        },
+        {
+          "line": 81,
+          "text": "-   Fork Click to your GitHub account by clicking the `Fork`_ button."
+        },
+        {
+          "line": 82,
+          "text": "-   `Clone`_ the main repository locally."
+        },
+        {
+          "line": 83,
+          "text": ""
+        },
+        {
+          "line": 84,
+          "text": "    .. code-block:: text"
+        },
+        {
+          "line": 85,
+          "text": ""
+        },
+        {
+          "line": 86,
+          "text": "        $ git clone https://github.com/pallets/click"
+        },
+        {
+          "line": 87,
+          "text": "        $ cd click"
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": "-   Add your fork as a remote to push your work to. Replace"
+        },
+        {
+          "line": 90,
+          "text": "    ``{username}`` with your username. This names the remote \"fork\", the"
+        },
+        {
+          "line": 91,
+          "text": "    default Pallets remote is \"origin\"."
+        },
+        {
+          "line": 92,
+          "text": ""
+        },
+        {
+          "line": 93,
+          "text": "    .. code-block:: text"
+        },
+        {
+          "line": 94,
+          "text": ""
+        },
+        {
+          "line": 95,
+          "text": "        $ git remote add fork https://github.com/{username}/click"
+        },
+        {
+          "line": 96,
+          "text": ""
+        },
+        {
+          "line": 97,
+          "text": "-   Create a virtualenv."
+        },
+        {
+          "line": 98,
+          "text": ""
+        },
+        {
+          "line": 99,
+          "text": "    .. code-block:: text"
+        },
+        {
+          "line": 100,
+          "text": ""
+        }
+      ],
+      "content": "How to contribute to Click\n==========================\n\nThank you for considering contributing to Click!\n\n\nSupport questions\n-----------------\n\nPlease don't use the issue tracker for this. The issue tracker is a tool\nto address bugs and feature requests in Click itself. Use one of the\nfollowing resources for questions about using Click or issues with your\nown code:\n\n-   The ``#get-help`` channel on our Discord chat:\n    https://discord.gg/pallets\n-   The mailing list flask@python.org for long term discussion or larger\n    issues.\n-   Ask on `Stack Overflow`_. Search with Google first using:\n    ``site:stackoverflow.com python click {search term, exception message, etc.}``\n\n.. _Stack Overflow: https://stackoverflow.com/questions/tagged/python-click?tab=Frequent\n\n\nReporting issues\n----------------\n\nInclude the following information in your post:\n\n-   Describe what you expected to happen.\n-   If possible, include a `minimal reproducible example`_ to help us\n    identify the issue. This also helps check that the issue is not with\n    your own code.\n-   Describe what actually happened. Include the full traceback if there\n    was an exception.\n-   List your Python and Click versions. If possible, check if this\n    issue is already fixed in the latest releases or the latest code in\n    the repository.\n\n.. _minimal reproducible example: https://stackoverflow.com/help/minimal-reproducible-example\n\n\nSubmitting patches\n------------------\n\nIf there is not an open issue for what you want to submit, prefer\nopening one for discussion before working on a PR. You can work on any\nissue that doesn't have an open PR linked to it or a maintainer assigned\nto it. These show up in the sidebar. No need to ask if you can work on\nan issue that interests you.\n\nInclude the following in your patch:\n\n-   Use `Black`_ to format your code. This and other tools will run\n    automatically if you install `pre-commit`_ using the instructions\n    below.\n-   Include tests if your patch adds or changes code. Make sure the test\n    fails without your patch.\n-   Update any relevant docs pages and docstrings. Docs pages and\n    docstrings should be wrapped at 72 characters.\n-   Add an entry in ``CHANGES.rst``. Use the same style as other\n    entries. Also include ``.. versionchanged::`` inline changelogs in\n    relevant docstrings.\n\n.. _Black: https://black.readthedocs.io\n.. _pre-commit: https://pre-commit.com\n\n\nFirst time setup\n~~~~~~~~~~~~~~~~\n\n-   Download and install the `latest version of git`_.\n-   Configure git with your `username`_ and `email`_.\n\n    .. code-block:: text\n\n        $ git config --global user.name 'your name'\n        $ git config --global user.email 'your email'\n\n-   Make sure you have a `GitHub account`_.\n-   Fork Click to your GitHub account by clicking the `Fork`_ button.\n-   `Clone`_ the main repository locally.\n\n    .. code-block:: text\n\n        $ git clone https://github.com/pallets/click\n        $ cd click\n\n-   Add your fork as a remote to push your work to. Replace\n    ``{username}`` with your username. This names the remote \"fork\", the\n    default Pallets remote is \"origin\".\n\n    .. code-block:: text\n\n        $ git remote add fork https://github.com/{username}/click\n\n-   Create a virtualenv.\n\n    .. code-block:: text\n",
+      "sha256": "b980a787256154dcfb42543d9803d3aca09467264e0511e0f5d8f58440b555de"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/options.rst",
+      "start_line": 128,
+      "end_line": 227,
+      "lines": [
+        {
+          "line": 128,
+          "text": ""
+        },
+        {
+          "line": 129,
+          "text": ".. click:run::"
+        },
+        {
+          "line": 130,
+          "text": ""
+        },
+        {
+          "line": 131,
+          "text": "    invoke(findme, args=['--pos', '2.0', '3.0'])"
+        },
+        {
+          "line": 132,
+          "text": ""
+        },
+        {
+          "line": 133,
+          "text": ".. _tuple-type:"
+        },
+        {
+          "line": 134,
+          "text": ""
+        },
+        {
+          "line": 135,
+          "text": "Tuples as Multi Value Options"
+        },
+        {
+          "line": 136,
+          "text": "-----------------------------"
+        },
+        {
+          "line": 137,
+          "text": ""
+        },
+        {
+          "line": 138,
+          "text": ".. versionadded:: 4.0"
+        },
+        {
+          "line": 139,
+          "text": ""
+        },
+        {
+          "line": 140,
+          "text": "As you can see that by using `nargs` set to a specific number each item in"
+        },
+        {
+          "line": 141,
+          "text": "the resulting tuple is of the same type.  This might not be what you want."
+        },
+        {
+          "line": 142,
+          "text": "Commonly you might want to use different types for different indexes in"
+        },
+        {
+          "line": 143,
+          "text": "the tuple.  For this you can directly specify a tuple as type:"
+        },
+        {
+          "line": 144,
+          "text": ""
+        },
+        {
+          "line": 145,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 146,
+          "text": ""
+        },
+        {
+          "line": 147,
+          "text": "    @click.command()"
+        },
+        {
+          "line": 148,
+          "text": "    @click.option('--item', type=(str, int))"
+        },
+        {
+          "line": 149,
+          "text": "    def putitem(item):"
+        },
+        {
+          "line": 150,
+          "text": "        name, id = item"
+        },
+        {
+          "line": 151,
+          "text": "        click.echo(f\"name={name} id={id}\")"
+        },
+        {
+          "line": 152,
+          "text": ""
+        },
+        {
+          "line": 153,
+          "text": "And on the command line:"
+        },
+        {
+          "line": 154,
+          "text": ""
+        },
+        {
+          "line": 155,
+          "text": ".. click:run::"
+        },
+        {
+          "line": 156,
+          "text": ""
+        },
+        {
+          "line": 157,
+          "text": "    invoke(putitem, args=['--item', 'peter', '1338'])"
+        },
+        {
+          "line": 158,
+          "text": ""
+        },
+        {
+          "line": 159,
+          "text": "By using a tuple literal as type, `nargs` gets automatically set to the"
+        },
+        {
+          "line": 160,
+          "text": "length of the tuple and the :class:`click.Tuple` type is automatically"
+        },
+        {
+          "line": 161,
+          "text": "used.  The above example is thus equivalent to this:"
+        },
+        {
+          "line": 162,
+          "text": ""
+        },
+        {
+          "line": 163,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 164,
+          "text": ""
+        },
+        {
+          "line": 165,
+          "text": "    @click.command()"
+        },
+        {
+          "line": 166,
+          "text": "    @click.option('--item', nargs=2, type=click.Tuple([str, int]))"
+        },
+        {
+          "line": 167,
+          "text": "    def putitem(item):"
+        },
+        {
+          "line": 168,
+          "text": "        name, id = item"
+        },
+        {
+          "line": 169,
+          "text": "        click.echo(f\"name={name} id={id}\")"
+        },
+        {
+          "line": 170,
+          "text": ""
+        },
+        {
+          "line": 171,
+          "text": ".. _multiple-options:"
+        },
+        {
+          "line": 172,
+          "text": ""
+        },
+        {
+          "line": 173,
+          "text": "Multiple Options"
+        },
+        {
+          "line": 174,
+          "text": "----------------"
+        },
+        {
+          "line": 175,
+          "text": ""
+        },
+        {
+          "line": 176,
+          "text": "Similarly to ``nargs``, there is also the case of wanting to support a"
+        },
+        {
+          "line": 177,
+          "text": "parameter being provided multiple times and have all the values recorded --"
+        },
+        {
+          "line": 178,
+          "text": "not just the last one.  For instance, ``git commit -m foo -m bar`` would"
+        },
+        {
+          "line": 179,
+          "text": "record two lines for the commit message: ``foo`` and ``bar``. This can be"
+        },
+        {
+          "line": 180,
+          "text": "accomplished with the ``multiple`` flag:"
+        },
+        {
+          "line": 181,
+          "text": ""
+        },
+        {
+          "line": 182,
+          "text": "Example:"
+        },
+        {
+          "line": 183,
+          "text": ""
+        },
+        {
+          "line": 184,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 185,
+          "text": ""
+        },
+        {
+          "line": 186,
+          "text": "    @click.command()"
+        },
+        {
+          "line": 187,
+          "text": "    @click.option('--message', '-m', multiple=True)"
+        },
+        {
+          "line": 188,
+          "text": "    def commit(message):"
+        },
+        {
+          "line": 189,
+          "text": "        click.echo('\\n'.join(message))"
+        },
+        {
+          "line": 190,
+          "text": ""
+        },
+        {
+          "line": 191,
+          "text": "And on the command line:"
+        },
+        {
+          "line": 192,
+          "text": ""
+        },
+        {
+          "line": 193,
+          "text": ".. click:run::"
+        },
+        {
+          "line": 194,
+          "text": ""
+        },
+        {
+          "line": 195,
+          "text": "    invoke(commit, args=['-m', 'foo', '-m', 'bar'])"
+        },
+        {
+          "line": 196,
+          "text": ""
+        },
+        {
+          "line": 197,
+          "text": "When passing a ``default`` with ``multiple=True``, the default value"
+        },
+        {
+          "line": 198,
+          "text": "must be a list or tuple, otherwise it will be interpreted as a list of"
+        },
+        {
+          "line": 199,
+          "text": "single characters."
+        },
+        {
+          "line": 200,
+          "text": ""
+        },
+        {
+          "line": 201,
+          "text": ".. code-block:: python"
+        },
+        {
+          "line": 202,
+          "text": ""
+        },
+        {
+          "line": 203,
+          "text": "    @click.option(\"--format\", multiple=True, default=[\"json\"])"
+        },
+        {
+          "line": 204,
+          "text": ""
+        },
+        {
+          "line": 205,
+          "text": ""
+        },
+        {
+          "line": 206,
+          "text": "Counting"
+        },
+        {
+          "line": 207,
+          "text": "--------"
+        },
+        {
+          "line": 208,
+          "text": ""
+        },
+        {
+          "line": 209,
+          "text": "In some very rare circumstances, it is interesting to use the repetition"
+        },
+        {
+          "line": 210,
+          "text": "of options to count an integer up.  This can be used for verbosity flags,"
+        },
+        {
+          "line": 211,
+          "text": "for instance:"
+        },
+        {
+          "line": 212,
+          "text": ""
+        },
+        {
+          "line": 213,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 214,
+          "text": ""
+        },
+        {
+          "line": 215,
+          "text": "    @click.command()"
+        },
+        {
+          "line": 216,
+          "text": "    @click.option('-v', '--verbose', count=True)"
+        },
+        {
+          "line": 217,
+          "text": "    def log(verbose):"
+        },
+        {
+          "line": 218,
+          "text": "        click.echo(f\"Verbosity: {verbose}\")"
+        },
+        {
+          "line": 219,
+          "text": ""
+        },
+        {
+          "line": 220,
+          "text": "And on the command line:"
+        },
+        {
+          "line": 221,
+          "text": ""
+        },
+        {
+          "line": 222,
+          "text": ".. click:run::"
+        },
+        {
+          "line": 223,
+          "text": ""
+        },
+        {
+          "line": 224,
+          "text": "    invoke(log, args=['-vvv'])"
+        },
+        {
+          "line": 225,
+          "text": ""
+        },
+        {
+          "line": 226,
+          "text": "Boolean Flags"
+        },
+        {
+          "line": 227,
+          "text": "-------------"
+        }
+      ],
+      "content": "\n.. click:run::\n\n    invoke(findme, args=['--pos', '2.0', '3.0'])\n\n.. _tuple-type:\n\nTuples as Multi Value Options\n-----------------------------\n\n.. versionadded:: 4.0\n\nAs you can see that by using `nargs` set to a specific number each item in\nthe resulting tuple is of the same type.  This might not be what you want.\nCommonly you might want to use different types for different indexes in\nthe tuple.  For this you can directly specify a tuple as type:\n\n.. click:example::\n\n    @click.command()\n    @click.option('--item', type=(str, int))\n    def putitem(item):\n        name, id = item\n        click.echo(f\"name={name} id={id}\")\n\nAnd on the command line:\n\n.. click:run::\n\n    invoke(putitem, args=['--item', 'peter', '1338'])\n\nBy using a tuple literal as type, `nargs` gets automatically set to the\nlength of the tuple and the :class:`click.Tuple` type is automatically\nused.  The above example is thus equivalent to this:\n\n.. click:example::\n\n    @click.command()\n    @click.option('--item', nargs=2, type=click.Tuple([str, int]))\n    def putitem(item):\n        name, id = item\n        click.echo(f\"name={name} id={id}\")\n\n.. _multiple-options:\n\nMultiple Options\n----------------\n\nSimilarly to ``nargs``, there is also the case of wanting to support a\nparameter being provided multiple times and have all the values recorded --\nnot just the last one.  For instance, ``git commit -m foo -m bar`` would\nrecord two lines for the commit message: ``foo`` and ``bar``. This can be\naccomplished with the ``multiple`` flag:\n\nExample:\n\n.. click:example::\n\n    @click.command()\n    @click.option('--message', '-m', multiple=True)\n    def commit(message):\n        click.echo('\\n'.join(message))\n\nAnd on the command line:\n\n.. click:run::\n\n    invoke(commit, args=['-m', 'foo', '-m', 'bar'])\n\nWhen passing a ``default`` with ``multiple=True``, the default value\nmust be a list or tuple, otherwise it will be interpreted as a list of\nsingle characters.\n\n.. code-block:: python\n\n    @click.option(\"--format\", multiple=True, default=[\"json\"])\n\n\nCounting\n--------\n\nIn some very rare circumstances, it is interesting to use the repetition\nof options to count an integer up.  This can be used for verbosity flags,\nfor instance:\n\n.. click:example::\n\n    @click.command()\n    @click.option('-v', '--verbose', count=True)\n    def log(verbose):\n        click.echo(f\"Verbosity: {verbose}\")\n\nAnd on the command line:\n\n.. click:run::\n\n    invoke(log, args=['-vvv'])\n\nBoolean Flags\n-------------",
+      "sha256": "fad28dbda2d8d5e93b11f4ff3fc86c551da4b6b9e9882eb500a093481b3fd657"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/quickstart.rst",
+      "start_line": 32,
+      "end_line": 131,
+      "lines": [
+        {
+          "line": 32,
+          "text": "keep different project environments isolated.  Let's see how virtualenv"
+        },
+        {
+          "line": 33,
+          "text": "works."
+        },
+        {
+          "line": 34,
+          "text": ""
+        },
+        {
+          "line": 35,
+          "text": "If you are on Mac OS X or Linux::"
+        },
+        {
+          "line": 36,
+          "text": ""
+        },
+        {
+          "line": 37,
+          "text": "    $ pip install virtualenv --user"
+        },
+        {
+          "line": 38,
+          "text": ""
+        },
+        {
+          "line": 39,
+          "text": "One of these will probably install virtualenv on your system.  Maybe it's even"
+        },
+        {
+          "line": 40,
+          "text": "in your package manager.  If you use Ubuntu, try::"
+        },
+        {
+          "line": 41,
+          "text": ""
+        },
+        {
+          "line": 42,
+          "text": "    $ sudo apt-get install python-virtualenv"
+        },
+        {
+          "line": 43,
+          "text": ""
+        },
+        {
+          "line": 44,
+          "text": "If you are on Windows (or none of the above methods worked) you must install"
+        },
+        {
+          "line": 45,
+          "text": "``pip`` first.  For more information about this, see `installing pip`_."
+        },
+        {
+          "line": 46,
+          "text": "Once you have it installed, run the ``pip`` command from above, but without"
+        },
+        {
+          "line": 47,
+          "text": "the `sudo` prefix."
+        },
+        {
+          "line": 48,
+          "text": ""
+        },
+        {
+          "line": 49,
+          "text": ".. _installing pip: https://pip.readthedocs.io/en/latest/installing/"
+        },
+        {
+          "line": 50,
+          "text": ""
+        },
+        {
+          "line": 51,
+          "text": "Once you have virtualenv installed, just fire up a shell and create"
+        },
+        {
+          "line": 52,
+          "text": "your own environment.  I usually create a project folder and a `venv`"
+        },
+        {
+          "line": 53,
+          "text": "folder within::"
+        },
+        {
+          "line": 54,
+          "text": ""
+        },
+        {
+          "line": 55,
+          "text": "    $ mkdir myproject"
+        },
+        {
+          "line": 56,
+          "text": "    $ cd myproject"
+        },
+        {
+          "line": 57,
+          "text": "    $ virtualenv venv"
+        },
+        {
+          "line": 58,
+          "text": "    New python executable in venv/bin/python"
+        },
+        {
+          "line": 59,
+          "text": "    Installing setuptools, pip............done."
+        },
+        {
+          "line": 60,
+          "text": ""
+        },
+        {
+          "line": 61,
+          "text": "Now, whenever you want to work on a project, you only have to activate the"
+        },
+        {
+          "line": 62,
+          "text": "corresponding environment.  On OS X and Linux, do the following::"
+        },
+        {
+          "line": 63,
+          "text": ""
+        },
+        {
+          "line": 64,
+          "text": "    $ . venv/bin/activate"
+        },
+        {
+          "line": 65,
+          "text": ""
+        },
+        {
+          "line": 66,
+          "text": "If you are a Windows user, the following command is for you::"
+        },
+        {
+          "line": 67,
+          "text": ""
+        },
+        {
+          "line": 68,
+          "text": "    $ venv\\scripts\\activate"
+        },
+        {
+          "line": 69,
+          "text": ""
+        },
+        {
+          "line": 70,
+          "text": "Either way, you should now be using your virtualenv (notice how the prompt of"
+        },
+        {
+          "line": 71,
+          "text": "your shell has changed to show the active environment)."
+        },
+        {
+          "line": 72,
+          "text": ""
+        },
+        {
+          "line": 73,
+          "text": "And if you want to go back to the real world, use the following command::"
+        },
+        {
+          "line": 74,
+          "text": ""
+        },
+        {
+          "line": 75,
+          "text": "    $ deactivate"
+        },
+        {
+          "line": 76,
+          "text": ""
+        },
+        {
+          "line": 77,
+          "text": "After doing this, the prompt of your shell should be as familiar as before."
+        },
+        {
+          "line": 78,
+          "text": ""
+        },
+        {
+          "line": 79,
+          "text": "Now, let's move on. Enter the following command to get Click activated in your"
+        },
+        {
+          "line": 80,
+          "text": "virtualenv::"
+        },
+        {
+          "line": 81,
+          "text": ""
+        },
+        {
+          "line": 82,
+          "text": "    $ pip install click"
+        },
+        {
+          "line": 83,
+          "text": ""
+        },
+        {
+          "line": 84,
+          "text": "A few seconds later and you are good to go."
+        },
+        {
+          "line": 85,
+          "text": ""
+        },
+        {
+          "line": 86,
+          "text": "Screencast and Examples"
+        },
+        {
+          "line": 87,
+          "text": "-----------------------"
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": "There is a screencast available which shows the basic API of Click and"
+        },
+        {
+          "line": 90,
+          "text": "how to build simple applications with it.  It also explores how to build"
+        },
+        {
+          "line": 91,
+          "text": "commands with subcommands."
+        },
+        {
+          "line": 92,
+          "text": ""
+        },
+        {
+          "line": 93,
+          "text": "*   `Building Command Line Applications with Click"
+        },
+        {
+          "line": 94,
+          "text": "    <https://www.youtube.com/watch?v=kNke39OZ2k0>`_"
+        },
+        {
+          "line": 95,
+          "text": ""
+        },
+        {
+          "line": 96,
+          "text": "Examples of Click applications can be found in the documentation as well"
+        },
+        {
+          "line": 97,
+          "text": "as in the GitHub repository together with readme files:"
+        },
+        {
+          "line": 98,
+          "text": ""
+        },
+        {
+          "line": 99,
+          "text": "*   ``inout``: `File input and output"
+        },
+        {
+          "line": 100,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/inout>`_"
+        },
+        {
+          "line": 101,
+          "text": "*   ``naval``: `Port of docopt naval example"
+        },
+        {
+          "line": 102,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/naval>`_"
+        },
+        {
+          "line": 103,
+          "text": "*   ``aliases``: `Command alias example"
+        },
+        {
+          "line": 104,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/aliases>`_"
+        },
+        {
+          "line": 105,
+          "text": "*   ``repo``: `Git-/Mercurial-like command line interface"
+        },
+        {
+          "line": 106,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/repo>`_"
+        },
+        {
+          "line": 107,
+          "text": "*   ``complex``: `Complex example with plugin loading"
+        },
+        {
+          "line": 108,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/complex>`_"
+        },
+        {
+          "line": 109,
+          "text": "*   ``validation``: `Custom parameter validation example"
+        },
+        {
+          "line": 110,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/validation>`_"
+        },
+        {
+          "line": 111,
+          "text": "*   ``colors``: `Color support demo"
+        },
+        {
+          "line": 112,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/colors>`_"
+        },
+        {
+          "line": 113,
+          "text": "*   ``termui``: `Terminal UI functions demo"
+        },
+        {
+          "line": 114,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/termui>`_"
+        },
+        {
+          "line": 115,
+          "text": "*   ``imagepipe``: `Multi command chaining demo"
+        },
+        {
+          "line": 116,
+          "text": "    <https://github.com/pallets/click/tree/main/examples/imagepipe>`_"
+        },
+        {
+          "line": 117,
+          "text": ""
+        },
+        {
+          "line": 118,
+          "text": "Basic Concepts - Creating a Command"
+        },
+        {
+          "line": 119,
+          "text": "-----------------------------------"
+        },
+        {
+          "line": 120,
+          "text": ""
+        },
+        {
+          "line": 121,
+          "text": "Click is based on declaring commands through decorators.  Internally, there"
+        },
+        {
+          "line": 122,
+          "text": "is a non-decorator interface for advanced use cases, but it's discouraged"
+        },
+        {
+          "line": 123,
+          "text": "for high-level usage."
+        },
+        {
+          "line": 124,
+          "text": ""
+        },
+        {
+          "line": 125,
+          "text": "A function becomes a Click command line tool by decorating it through"
+        },
+        {
+          "line": 126,
+          "text": ":func:`click.command`.  At its simplest, just decorating a function"
+        },
+        {
+          "line": 127,
+          "text": "with this decorator will make it into a callable script:"
+        },
+        {
+          "line": 128,
+          "text": ""
+        },
+        {
+          "line": 129,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 130,
+          "text": ""
+        },
+        {
+          "line": 131,
+          "text": "    import click"
+        }
+      ],
+      "content": "keep different project environments isolated.  Let's see how virtualenv\nworks.\n\nIf you are on Mac OS X or Linux::\n\n    $ pip install virtualenv --user\n\nOne of these will probably install virtualenv on your system.  Maybe it's even\nin your package manager.  If you use Ubuntu, try::\n\n    $ sudo apt-get install python-virtualenv\n\nIf you are on Windows (or none of the above methods worked) you must install\n``pip`` first.  For more information about this, see `installing pip`_.\nOnce you have it installed, run the ``pip`` command from above, but without\nthe `sudo` prefix.\n\n.. _installing pip: https://pip.readthedocs.io/en/latest/installing/\n\nOnce you have virtualenv installed, just fire up a shell and create\nyour own environment.  I usually create a project folder and a `venv`\nfolder within::\n\n    $ mkdir myproject\n    $ cd myproject\n    $ virtualenv venv\n    New python executable in venv/bin/python\n    Installing setuptools, pip............done.\n\nNow, whenever you want to work on a project, you only have to activate the\ncorresponding environment.  On OS X and Linux, do the following::\n\n    $ . venv/bin/activate\n\nIf you are a Windows user, the following command is for you::\n\n    $ venv\\scripts\\activate\n\nEither way, you should now be using your virtualenv (notice how the prompt of\nyour shell has changed to show the active environment).\n\nAnd if you want to go back to the real world, use the following command::\n\n    $ deactivate\n\nAfter doing this, the prompt of your shell should be as familiar as before.\n\nNow, let's move on. Enter the following command to get Click activated in your\nvirtualenv::\n\n    $ pip install click\n\nA few seconds later and you are good to go.\n\nScreencast and Examples\n-----------------------\n\nThere is a screencast available which shows the basic API of Click and\nhow to build simple applications with it.  It also explores how to build\ncommands with subcommands.\n\n*   `Building Command Line Applications with Click\n    <https://www.youtube.com/watch?v=kNke39OZ2k0>`_\n\nExamples of Click applications can be found in the documentation as well\nas in the GitHub repository together with readme files:\n\n*   ``inout``: `File input and output\n    <https://github.com/pallets/click/tree/main/examples/inout>`_\n*   ``naval``: `Port of docopt naval example\n    <https://github.com/pallets/click/tree/main/examples/naval>`_\n*   ``aliases``: `Command alias example\n    <https://github.com/pallets/click/tree/main/examples/aliases>`_\n*   ``repo``: `Git-/Mercurial-like command line interface\n    <https://github.com/pallets/click/tree/main/examples/repo>`_\n*   ``complex``: `Complex example with plugin loading\n    <https://github.com/pallets/click/tree/main/examples/complex>`_\n*   ``validation``: `Custom parameter validation example\n    <https://github.com/pallets/click/tree/main/examples/validation>`_\n*   ``colors``: `Color support demo\n    <https://github.com/pallets/click/tree/main/examples/colors>`_\n*   ``termui``: `Terminal UI functions demo\n    <https://github.com/pallets/click/tree/main/examples/termui>`_\n*   ``imagepipe``: `Multi command chaining demo\n    <https://github.com/pallets/click/tree/main/examples/imagepipe>`_\n\nBasic Concepts - Creating a Command\n-----------------------------------\n\nClick is based on declaring commands through decorators.  Internally, there\nis a non-decorator interface for advanced use cases, but it's discouraged\nfor high-level usage.\n\nA function becomes a Click command line tool by decorating it through\n:func:`click.command`.  At its simplest, just decorating a function\nwith this decorator will make it into a callable script:\n\n.. click:example::\n\n    import click",
+      "sha256": "9dcf3ddd6c3db6cd2c7d0993700cba9e143ccba3b2ac28569dfc98d053f36cdf"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/advanced.rst",
+      "start_line": 76,
+      "end_line": 175,
+      "lines": [
+        {
+          "line": 76,
+          "text": "to the callback is the `expose_value` argument to a parameter which hides"
+        },
+        {
+          "line": 77,
+          "text": "the parameter entirely.  The way this works is that the :class:`Context`"
+        },
+        {
+          "line": 78,
+          "text": "object has a :attr:`~Context.params` attribute which is a dictionary of"
+        },
+        {
+          "line": 79,
+          "text": "all parameters.  Whatever is in that dictionary is being passed to the"
+        },
+        {
+          "line": 80,
+          "text": "callbacks."
+        },
+        {
+          "line": 81,
+          "text": ""
+        },
+        {
+          "line": 82,
+          "text": "This can be used to make up addition parameters.  Generally this pattern"
+        },
+        {
+          "line": 83,
+          "text": "is not recommended but in some cases it can be useful.  At the very least"
+        },
+        {
+          "line": 84,
+          "text": "it's good to know that the system works this way."
+        },
+        {
+          "line": 85,
+          "text": ""
+        },
+        {
+          "line": 86,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 87,
+          "text": ""
+        },
+        {
+          "line": 88,
+          "text": "    import urllib"
+        },
+        {
+          "line": 89,
+          "text": ""
+        },
+        {
+          "line": 90,
+          "text": "    def open_url(ctx, param, value):"
+        },
+        {
+          "line": 91,
+          "text": "        if value is not None:"
+        },
+        {
+          "line": 92,
+          "text": "            ctx.params['fp'] = urllib.urlopen(value)"
+        },
+        {
+          "line": 93,
+          "text": "            return value"
+        },
+        {
+          "line": 94,
+          "text": ""
+        },
+        {
+          "line": 95,
+          "text": "    @click.command()"
+        },
+        {
+          "line": 96,
+          "text": "    @click.option('--url', callback=open_url)"
+        },
+        {
+          "line": 97,
+          "text": "    def cli(url, fp=None):"
+        },
+        {
+          "line": 98,
+          "text": "        if fp is not None:"
+        },
+        {
+          "line": 99,
+          "text": "            click.echo(f\"{url}: {fp.code}\")"
+        },
+        {
+          "line": 100,
+          "text": ""
+        },
+        {
+          "line": 101,
+          "text": "In this case the callback returns the URL unchanged but also passes a"
+        },
+        {
+          "line": 102,
+          "text": "second ``fp`` value to the callback.  What's more recommended is to pass"
+        },
+        {
+          "line": 103,
+          "text": "the information in a wrapper however:"
+        },
+        {
+          "line": 104,
+          "text": ""
+        },
+        {
+          "line": 105,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 106,
+          "text": ""
+        },
+        {
+          "line": 107,
+          "text": "    import urllib"
+        },
+        {
+          "line": 108,
+          "text": ""
+        },
+        {
+          "line": 109,
+          "text": "    class URL(object):"
+        },
+        {
+          "line": 110,
+          "text": ""
+        },
+        {
+          "line": 111,
+          "text": "        def __init__(self, url, fp):"
+        },
+        {
+          "line": 112,
+          "text": "            self.url = url"
+        },
+        {
+          "line": 113,
+          "text": "            self.fp = fp"
+        },
+        {
+          "line": 114,
+          "text": ""
+        },
+        {
+          "line": 115,
+          "text": "    def open_url(ctx, param, value):"
+        },
+        {
+          "line": 116,
+          "text": "        if value is not None:"
+        },
+        {
+          "line": 117,
+          "text": "            return URL(value, urllib.urlopen(value))"
+        },
+        {
+          "line": 118,
+          "text": ""
+        },
+        {
+          "line": 119,
+          "text": "    @click.command()"
+        },
+        {
+          "line": 120,
+          "text": "    @click.option('--url', callback=open_url)"
+        },
+        {
+          "line": 121,
+          "text": "    def cli(url):"
+        },
+        {
+          "line": 122,
+          "text": "        if url is not None:"
+        },
+        {
+          "line": 123,
+          "text": "            click.echo(f\"{url.url}: {url.fp.code}\")"
+        },
+        {
+          "line": 124,
+          "text": ""
+        },
+        {
+          "line": 125,
+          "text": ""
+        },
+        {
+          "line": 126,
+          "text": "Token Normalization"
+        },
+        {
+          "line": 127,
+          "text": "-------------------"
+        },
+        {
+          "line": 128,
+          "text": ""
+        },
+        {
+          "line": 129,
+          "text": ".. versionadded:: 2.0"
+        },
+        {
+          "line": 130,
+          "text": ""
+        },
+        {
+          "line": 131,
+          "text": "Starting with Click 2.0, it's possible to provide a function that is used"
+        },
+        {
+          "line": 132,
+          "text": "for normalizing tokens.  Tokens are option names, choice values, or command"
+        },
+        {
+          "line": 133,
+          "text": "values.  This can be used to implement case insensitive options, for"
+        },
+        {
+          "line": 134,
+          "text": "instance."
+        },
+        {
+          "line": 135,
+          "text": ""
+        },
+        {
+          "line": 136,
+          "text": "In order to use this feature, the context needs to be passed a function that"
+        },
+        {
+          "line": 137,
+          "text": "performs the normalization of the token.  For instance, you could have a"
+        },
+        {
+          "line": 138,
+          "text": "function that converts the token to lowercase:"
+        },
+        {
+          "line": 139,
+          "text": ""
+        },
+        {
+          "line": 140,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 141,
+          "text": ""
+        },
+        {
+          "line": 142,
+          "text": "    CONTEXT_SETTINGS = dict(token_normalize_func=lambda x: x.lower())"
+        },
+        {
+          "line": 143,
+          "text": ""
+        },
+        {
+          "line": 144,
+          "text": "    @click.command(context_settings=CONTEXT_SETTINGS)"
+        },
+        {
+          "line": 145,
+          "text": "    @click.option('--name', default='Pete')"
+        },
+        {
+          "line": 146,
+          "text": "    def cli(name):"
+        },
+        {
+          "line": 147,
+          "text": "        click.echo(f\"Name: {name}\")"
+        },
+        {
+          "line": 148,
+          "text": ""
+        },
+        {
+          "line": 149,
+          "text": "And how it works on the command line:"
+        },
+        {
+          "line": 150,
+          "text": ""
+        },
+        {
+          "line": 151,
+          "text": ".. click:run::"
+        },
+        {
+          "line": 152,
+          "text": ""
+        },
+        {
+          "line": 153,
+          "text": "    invoke(cli, prog_name='cli', args=['--NAME=Pete'])"
+        },
+        {
+          "line": 154,
+          "text": ""
+        },
+        {
+          "line": 155,
+          "text": "Invoking Other Commands"
+        },
+        {
+          "line": 156,
+          "text": "-----------------------"
+        },
+        {
+          "line": 157,
+          "text": ""
+        },
+        {
+          "line": 158,
+          "text": "Sometimes, it might be interesting to invoke one command from another"
+        },
+        {
+          "line": 159,
+          "text": "command.  This is a pattern that is generally discouraged with Click, but"
+        },
+        {
+          "line": 160,
+          "text": "possible nonetheless.  For this, you can use the :func:`Context.invoke`"
+        },
+        {
+          "line": 161,
+          "text": "or :func:`Context.forward` methods."
+        },
+        {
+          "line": 162,
+          "text": ""
+        },
+        {
+          "line": 163,
+          "text": "They work similarly, but the difference is that :func:`Context.invoke` merely"
+        },
+        {
+          "line": 164,
+          "text": "invokes another command with the arguments you provide as a caller,"
+        },
+        {
+          "line": 165,
+          "text": "whereas :func:`Context.forward` fills in the arguments from the current"
+        },
+        {
+          "line": 166,
+          "text": "command.  Both accept the command as the first argument and everything else"
+        },
+        {
+          "line": 167,
+          "text": "is passed onwards as you would expect."
+        },
+        {
+          "line": 168,
+          "text": ""
+        },
+        {
+          "line": 169,
+          "text": "Example:"
+        },
+        {
+          "line": 170,
+          "text": ""
+        },
+        {
+          "line": 171,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 172,
+          "text": ""
+        },
+        {
+          "line": 173,
+          "text": "    cli = click.Group()"
+        },
+        {
+          "line": 174,
+          "text": ""
+        },
+        {
+          "line": 175,
+          "text": "    @cli.command()"
+        }
+      ],
+      "content": "to the callback is the `expose_value` argument to a parameter which hides\nthe parameter entirely.  The way this works is that the :class:`Context`\nobject has a :attr:`~Context.params` attribute which is a dictionary of\nall parameters.  Whatever is in that dictionary is being passed to the\ncallbacks.\n\nThis can be used to make up addition parameters.  Generally this pattern\nis not recommended but in some cases it can be useful.  At the very least\nit's good to know that the system works this way.\n\n.. click:example::\n\n    import urllib\n\n    def open_url(ctx, param, value):\n        if value is not None:\n            ctx.params['fp'] = urllib.urlopen(value)\n            return value\n\n    @click.command()\n    @click.option('--url', callback=open_url)\n    def cli(url, fp=None):\n        if fp is not None:\n            click.echo(f\"{url}: {fp.code}\")\n\nIn this case the callback returns the URL unchanged but also passes a\nsecond ``fp`` value to the callback.  What's more recommended is to pass\nthe information in a wrapper however:\n\n.. click:example::\n\n    import urllib\n\n    class URL(object):\n\n        def __init__(self, url, fp):\n            self.url = url\n            self.fp = fp\n\n    def open_url(ctx, param, value):\n        if value is not None:\n            return URL(value, urllib.urlopen(value))\n\n    @click.command()\n    @click.option('--url', callback=open_url)\n    def cli(url):\n        if url is not None:\n            click.echo(f\"{url.url}: {url.fp.code}\")\n\n\nToken Normalization\n-------------------\n\n.. versionadded:: 2.0\n\nStarting with Click 2.0, it's possible to provide a function that is used\nfor normalizing tokens.  Tokens are option names, choice values, or command\nvalues.  This can be used to implement case insensitive options, for\ninstance.\n\nIn order to use this feature, the context needs to be passed a function that\nperforms the normalization of the token.  For instance, you could have a\nfunction that converts the token to lowercase:\n\n.. click:example::\n\n    CONTEXT_SETTINGS = dict(token_normalize_func=lambda x: x.lower())\n\n    @click.command(context_settings=CONTEXT_SETTINGS)\n    @click.option('--name', default='Pete')\n    def cli(name):\n        click.echo(f\"Name: {name}\")\n\nAnd how it works on the command line:\n\n.. click:run::\n\n    invoke(cli, prog_name='cli', args=['--NAME=Pete'])\n\nInvoking Other Commands\n-----------------------\n\nSometimes, it might be interesting to invoke one command from another\ncommand.  This is a pattern that is generally discouraged with Click, but\npossible nonetheless.  For this, you can use the :func:`Context.invoke`\nor :func:`Context.forward` methods.\n\nThey work similarly, but the difference is that :func:`Context.invoke` merely\ninvokes another command with the arguments you provide as a caller,\nwhereas :func:`Context.forward` fills in the arguments from the current\ncommand.  Both accept the command as the first argument and everything else\nis passed onwards as you would expect.\n\nExample:\n\n.. click:example::\n\n    cli = click.Group()\n\n    @cli.command()",
+      "sha256": "71445658551fd4dc713e0bdd83dc264bf55f30cec87ef257c9511f9adedad541"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/commands.rst",
+      "start_line": 1,
+      "end_line": 100,
+      "lines": [
+        {
+          "line": 1,
+          "text": "Commands and Groups"
+        },
+        {
+          "line": 2,
+          "text": "==================="
+        },
+        {
+          "line": 3,
+          "text": ""
+        },
+        {
+          "line": 4,
+          "text": ".. currentmodule:: click"
+        },
+        {
+          "line": 5,
+          "text": ""
+        },
+        {
+          "line": 6,
+          "text": "The most important feature of Click is the concept of arbitrarily nesting"
+        },
+        {
+          "line": 7,
+          "text": "command line utilities.  This is implemented through the :class:`Command`"
+        },
+        {
+          "line": 8,
+          "text": "and :class:`Group` (actually :class:`MultiCommand`)."
+        },
+        {
+          "line": 9,
+          "text": ""
+        },
+        {
+          "line": 10,
+          "text": "Callback Invocation"
+        },
+        {
+          "line": 11,
+          "text": "-------------------"
+        },
+        {
+          "line": 12,
+          "text": ""
+        },
+        {
+          "line": 13,
+          "text": "For a regular command, the callback is executed whenever the command runs."
+        },
+        {
+          "line": 14,
+          "text": "If the script is the only command, it will always fire (unless a parameter"
+        },
+        {
+          "line": 15,
+          "text": "callback prevents it.  This for instance happens if someone passes"
+        },
+        {
+          "line": 16,
+          "text": "``--help`` to the script)."
+        },
+        {
+          "line": 17,
+          "text": ""
+        },
+        {
+          "line": 18,
+          "text": "For groups and multi commands, the situation looks different.  In this case,"
+        },
+        {
+          "line": 19,
+          "text": "the callback fires whenever a subcommand fires (unless this behavior is"
+        },
+        {
+          "line": 20,
+          "text": "changed).  What this means in practice is that an outer command runs"
+        },
+        {
+          "line": 21,
+          "text": "when an inner command runs:"
+        },
+        {
+          "line": 22,
+          "text": ""
+        },
+        {
+          "line": 23,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": "    @click.group()"
+        },
+        {
+          "line": 26,
+          "text": "    @click.option('--debug/--no-debug', default=False)"
+        },
+        {
+          "line": 27,
+          "text": "    def cli(debug):"
+        },
+        {
+          "line": 28,
+          "text": "        click.echo(f\"Debug mode is {'on' if debug else 'off'}\")"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "    @cli.command()  # @cli, not @click!"
+        },
+        {
+          "line": 31,
+          "text": "    def sync():"
+        },
+        {
+          "line": 32,
+          "text": "        click.echo('Syncing')"
+        },
+        {
+          "line": 33,
+          "text": ""
+        },
+        {
+          "line": 34,
+          "text": "Here is what this looks like:"
+        },
+        {
+          "line": 35,
+          "text": ""
+        },
+        {
+          "line": 36,
+          "text": ".. click:run::"
+        },
+        {
+          "line": 37,
+          "text": ""
+        },
+        {
+          "line": 38,
+          "text": "    invoke(cli, prog_name='tool.py')"
+        },
+        {
+          "line": 39,
+          "text": "    println()"
+        },
+        {
+          "line": 40,
+          "text": "    invoke(cli, prog_name='tool.py', args=['--debug', 'sync'])"
+        },
+        {
+          "line": 41,
+          "text": ""
+        },
+        {
+          "line": 42,
+          "text": "Passing Parameters"
+        },
+        {
+          "line": 43,
+          "text": "------------------"
+        },
+        {
+          "line": 44,
+          "text": ""
+        },
+        {
+          "line": 45,
+          "text": "Click strictly separates parameters between commands and subcommands. What this"
+        },
+        {
+          "line": 46,
+          "text": "means is that options and arguments for a specific command have to be specified"
+        },
+        {
+          "line": 47,
+          "text": "*after* the command name itself, but *before* any other command names."
+        },
+        {
+          "line": 48,
+          "text": ""
+        },
+        {
+          "line": 49,
+          "text": "This behavior is already observable with the predefined ``--help`` option."
+        },
+        {
+          "line": 50,
+          "text": "Suppose we have a program called ``tool.py``, containing a subcommand called"
+        },
+        {
+          "line": 51,
+          "text": "``sub``."
+        },
+        {
+          "line": 52,
+          "text": ""
+        },
+        {
+          "line": 53,
+          "text": "- ``tool.py --help`` will return the help for the whole program (listing"
+        },
+        {
+          "line": 54,
+          "text": "  subcommands)."
+        },
+        {
+          "line": 55,
+          "text": ""
+        },
+        {
+          "line": 56,
+          "text": "- ``tool.py sub --help`` will return the help for the ``sub`` subcommand."
+        },
+        {
+          "line": 57,
+          "text": ""
+        },
+        {
+          "line": 58,
+          "text": "- But ``tool.py --help sub`` will treat ``--help`` as an argument for the main"
+        },
+        {
+          "line": 59,
+          "text": "  program. Click then invokes the callback for ``--help``, which prints the"
+        },
+        {
+          "line": 60,
+          "text": "  help and aborts the program before click can process the subcommand."
+        },
+        {
+          "line": 61,
+          "text": ""
+        },
+        {
+          "line": 62,
+          "text": "Nested Handling and Contexts"
+        },
+        {
+          "line": 63,
+          "text": "----------------------------"
+        },
+        {
+          "line": 64,
+          "text": ""
+        },
+        {
+          "line": 65,
+          "text": "As you can see from the earlier example, the basic command group accepts a"
+        },
+        {
+          "line": 66,
+          "text": "debug argument which is passed to its callback, but not to the sync"
+        },
+        {
+          "line": 67,
+          "text": "command itself.  The sync command only accepts its own arguments."
+        },
+        {
+          "line": 68,
+          "text": ""
+        },
+        {
+          "line": 69,
+          "text": "This allows tools to act completely independent of each other, but how"
+        },
+        {
+          "line": 70,
+          "text": "does one command talk to a nested one?  The answer to this is the"
+        },
+        {
+          "line": 71,
+          "text": ":class:`Context`."
+        },
+        {
+          "line": 72,
+          "text": ""
+        },
+        {
+          "line": 73,
+          "text": "Each time a command is invoked, a new context is created and linked with the"
+        },
+        {
+          "line": 74,
+          "text": "parent context.  Normally, you can't see these contexts, but they are"
+        },
+        {
+          "line": 75,
+          "text": "there.  Contexts are passed to parameter callbacks together with the"
+        },
+        {
+          "line": 76,
+          "text": "value automatically.  Commands can also ask for the context to be passed"
+        },
+        {
+          "line": 77,
+          "text": "by marking themselves with the :func:`pass_context` decorator.  In that"
+        },
+        {
+          "line": 78,
+          "text": "case, the context is passed as first argument."
+        },
+        {
+          "line": 79,
+          "text": ""
+        },
+        {
+          "line": 80,
+          "text": "The context can also carry a program specified object that can be"
+        },
+        {
+          "line": 81,
+          "text": "used for the program's purposes.  What this means is that you can build a"
+        },
+        {
+          "line": 82,
+          "text": "script like this:"
+        },
+        {
+          "line": 83,
+          "text": ""
+        },
+        {
+          "line": 84,
+          "text": ".. click:example::"
+        },
+        {
+          "line": 85,
+          "text": ""
+        },
+        {
+          "line": 86,
+          "text": "    @click.group()"
+        },
+        {
+          "line": 87,
+          "text": "    @click.option('--debug/--no-debug', default=False)"
+        },
+        {
+          "line": 88,
+          "text": "    @click.pass_context"
+        },
+        {
+          "line": 89,
+          "text": "    def cli(ctx, debug):"
+        },
+        {
+          "line": 90,
+          "text": "        # ensure that ctx.obj exists and is a dict (in case `cli()` is called"
+        },
+        {
+          "line": 91,
+          "text": "        # by means other than the `if` block below)"
+        },
+        {
+          "line": 92,
+          "text": "        ctx.ensure_object(dict)"
+        },
+        {
+          "line": 93,
+          "text": ""
+        },
+        {
+          "line": 94,
+          "text": "        ctx.obj['DEBUG'] = debug"
+        },
+        {
+          "line": 95,
+          "text": ""
+        },
+        {
+          "line": 96,
+          "text": "    @cli.command()"
+        },
+        {
+          "line": 97,
+          "text": "    @click.pass_context"
+        },
+        {
+          "line": 98,
+          "text": "    def sync(ctx):"
+        },
+        {
+          "line": 99,
+          "text": "        click.echo(f\"Debug is {'on' if ctx.obj['DEBUG'] else 'off'}\")"
+        },
+        {
+          "line": 100,
+          "text": ""
+        }
+      ],
+      "content": "Commands and Groups\n===================\n\n.. currentmodule:: click\n\nThe most important feature of Click is the concept of arbitrarily nesting\ncommand line utilities.  This is implemented through the :class:`Command`\nand :class:`Group` (actually :class:`MultiCommand`).\n\nCallback Invocation\n-------------------\n\nFor a regular command, the callback is executed whenever the command runs.\nIf the script is the only command, it will always fire (unless a parameter\ncallback prevents it.  This for instance happens if someone passes\n``--help`` to the script).\n\nFor groups and multi commands, the situation looks different.  In this case,\nthe callback fires whenever a subcommand fires (unless this behavior is\nchanged).  What this means in practice is that an outer command runs\nwhen an inner command runs:\n\n.. click:example::\n\n    @click.group()\n    @click.option('--debug/--no-debug', default=False)\n    def cli(debug):\n        click.echo(f\"Debug mode is {'on' if debug else 'off'}\")\n\n    @cli.command()  # @cli, not @click!\n    def sync():\n        click.echo('Syncing')\n\nHere is what this looks like:\n\n.. click:run::\n\n    invoke(cli, prog_name='tool.py')\n    println()\n    invoke(cli, prog_name='tool.py', args=['--debug', 'sync'])\n\nPassing Parameters\n------------------\n\nClick strictly separates parameters between commands and subcommands. What this\nmeans is that options and arguments for a specific command have to be specified\n*after* the command name itself, but *before* any other command names.\n\nThis behavior is already observable with the predefined ``--help`` option.\nSuppose we have a program called ``tool.py``, containing a subcommand called\n``sub``.\n\n- ``tool.py --help`` will return the help for the whole program (listing\n  subcommands).\n\n- ``tool.py sub --help`` will return the help for the ``sub`` subcommand.\n\n- But ``tool.py --help sub`` will treat ``--help`` as an argument for the main\n  program. Click then invokes the callback for ``--help``, which prints the\n  help and aborts the program before click can process the subcommand.\n\nNested Handling and Contexts\n----------------------------\n\nAs you can see from the earlier example, the basic command group accepts a\ndebug argument which is passed to its callback, but not to the sync\ncommand itself.  The sync command only accepts its own arguments.\n\nThis allows tools to act completely independent of each other, but how\ndoes one command talk to a nested one?  The answer to this is the\n:class:`Context`.\n\nEach time a command is invoked, a new context is created and linked with the\nparent context.  Normally, you can't see these contexts, but they are\nthere.  Contexts are passed to parameter callbacks together with the\nvalue automatically.  Commands can also ask for the context to be passed\nby marking themselves with the :func:`pass_context` decorator.  In that\ncase, the context is passed as first argument.\n\nThe context can also carry a program specified object that can be\nused for the program's purposes.  What this means is that you can build a\nscript like this:\n\n.. click:example::\n\n    @click.group()\n    @click.option('--debug/--no-debug', default=False)\n    @click.pass_context\n    def cli(ctx, debug):\n        # ensure that ctx.obj exists and is a dict (in case `cli()` is called\n        # by means other than the `if` block below)\n        ctx.ensure_object(dict)\n\n        ctx.obj['DEBUG'] = debug\n\n    @cli.command()\n    @click.pass_context\n    def sync(ctx):\n        click.echo(f\"Debug is {'on' if ctx.obj['DEBUG'] else 'off'}\")\n",
+      "sha256": "676a5df286a93d5a47adb5cd13941a82ad5d1faf879f85a3f632135ea1749bb8"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/conf.py",
+      "start_line": 1,
+      "end_line": 59,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from pallets_sphinx_themes import get_version"
+        },
+        {
+          "line": 2,
+          "text": "from pallets_sphinx_themes import ProjectLink"
+        },
+        {
+          "line": 3,
+          "text": ""
+        },
+        {
+          "line": 4,
+          "text": "import click._compat"
+        },
+        {
+          "line": 5,
+          "text": ""
+        },
+        {
+          "line": 6,
+          "text": "# compat until pallets-sphinx-themes is updated"
+        },
+        {
+          "line": 7,
+          "text": "click._compat.text_type = str"
+        },
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "# Project --------------------------------------------------------------"
+        },
+        {
+          "line": 10,
+          "text": ""
+        },
+        {
+          "line": 11,
+          "text": "project = \"Click\""
+        },
+        {
+          "line": 12,
+          "text": "copyright = \"2014 Pallets\""
+        },
+        {
+          "line": 13,
+          "text": "author = \"Pallets\""
+        },
+        {
+          "line": 14,
+          "text": "release, version = get_version(\"Click\")"
+        },
+        {
+          "line": 15,
+          "text": ""
+        },
+        {
+          "line": 16,
+          "text": "# General --------------------------------------------------------------"
+        },
+        {
+          "line": 17,
+          "text": ""
+        },
+        {
+          "line": 18,
+          "text": "master_doc = \"index\""
+        },
+        {
+          "line": 19,
+          "text": "extensions = ["
+        },
+        {
+          "line": 20,
+          "text": "    \"sphinx.ext.autodoc\","
+        },
+        {
+          "line": 21,
+          "text": "    \"sphinx.ext.intersphinx\","
+        },
+        {
+          "line": 22,
+          "text": "    \"sphinxcontrib.log_cabinet\","
+        },
+        {
+          "line": 23,
+          "text": "    \"pallets_sphinx_themes\","
+        },
+        {
+          "line": 24,
+          "text": "    \"sphinx_issues\","
+        },
+        {
+          "line": 25,
+          "text": "    \"sphinx_tabs.tabs\","
+        },
+        {
+          "line": 26,
+          "text": "]"
+        },
+        {
+          "line": 27,
+          "text": "autodoc_typehints = \"description\""
+        },
+        {
+          "line": 28,
+          "text": "intersphinx_mapping = {\"python\": (\"https://docs.python.org/3/\", None)}"
+        },
+        {
+          "line": 29,
+          "text": "issues_github_path = \"pallets/click\""
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "# HTML -----------------------------------------------------------------"
+        },
+        {
+          "line": 32,
+          "text": ""
+        },
+        {
+          "line": 33,
+          "text": "html_theme = \"click\""
+        },
+        {
+          "line": 34,
+          "text": "html_theme_options = {\"index_sidebar_logo\": False}"
+        },
+        {
+          "line": 35,
+          "text": "html_context = {"
+        },
+        {
+          "line": 36,
+          "text": "    \"project_links\": ["
+        },
+        {
+          "line": 37,
+          "text": "        ProjectLink(\"Donate\", \"https://palletsprojects.com/donate\"),"
+        },
+        {
+          "line": 38,
+          "text": "        ProjectLink(\"PyPI Releases\", \"https://pypi.org/project/click/\"),"
+        },
+        {
+          "line": 39,
+          "text": "        ProjectLink(\"Source Code\", \"https://github.com/pallets/click/\"),"
+        },
+        {
+          "line": 40,
+          "text": "        ProjectLink(\"Issue Tracker\", \"https://github.com/pallets/click/issues/\"),"
+        },
+        {
+          "line": 41,
+          "text": "        ProjectLink(\"Website\", \"https://palletsprojects.com/\"),"
+        },
+        {
+          "line": 42,
+          "text": "        ProjectLink(\"Twitter\", \"https://twitter.com/PalletsTeam\"),"
+        },
+        {
+          "line": 43,
+          "text": "        ProjectLink(\"Chat\", \"https://discord.gg/pallets\"),"
+        },
+        {
+          "line": 44,
+          "text": "    ]"
+        },
+        {
+          "line": 45,
+          "text": "}"
+        },
+        {
+          "line": 46,
+          "text": "html_sidebars = {"
+        },
+        {
+          "line": 47,
+          "text": "    \"index\": [\"project.html\", \"localtoc.html\", \"searchbox.html\", \"ethicalads.html\"],"
+        },
+        {
+          "line": 48,
+          "text": "    \"**\": [\"localtoc.html\", \"relations.html\", \"searchbox.html\", \"ethicalads.html\"],"
+        },
+        {
+          "line": 49,
+          "text": "}"
+        },
+        {
+          "line": 50,
+          "text": "singlehtml_sidebars = {\"index\": [\"project.html\", \"localtoc.html\", \"ethicalads.html\"]}"
+        },
+        {
+          "line": 51,
+          "text": "html_static_path = [\"_static\"]"
+        },
+        {
+          "line": 52,
+          "text": "html_favicon = \"_static/click-icon.png\""
+        },
+        {
+          "line": 53,
+          "text": "html_logo = \"_static/click-logo-sidebar.png\""
+        },
+        {
+          "line": 54,
+          "text": "html_title = f\"Click Documentation ({version})\""
+        },
+        {
+          "line": 55,
+          "text": "html_show_sourcelink = False"
+        },
+        {
+          "line": 56,
+          "text": ""
+        },
+        {
+          "line": 57,
+          "text": "# LaTeX ----------------------------------------------------------------"
+        },
+        {
+          "line": 58,
+          "text": ""
+        },
+        {
+          "line": 59,
+          "text": "latex_documents = [(master_doc, f\"Click-{version}.tex\", html_title, author, \"manual\")]"
+        }
+      ],
+      "content": "from pallets_sphinx_themes import get_version\nfrom pallets_sphinx_themes import ProjectLink\n\nimport click._compat\n\n# compat until pallets-sphinx-themes is updated\nclick._compat.text_type = str\n\n# Project --------------------------------------------------------------\n\nproject = \"Click\"\ncopyright = \"2014 Pallets\"\nauthor = \"Pallets\"\nrelease, version = get_version(\"Click\")\n\n# General --------------------------------------------------------------\n\nmaster_doc = \"index\"\nextensions = [\n    \"sphinx.ext.autodoc\",\n    \"sphinx.ext.intersphinx\",\n    \"sphinxcontrib.log_cabinet\",\n    \"pallets_sphinx_themes\",\n    \"sphinx_issues\",\n    \"sphinx_tabs.tabs\",\n]\nautodoc_typehints = \"description\"\nintersphinx_mapping = {\"python\": (\"https://docs.python.org/3/\", None)}\nissues_github_path = \"pallets/click\"\n\n# HTML -----------------------------------------------------------------\n\nhtml_theme = \"click\"\nhtml_theme_options = {\"index_sidebar_logo\": False}\nhtml_context = {\n    \"project_links\": [\n        ProjectLink(\"Donate\", \"https://palletsprojects.com/donate\"),\n        ProjectLink(\"PyPI Releases\", \"https://pypi.org/project/click/\"),\n        ProjectLink(\"Source Code\", \"https://github.com/pallets/click/\"),\n        ProjectLink(\"Issue Tracker\", \"https://github.com/pallets/click/issues/\"),\n        ProjectLink(\"Website\", \"https://palletsprojects.com/\"),\n        ProjectLink(\"Twitter\", \"https://twitter.com/PalletsTeam\"),\n        ProjectLink(\"Chat\", \"https://discord.gg/pallets\"),\n    ]\n}\nhtml_sidebars = {\n    \"index\": [\"project.html\", \"localtoc.html\", \"searchbox.html\", \"ethicalads.html\"],\n    \"**\": [\"localtoc.html\", \"relations.html\", \"searchbox.html\", \"ethicalads.html\"],\n}\nsinglehtml_sidebars = {\"index\": [\"project.html\", \"localtoc.html\", \"ethicalads.html\"]}\nhtml_static_path = [\"_static\"]\nhtml_favicon = \"_static/click-icon.png\"\nhtml_logo = \"_static/click-logo-sidebar.png\"\nhtml_title = f\"Click Documentation ({version})\"\nhtml_show_sourcelink = False\n\n# LaTeX ----------------------------------------------------------------\n\nlatex_documents = [(master_doc, f\"Click-{version}.tex\", html_title, author, \"manual\")]",
+      "sha256": "6a644e244248d80e6603f780fc1f534bec2937a976724c39891fe03801e99e35"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "examples/termui/termui.py",
+      "start_line": 16,
+      "end_line": 115,
+      "lines": [
+        {
+          "line": 16,
+          "text": "    \"\"\"Demonstrates ANSI color support.\"\"\""
+        },
+        {
+          "line": 17,
+          "text": "    for color in \"red\", \"green\", \"blue\":"
+        },
+        {
+          "line": 18,
+          "text": "        click.echo(click.style(f\"I am colored {color}\", fg=color))"
+        },
+        {
+          "line": 19,
+          "text": "        click.echo(click.style(f\"I am background colored {color}\", bg=color))"
+        },
+        {
+          "line": 20,
+          "text": ""
+        },
+        {
+          "line": 21,
+          "text": ""
+        },
+        {
+          "line": 22,
+          "text": "@cli.command()"
+        },
+        {
+          "line": 23,
+          "text": "def pager():"
+        },
+        {
+          "line": 24,
+          "text": "    \"\"\"Demonstrates using the pager.\"\"\""
+        },
+        {
+          "line": 25,
+          "text": "    lines = []"
+        },
+        {
+          "line": 26,
+          "text": "    for x in range(200):"
+        },
+        {
+          "line": 27,
+          "text": "        lines.append(f\"{click.style(str(x), fg='green')}. Hello World!\")"
+        },
+        {
+          "line": 28,
+          "text": "    click.echo_via_pager(\"\\n\".join(lines))"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "@cli.command()"
+        },
+        {
+          "line": 32,
+          "text": "@click.option("
+        },
+        {
+          "line": 33,
+          "text": "    \"--count\","
+        },
+        {
+          "line": 34,
+          "text": "    default=8000,"
+        },
+        {
+          "line": 35,
+          "text": "    type=click.IntRange(1, 100000),"
+        },
+        {
+          "line": 36,
+          "text": "    help=\"The number of items to process.\","
+        },
+        {
+          "line": 37,
+          "text": ")"
+        },
+        {
+          "line": 38,
+          "text": "def progress(count):"
+        },
+        {
+          "line": 39,
+          "text": "    \"\"\"Demonstrates the progress bar.\"\"\""
+        },
+        {
+          "line": 40,
+          "text": "    items = range(count)"
+        },
+        {
+          "line": 41,
+          "text": ""
+        },
+        {
+          "line": 42,
+          "text": "    def process_slowly(item):"
+        },
+        {
+          "line": 43,
+          "text": "        time.sleep(0.002 * random.random())"
+        },
+        {
+          "line": 44,
+          "text": ""
+        },
+        {
+          "line": 45,
+          "text": "    def filter(items):"
+        },
+        {
+          "line": 46,
+          "text": "        for item in items:"
+        },
+        {
+          "line": 47,
+          "text": "            if random.random() > 0.3:"
+        },
+        {
+          "line": 48,
+          "text": "                yield item"
+        },
+        {
+          "line": 49,
+          "text": ""
+        },
+        {
+          "line": 50,
+          "text": "    with click.progressbar("
+        },
+        {
+          "line": 51,
+          "text": "        items, label=\"Processing accounts\", fill_char=click.style(\"#\", fg=\"green\")"
+        },
+        {
+          "line": 52,
+          "text": "    ) as bar:"
+        },
+        {
+          "line": 53,
+          "text": "        for item in bar:"
+        },
+        {
+          "line": 54,
+          "text": "            process_slowly(item)"
+        },
+        {
+          "line": 55,
+          "text": ""
+        },
+        {
+          "line": 56,
+          "text": "    def show_item(item):"
+        },
+        {
+          "line": 57,
+          "text": "        if item is not None:"
+        },
+        {
+          "line": 58,
+          "text": "            return f\"Item #{item}\""
+        },
+        {
+          "line": 59,
+          "text": ""
+        },
+        {
+          "line": 60,
+          "text": "    with click.progressbar("
+        },
+        {
+          "line": 61,
+          "text": "        filter(items),"
+        },
+        {
+          "line": 62,
+          "text": "        label=\"Committing transaction\","
+        },
+        {
+          "line": 63,
+          "text": "        fill_char=click.style(\"#\", fg=\"yellow\"),"
+        },
+        {
+          "line": 64,
+          "text": "        item_show_func=show_item,"
+        },
+        {
+          "line": 65,
+          "text": "    ) as bar:"
+        },
+        {
+          "line": 66,
+          "text": "        for item in bar:"
+        },
+        {
+          "line": 67,
+          "text": "            process_slowly(item)"
+        },
+        {
+          "line": 68,
+          "text": ""
+        },
+        {
+          "line": 69,
+          "text": "    with click.progressbar("
+        },
+        {
+          "line": 70,
+          "text": "        length=count,"
+        },
+        {
+          "line": 71,
+          "text": "        label=\"Counting\","
+        },
+        {
+          "line": 72,
+          "text": "        bar_template=\"%(label)s  %(bar)s | %(info)s\","
+        },
+        {
+          "line": 73,
+          "text": "        fill_char=click.style(\"█\", fg=\"cyan\"),"
+        },
+        {
+          "line": 74,
+          "text": "        empty_char=\" \","
+        },
+        {
+          "line": 75,
+          "text": "    ) as bar:"
+        },
+        {
+          "line": 76,
+          "text": "        for item in bar:"
+        },
+        {
+          "line": 77,
+          "text": "            process_slowly(item)"
+        },
+        {
+          "line": 78,
+          "text": ""
+        },
+        {
+          "line": 79,
+          "text": "    with click.progressbar("
+        },
+        {
+          "line": 80,
+          "text": "        length=count,"
+        },
+        {
+          "line": 81,
+          "text": "        width=0,"
+        },
+        {
+          "line": 82,
+          "text": "        show_percent=False,"
+        },
+        {
+          "line": 83,
+          "text": "        show_eta=False,"
+        },
+        {
+          "line": 84,
+          "text": "        fill_char=click.style(\"#\", fg=\"magenta\"),"
+        },
+        {
+          "line": 85,
+          "text": "    ) as bar:"
+        },
+        {
+          "line": 86,
+          "text": "        for item in bar:"
+        },
+        {
+          "line": 87,
+          "text": "            process_slowly(item)"
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": "    # 'Non-linear progress bar'"
+        },
+        {
+          "line": 90,
+          "text": "    steps = [math.exp(x * 1.0 / 20) - 1 for x in range(20)]"
+        },
+        {
+          "line": 91,
+          "text": "    count = int(sum(steps))"
+        },
+        {
+          "line": 92,
+          "text": "    with click.progressbar("
+        },
+        {
+          "line": 93,
+          "text": "        length=count,"
+        },
+        {
+          "line": 94,
+          "text": "        show_percent=False,"
+        },
+        {
+          "line": 95,
+          "text": "        label=\"Slowing progress bar\","
+        },
+        {
+          "line": 96,
+          "text": "        fill_char=click.style(\"█\", fg=\"green\"),"
+        },
+        {
+          "line": 97,
+          "text": "    ) as bar:"
+        },
+        {
+          "line": 98,
+          "text": "        for item in steps:"
+        },
+        {
+          "line": 99,
+          "text": "            time.sleep(item)"
+        },
+        {
+          "line": 100,
+          "text": "            bar.update(item)"
+        },
+        {
+          "line": 101,
+          "text": ""
+        },
+        {
+          "line": 102,
+          "text": ""
+        },
+        {
+          "line": 103,
+          "text": "@cli.command()"
+        },
+        {
+          "line": 104,
+          "text": "@click.argument(\"url\")"
+        },
+        {
+          "line": 105,
+          "text": "def open(url):"
+        },
+        {
+          "line": 106,
+          "text": "    \"\"\"Opens a file or URL In the default application.\"\"\""
+        },
+        {
+          "line": 107,
+          "text": "    click.launch(url)"
+        },
+        {
+          "line": 108,
+          "text": ""
+        },
+        {
+          "line": 109,
+          "text": ""
+        },
+        {
+          "line": 110,
+          "text": "@cli.command()"
+        },
+        {
+          "line": 111,
+          "text": "@click.argument(\"url\")"
+        },
+        {
+          "line": 112,
+          "text": "def locate(url):"
+        },
+        {
+          "line": 113,
+          "text": "    \"\"\"Opens a file or URL In the default application.\"\"\""
+        },
+        {
+          "line": 114,
+          "text": "    click.launch(url, locate=True)"
+        },
+        {
+          "line": 115,
+          "text": ""
+        }
+      ],
+      "content": "    \"\"\"Demonstrates ANSI color support.\"\"\"\n    for color in \"red\", \"green\", \"blue\":\n        click.echo(click.style(f\"I am colored {color}\", fg=color))\n        click.echo(click.style(f\"I am background colored {color}\", bg=color))\n\n\n@cli.command()\ndef pager():\n    \"\"\"Demonstrates using the pager.\"\"\"\n    lines = []\n    for x in range(200):\n        lines.append(f\"{click.style(str(x), fg='green')}. Hello World!\")\n    click.echo_via_pager(\"\\n\".join(lines))\n\n\n@cli.command()\n@click.option(\n    \"--count\",\n    default=8000,\n    type=click.IntRange(1, 100000),\n    help=\"The number of items to process.\",\n)\ndef progress(count):\n    \"\"\"Demonstrates the progress bar.\"\"\"\n    items = range(count)\n\n    def process_slowly(item):\n        time.sleep(0.002 * random.random())\n\n    def filter(items):\n        for item in items:\n            if random.random() > 0.3:\n                yield item\n\n    with click.progressbar(\n        items, label=\"Processing accounts\", fill_char=click.style(\"#\", fg=\"green\")\n    ) as bar:\n        for item in bar:\n            process_slowly(item)\n\n    def show_item(item):\n        if item is not None:\n            return f\"Item #{item}\"\n\n    with click.progressbar(\n        filter(items),\n        label=\"Committing transaction\",\n        fill_char=click.style(\"#\", fg=\"yellow\"),\n        item_show_func=show_item,\n    ) as bar:\n        for item in bar:\n            process_slowly(item)\n\n    with click.progressbar(\n        length=count,\n        label=\"Counting\",\n        bar_template=\"%(label)s  %(bar)s | %(info)s\",\n        fill_char=click.style(\"█\", fg=\"cyan\"),\n        empty_char=\" \",\n    ) as bar:\n        for item in bar:\n            process_slowly(item)\n\n    with click.progressbar(\n        length=count,\n        width=0,\n        show_percent=False,\n        show_eta=False,\n        fill_char=click.style(\"#\", fg=\"magenta\"),\n    ) as bar:\n        for item in bar:\n            process_slowly(item)\n\n    # 'Non-linear progress bar'\n    steps = [math.exp(x * 1.0 / 20) - 1 for x in range(20)]\n    count = int(sum(steps))\n    with click.progressbar(\n        length=count,\n        show_percent=False,\n        label=\"Slowing progress bar\",\n        fill_char=click.style(\"█\", fg=\"green\"),\n    ) as bar:\n        for item in steps:\n            time.sleep(item)\n            bar.update(item)\n\n\n@cli.command()\n@click.argument(\"url\")\ndef open(url):\n    \"\"\"Opens a file or URL In the default application.\"\"\"\n    click.launch(url)\n\n\n@cli.command()\n@click.argument(\"url\")\ndef locate(url):\n    \"\"\"Opens a file or URL In the default application.\"\"\"\n    click.launch(url, locate=True)\n",
+      "sha256": "cc79721d0e7250c9aa23cfafb4f897cd1fd25711371ae58aab616760be47381d"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/__init__.py",
+      "start_line": 30,
+      "end_line": 75,
+      "lines": [
+        {
+          "line": 30,
+          "text": "from .exceptions import BadParameter as BadParameter"
+        },
+        {
+          "line": 31,
+          "text": "from .exceptions import ClickException as ClickException"
+        },
+        {
+          "line": 32,
+          "text": "from .exceptions import FileError as FileError"
+        },
+        {
+          "line": 33,
+          "text": "from .exceptions import MissingParameter as MissingParameter"
+        },
+        {
+          "line": 34,
+          "text": "from .exceptions import NoSuchOption as NoSuchOption"
+        },
+        {
+          "line": 35,
+          "text": "from .exceptions import UsageError as UsageError"
+        },
+        {
+          "line": 36,
+          "text": "from .formatting import HelpFormatter as HelpFormatter"
+        },
+        {
+          "line": 37,
+          "text": "from .formatting import wrap_text as wrap_text"
+        },
+        {
+          "line": 38,
+          "text": "from .globals import get_current_context as get_current_context"
+        },
+        {
+          "line": 39,
+          "text": "from .parser import OptionParser as OptionParser"
+        },
+        {
+          "line": 40,
+          "text": "from .termui import clear as clear"
+        },
+        {
+          "line": 41,
+          "text": "from .termui import confirm as confirm"
+        },
+        {
+          "line": 42,
+          "text": "from .termui import echo_via_pager as echo_via_pager"
+        },
+        {
+          "line": 43,
+          "text": "from .termui import edit as edit"
+        },
+        {
+          "line": 44,
+          "text": "from .termui import get_terminal_size as get_terminal_size"
+        },
+        {
+          "line": 45,
+          "text": "from .termui import getchar as getchar"
+        },
+        {
+          "line": 46,
+          "text": "from .termui import launch as launch"
+        },
+        {
+          "line": 47,
+          "text": "from .termui import pause as pause"
+        },
+        {
+          "line": 48,
+          "text": "from .termui import progressbar as progressbar"
+        },
+        {
+          "line": 49,
+          "text": "from .termui import prompt as prompt"
+        },
+        {
+          "line": 50,
+          "text": "from .termui import secho as secho"
+        },
+        {
+          "line": 51,
+          "text": "from .termui import style as style"
+        },
+        {
+          "line": 52,
+          "text": "from .termui import unstyle as unstyle"
+        },
+        {
+          "line": 53,
+          "text": "from .types import BOOL as BOOL"
+        },
+        {
+          "line": 54,
+          "text": "from .types import Choice as Choice"
+        },
+        {
+          "line": 55,
+          "text": "from .types import DateTime as DateTime"
+        },
+        {
+          "line": 56,
+          "text": "from .types import File as File"
+        },
+        {
+          "line": 57,
+          "text": "from .types import FLOAT as FLOAT"
+        },
+        {
+          "line": 58,
+          "text": "from .types import FloatRange as FloatRange"
+        },
+        {
+          "line": 59,
+          "text": "from .types import INT as INT"
+        },
+        {
+          "line": 60,
+          "text": "from .types import IntRange as IntRange"
+        },
+        {
+          "line": 61,
+          "text": "from .types import ParamType as ParamType"
+        },
+        {
+          "line": 62,
+          "text": "from .types import Path as Path"
+        },
+        {
+          "line": 63,
+          "text": "from .types import STRING as STRING"
+        },
+        {
+          "line": 64,
+          "text": "from .types import Tuple as Tuple"
+        },
+        {
+          "line": 65,
+          "text": "from .types import UNPROCESSED as UNPROCESSED"
+        },
+        {
+          "line": 66,
+          "text": "from .types import UUID as UUID"
+        },
+        {
+          "line": 67,
+          "text": "from .utils import echo as echo"
+        },
+        {
+          "line": 68,
+          "text": "from .utils import format_filename as format_filename"
+        },
+        {
+          "line": 69,
+          "text": "from .utils import get_app_dir as get_app_dir"
+        },
+        {
+          "line": 70,
+          "text": "from .utils import get_binary_stream as get_binary_stream"
+        },
+        {
+          "line": 71,
+          "text": "from .utils import get_os_args as get_os_args"
+        },
+        {
+          "line": 72,
+          "text": "from .utils import get_text_stream as get_text_stream"
+        },
+        {
+          "line": 73,
+          "text": "from .utils import open_file as open_file"
+        },
+        {
+          "line": 74,
+          "text": ""
+        },
+        {
+          "line": 75,
+          "text": "__version__ = \"8.0.2.dev0\""
+        }
+      ],
+      "content": "from .exceptions import BadParameter as BadParameter\nfrom .exceptions import ClickException as ClickException\nfrom .exceptions import FileError as FileError\nfrom .exceptions import MissingParameter as MissingParameter\nfrom .exceptions import NoSuchOption as NoSuchOption\nfrom .exceptions import UsageError as UsageError\nfrom .formatting import HelpFormatter as HelpFormatter\nfrom .formatting import wrap_text as wrap_text\nfrom .globals import get_current_context as get_current_context\nfrom .parser import OptionParser as OptionParser\nfrom .termui import clear as clear\nfrom .termui import confirm as confirm\nfrom .termui import echo_via_pager as echo_via_pager\nfrom .termui import edit as edit\nfrom .termui import get_terminal_size as get_terminal_size\nfrom .termui import getchar as getchar\nfrom .termui import launch as launch\nfrom .termui import pause as pause\nfrom .termui import progressbar as progressbar\nfrom .termui import prompt as prompt\nfrom .termui import secho as secho\nfrom .termui import style as style\nfrom .termui import unstyle as unstyle\nfrom .types import BOOL as BOOL\nfrom .types import Choice as Choice\nfrom .types import DateTime as DateTime\nfrom .types import File as File\nfrom .types import FLOAT as FLOAT\nfrom .types import FloatRange as FloatRange\nfrom .types import INT as INT\nfrom .types import IntRange as IntRange\nfrom .types import ParamType as ParamType\nfrom .types import Path as Path\nfrom .types import STRING as STRING\nfrom .types import Tuple as Tuple\nfrom .types import UNPROCESSED as UNPROCESSED\nfrom .types import UUID as UUID\nfrom .utils import echo as echo\nfrom .utils import format_filename as format_filename\nfrom .utils import get_app_dir as get_app_dir\nfrom .utils import get_binary_stream as get_binary_stream\nfrom .utils import get_os_args as get_os_args\nfrom .utils import get_text_stream as get_text_stream\nfrom .utils import open_file as open_file\n\n__version__ = \"8.0.2.dev0\"",
+      "sha256": "e68cb7b652ca27b4f523da887f0f4bf84ff8ebdf45af3fe58d43f3caa01b1663"
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "ClickException",
+    "result": {
+      "query": "ClickException",
+      "matches": [
+        {
+          "path": "CHANGES.rst",
+          "line": 292,
+          "snippet": "-   Fix ``ClickException`` output going to stdout instead of stderr."
+        },
+        {
+          "path": "docs/api.rst",
+          "line": 154,
+          "snippet": ".. autoexception:: ClickException"
+        },
+        {
+          "path": "docs/exceptions.rst",
+          "line": 14,
+          "snippet": "there it handles all subclasses of :exc:`ClickException` as well as the"
+        },
+        {
+          "path": "docs/exceptions.rst",
+          "line": 22,
+          "snippet": "2.  If an :exc:`ClickException` is raised, invoke the"
+        },
+        {
+          "path": "docs/exceptions.rst",
+          "line": 23,
+          "snippet": "    :meth:`ClickException.show` method on it to display it and then exit"
+        },
+        {
+          "path": "docs/exceptions.rst",
+          "line": 24,
+          "snippet": "    the program with :attr:`ClickException.exit_code`."
+        },
+        {
+          "path": "docs/exceptions.rst",
+          "line": 55,
+          "snippet": "Click has two exception bases: :exc:`ClickException` which is raised for"
+        },
+        {
+          "path": "docs/exceptions.rst",
+          "line": 59,
+          "snippet": "A :exc:`ClickException` has a :meth:`~ClickException.show` method which"
+        },
+        {
+          "path": "src/click/__init__.py",
+          "line": 31,
+          "snippet": "from .exceptions import ClickException as ClickException"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 22,
+          "snippet": "from .exceptions import ClickException"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 494,
+          "snippet": "                raise ClickException("
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 498,
+          "snippet": "            raise ClickException("
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 20,
+          "snippet": "from .exceptions import ClickException"
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 1065,
+          "snippet": "            except ClickException as e:"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "line": 23,
+          "snippet": "class ClickException(Exception):"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "line": 46,
+          "snippet": "class UsageError(ClickException):"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "line": 256,
+          "snippet": "class FileError(ClickException):"
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/_termui_impl.py",
+      "start_line": 10,
+      "end_line": 109,
+      "lines": [
+        {
+          "line": 10,
+          "text": "import time"
+        },
+        {
+          "line": 11,
+          "text": "import typing as t"
+        },
+        {
+          "line": 12,
+          "text": "from gettext import gettext as _"
+        },
+        {
+          "line": 13,
+          "text": ""
+        },
+        {
+          "line": 14,
+          "text": "from ._compat import _default_text_stdout"
+        },
+        {
+          "line": 15,
+          "text": "from ._compat import CYGWIN"
+        },
+        {
+          "line": 16,
+          "text": "from ._compat import get_best_encoding"
+        },
+        {
+          "line": 17,
+          "text": "from ._compat import isatty"
+        },
+        {
+          "line": 18,
+          "text": "from ._compat import open_stream"
+        },
+        {
+          "line": 19,
+          "text": "from ._compat import strip_ansi"
+        },
+        {
+          "line": 20,
+          "text": "from ._compat import term_len"
+        },
+        {
+          "line": 21,
+          "text": "from ._compat import WIN"
+        },
+        {
+          "line": 22,
+          "text": "from .exceptions import ClickException"
+        },
+        {
+          "line": 23,
+          "text": "from .utils import echo"
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": "V = t.TypeVar(\"V\")"
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "if os.name == \"nt\":"
+        },
+        {
+          "line": 28,
+          "text": "    BEFORE_BAR = \"\\r\""
+        },
+        {
+          "line": 29,
+          "text": "    AFTER_BAR = \"\\n\""
+        },
+        {
+          "line": 30,
+          "text": "else:"
+        },
+        {
+          "line": 31,
+          "text": "    BEFORE_BAR = \"\\r\\033[?25l\""
+        },
+        {
+          "line": 32,
+          "text": "    AFTER_BAR = \"\\033[?25h\\n\""
+        },
+        {
+          "line": 33,
+          "text": ""
+        },
+        {
+          "line": 34,
+          "text": ""
+        },
+        {
+          "line": 35,
+          "text": "class ProgressBar(t.Generic[V]):"
+        },
+        {
+          "line": 36,
+          "text": "    def __init__("
+        },
+        {
+          "line": 37,
+          "text": "        self,"
+        },
+        {
+          "line": 38,
+          "text": "        iterable: t.Optional[t.Iterable[V]],"
+        },
+        {
+          "line": 39,
+          "text": "        length: t.Optional[int] = None,"
+        },
+        {
+          "line": 40,
+          "text": "        fill_char: str = \"#\","
+        },
+        {
+          "line": 41,
+          "text": "        empty_char: str = \" \","
+        },
+        {
+          "line": 42,
+          "text": "        bar_template: str = \"%(bar)s\","
+        },
+        {
+          "line": 43,
+          "text": "        info_sep: str = \"  \","
+        },
+        {
+          "line": 44,
+          "text": "        show_eta: bool = True,"
+        },
+        {
+          "line": 45,
+          "text": "        show_percent: t.Optional[bool] = None,"
+        },
+        {
+          "line": 46,
+          "text": "        show_pos: bool = False,"
+        },
+        {
+          "line": 47,
+          "text": "        item_show_func: t.Optional[t.Callable[[t.Optional[V]], t.Optional[str]]] = None,"
+        },
+        {
+          "line": 48,
+          "text": "        label: t.Optional[str] = None,"
+        },
+        {
+          "line": 49,
+          "text": "        file: t.Optional[t.TextIO] = None,"
+        },
+        {
+          "line": 50,
+          "text": "        color: t.Optional[bool] = None,"
+        },
+        {
+          "line": 51,
+          "text": "        update_min_steps: int = 1,"
+        },
+        {
+          "line": 52,
+          "text": "        width: int = 30,"
+        },
+        {
+          "line": 53,
+          "text": "    ) -> None:"
+        },
+        {
+          "line": 54,
+          "text": "        self.fill_char = fill_char"
+        },
+        {
+          "line": 55,
+          "text": "        self.empty_char = empty_char"
+        },
+        {
+          "line": 56,
+          "text": "        self.bar_template = bar_template"
+        },
+        {
+          "line": 57,
+          "text": "        self.info_sep = info_sep"
+        },
+        {
+          "line": 58,
+          "text": "        self.show_eta = show_eta"
+        },
+        {
+          "line": 59,
+          "text": "        self.show_percent = show_percent"
+        },
+        {
+          "line": 60,
+          "text": "        self.show_pos = show_pos"
+        },
+        {
+          "line": 61,
+          "text": "        self.item_show_func = item_show_func"
+        },
+        {
+          "line": 62,
+          "text": "        self.label = label or \"\""
+        },
+        {
+          "line": 63,
+          "text": "        if file is None:"
+        },
+        {
+          "line": 64,
+          "text": "            file = _default_text_stdout()"
+        },
+        {
+          "line": 65,
+          "text": "        self.file = file"
+        },
+        {
+          "line": 66,
+          "text": "        self.color = color"
+        },
+        {
+          "line": 67,
+          "text": "        self.update_min_steps = update_min_steps"
+        },
+        {
+          "line": 68,
+          "text": "        self._completed_intervals = 0"
+        },
+        {
+          "line": 69,
+          "text": "        self.width = width"
+        },
+        {
+          "line": 70,
+          "text": "        self.autowidth = width == 0"
+        },
+        {
+          "line": 71,
+          "text": ""
+        },
+        {
+          "line": 72,
+          "text": "        if length is None:"
+        },
+        {
+          "line": 73,
+          "text": "            from operator import length_hint"
+        },
+        {
+          "line": 74,
+          "text": ""
+        },
+        {
+          "line": 75,
+          "text": "            length = length_hint(iterable, -1)"
+        },
+        {
+          "line": 76,
+          "text": ""
+        },
+        {
+          "line": 77,
+          "text": "            if length == -1:"
+        },
+        {
+          "line": 78,
+          "text": "                length = None"
+        },
+        {
+          "line": 79,
+          "text": "        if iterable is None:"
+        },
+        {
+          "line": 80,
+          "text": "            if length is None:"
+        },
+        {
+          "line": 81,
+          "text": "                raise TypeError(\"iterable or length is required\")"
+        },
+        {
+          "line": 82,
+          "text": "            iterable = t.cast(t.Iterable[V], range(length))"
+        },
+        {
+          "line": 83,
+          "text": "        self.iter = iter(iterable)"
+        },
+        {
+          "line": 84,
+          "text": "        self.length = length"
+        },
+        {
+          "line": 85,
+          "text": "        self.pos = 0"
+        },
+        {
+          "line": 86,
+          "text": "        self.avg: t.List[float] = []"
+        },
+        {
+          "line": 87,
+          "text": "        self.start = self.last_eta = time.time()"
+        },
+        {
+          "line": 88,
+          "text": "        self.eta_known = False"
+        },
+        {
+          "line": 89,
+          "text": "        self.finished = False"
+        },
+        {
+          "line": 90,
+          "text": "        self.max_width: t.Optional[int] = None"
+        },
+        {
+          "line": 91,
+          "text": "        self.entered = False"
+        },
+        {
+          "line": 92,
+          "text": "        self.current_item: t.Optional[V] = None"
+        },
+        {
+          "line": 93,
+          "text": "        self.is_hidden = not isatty(self.file)"
+        },
+        {
+          "line": 94,
+          "text": "        self._last_line: t.Optional[str] = None"
+        },
+        {
+          "line": 95,
+          "text": ""
+        },
+        {
+          "line": 96,
+          "text": "    def __enter__(self) -> \"ProgressBar\":"
+        },
+        {
+          "line": 97,
+          "text": "        self.entered = True"
+        },
+        {
+          "line": 98,
+          "text": "        self.render_progress()"
+        },
+        {
+          "line": 99,
+          "text": "        return self"
+        },
+        {
+          "line": 100,
+          "text": ""
+        },
+        {
+          "line": 101,
+          "text": "    def __exit__(self, exc_type, exc_value, tb):  # type: ignore"
+        },
+        {
+          "line": 102,
+          "text": "        self.render_finish()"
+        },
+        {
+          "line": 103,
+          "text": ""
+        },
+        {
+          "line": 104,
+          "text": "    def __iter__(self) -> t.Iterator[V]:"
+        },
+        {
+          "line": 105,
+          "text": "        if not self.entered:"
+        },
+        {
+          "line": 106,
+          "text": "            raise RuntimeError(\"You need to use progress bars in a with block.\")"
+        },
+        {
+          "line": 107,
+          "text": "        self.render_progress()"
+        },
+        {
+          "line": 108,
+          "text": "        return self.generator()"
+        },
+        {
+          "line": 109,
+          "text": ""
+        }
+      ],
+      "content": "import time\nimport typing as t\nfrom gettext import gettext as _\n\nfrom ._compat import _default_text_stdout\nfrom ._compat import CYGWIN\nfrom ._compat import get_best_encoding\nfrom ._compat import isatty\nfrom ._compat import open_stream\nfrom ._compat import strip_ansi\nfrom ._compat import term_len\nfrom ._compat import WIN\nfrom .exceptions import ClickException\nfrom .utils import echo\n\nV = t.TypeVar(\"V\")\n\nif os.name == \"nt\":\n    BEFORE_BAR = \"\\r\"\n    AFTER_BAR = \"\\n\"\nelse:\n    BEFORE_BAR = \"\\r\\033[?25l\"\n    AFTER_BAR = \"\\033[?25h\\n\"\n\n\nclass ProgressBar(t.Generic[V]):\n    def __init__(\n        self,\n        iterable: t.Optional[t.Iterable[V]],\n        length: t.Optional[int] = None,\n        fill_char: str = \"#\",\n        empty_char: str = \" \",\n        bar_template: str = \"%(bar)s\",\n        info_sep: str = \"  \",\n        show_eta: bool = True,\n        show_percent: t.Optional[bool] = None,\n        show_pos: bool = False,\n        item_show_func: t.Optional[t.Callable[[t.Optional[V]], t.Optional[str]]] = None,\n        label: t.Optional[str] = None,\n        file: t.Optional[t.TextIO] = None,\n        color: t.Optional[bool] = None,\n        update_min_steps: int = 1,\n        width: int = 30,\n    ) -> None:\n        self.fill_char = fill_char\n        self.empty_char = empty_char\n        self.bar_template = bar_template\n        self.info_sep = info_sep\n        self.show_eta = show_eta\n        self.show_percent = show_percent\n        self.show_pos = show_pos\n        self.item_show_func = item_show_func\n        self.label = label or \"\"\n        if file is None:\n            file = _default_text_stdout()\n        self.file = file\n        self.color = color\n        self.update_min_steps = update_min_steps\n        self._completed_intervals = 0\n        self.width = width\n        self.autowidth = width == 0\n\n        if length is None:\n            from operator import length_hint\n\n            length = length_hint(iterable, -1)\n\n            if length == -1:\n                length = None\n        if iterable is None:\n            if length is None:\n                raise TypeError(\"iterable or length is required\")\n            iterable = t.cast(t.Iterable[V], range(length))\n        self.iter = iter(iterable)\n        self.length = length\n        self.pos = 0\n        self.avg: t.List[float] = []\n        self.start = self.last_eta = time.time()\n        self.eta_known = False\n        self.finished = False\n        self.max_width: t.Optional[int] = None\n        self.entered = False\n        self.current_item: t.Optional[V] = None\n        self.is_hidden = not isatty(self.file)\n        self._last_line: t.Optional[str] = None\n\n    def __enter__(self) -> \"ProgressBar\":\n        self.entered = True\n        self.render_progress()\n        return self\n\n    def __exit__(self, exc_type, exc_value, tb):  # type: ignore\n        self.render_finish()\n\n    def __iter__(self) -> t.Iterator[V]:\n        if not self.entered:\n            raise RuntimeError(\"You need to use progress bars in a with block.\")\n        self.render_progress()\n        return self.generator()\n",
+      "sha256": "dc805cfb047c6abb7b70e20ddf2e2f4377edc82b3818d2cc8c372b49a9540fd7"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "CHANGES.rst",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": ".. currentmodule:: click"
+        }
+      ],
+      "content": ".. currentmodule:: click",
+      "sha256": "74a7ad9eda3fb4e9b3b0fc5e4fcb00dd011d9ae411c622c27a6bb20d226e0baf"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "CONTRIBUTING.rst",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "How to contribute to Click"
+        }
+      ],
+      "content": "How to contribute to Click",
+      "sha256": "b980a787256154dcfb42543d9803d3aca09467264e0511e0f5d8f58440b555de"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/options.rst",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": ".. _options:"
+        }
+      ],
+      "content": ".. _options:",
+      "sha256": "fad28dbda2d8d5e93b11f4ff3fc86c551da4b6b9e9882eb500a093481b3fd657"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/quickstart.rst",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "Quickstart"
+        }
+      ],
+      "content": "Quickstart",
+      "sha256": "9dcf3ddd6c3db6cd2c7d0993700cba9e143ccba3b2ac28569dfc98d053f36cdf"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/advanced.rst",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "Advanced Patterns"
+        }
+      ],
+      "content": "Advanced Patterns",
+      "sha256": "71445658551fd4dc713e0bdd83dc264bf55f30cec87ef257c9511f9adedad541"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/commands.rst",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "Commands and Groups"
+        }
+      ],
+      "content": "Commands and Groups",
+      "sha256": "676a5df286a93d5a47adb5cd13941a82ad5d1faf879f85a3f632135ea1749bb8"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "docs/conf.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from pallets_sphinx_themes import get_version"
+        }
+      ],
+      "content": "from pallets_sphinx_themes import get_version",
+      "sha256": "6a644e244248d80e6603f780fc1f534bec2937a976724c39891fe03801e99e35"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "examples/termui/termui.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "import math"
+        }
+      ],
+      "content": "import math",
+      "sha256": "cc79721d0e7250c9aa23cfafb4f897cd1fd25711371ae58aab616760be47381d"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/__init__.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "\"\"\""
+        }
+      ],
+      "content": "\"\"\"",
+      "sha256": "e68cb7b652ca27b4f523da887f0f4bf84ff8ebdf45af3fe58d43f3caa01b1663"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/_termui_impl.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "\"\"\""
+        }
+      ],
+      "content": "\"\"\"",
+      "sha256": "dc805cfb047c6abb7b70e20ddf2e2f4377edc82b3818d2cc8c372b49a9540fd7"
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "case": {
+    "case_id": "synthetic-login-demo",
+    "issue_url": "synthetic://sample_repo/login-500",
+    "base_commit": "not-applicable-synthetic-example",
+    "fix_commit": "not-applicable-synthetic-example",
+    "expected_files": [
+      "src/main/java/demo/auth/service/TokenService.java",
+      "src/main/java/demo/auth/exception/GlobalExceptionHandler.java"
+    ]
+  },
+  "mode": "offline",
+  "ranked_files": [
+    "src/main/java/demo/auth/controller/UserController.java",
+    "src/main/java/demo/auth/service/UserService.java",
+    "src/main/java/demo/auth/exception/GlobalExceptionHandler.java",
+    "src/main/java/demo/auth/service/TokenService.java",
+    "src/main/java/demo/auth/exception/BadCredentialsException.java",
+    "src/main/java/demo/auth/exception/TokenExpiredException.java"
+  ],
+  "matched_files": [
+    "src/main/java/demo/auth/exception/GlobalExceptionHandler.java",
+    "src/main/java/demo/auth/service/TokenService.java"
+  ],
+  "missed_files": [],
+  "metrics": {
+    "top_1_hit": false,
+    "top_3_hit": true,
+    "first_relevant_rank": 3,
+    "reciprocal_rank": 0.3333333333333333,
+    "file_recall": 1.0
+  },
+  "limitations": [
+    "File-level evaluation only; line accuracy and root cause are not scored.",
+    "Commit metadata and labels are user-supplied, not independently verified."
+  ],
+  "inputs_sha256": {
+    "result": "eefcd3287bea9d0c1a4aac480a7ab87adc2faef3fd52d67c449deaa1e7fd75b6",
+    "case": "a0671307d5ef5145d0d1b6c4f2dd64702052f71dbbded4033eac6e2be3785298"
+  }
+}

@@ -1,0 +1,36 @@
+test_changed_file_citation_is_removed (test_agent.AgentTests.test_changed_file_citation_is_removed) ... ok
+test_invalid_issue_and_mode_fail_before_analysis (test_agent.AgentTests.test_invalid_issue_and_mode_fail_before_analysis) ... ok
+test_invalid_model_json_gives_actionable_error (test_agent.AgentTests.test_invalid_model_json_gives_actionable_error) ... ok
+test_login_query_follows_sample_chain_and_cites_actual_source (test_agent.AgentTests.test_login_query_follows_sample_chain_and_cites_actual_source) ... ok
+test_model_bad_tool_path_is_reported_without_reading_outside_repository (test_agent.AgentTests.test_model_bad_tool_path_is_reported_without_reading_outside_repository) ... ok
+test_model_cannot_cite_unread_gap_between_two_windows (test_agent.AgentTests.test_model_cannot_cite_unread_gap_between_two_windows) ... ok
+test_model_citations_use_tools_and_discard_unread_files (test_agent.AgentTests.test_model_citations_use_tools_and_discard_unread_files) ... ok
+test_unrelated_query_does_not_invent_candidates (test_agent.AgentTests.test_unrelated_query_does_not_invent_candidates) ... ok
+test_final_response_request_omits_tool_fields (test_model.ModelTransportTests.test_final_response_request_omits_tool_fields) ... ok
+test_http_errors_do_not_disclose_provider_body (test_model.ModelTransportTests.test_http_errors_do_not_disclose_provider_body) ... ok
+test_malformed_provider_responses_raise_model_error (test_model.ModelTransportTests.test_malformed_provider_responses_raise_model_error) ... ok
+test_redirects_are_rejected_without_forwarding_credentials (test_model.ModelTransportTests.test_redirects_are_rejected_without_forwarding_credentials) ... ok
+test_request_sends_expected_route_auth_messages_and_tools (test_model.ModelTransportTests.test_request_sends_expected_route_auth_messages_and_tools) ... ok
+test_file_count_size_and_binary_bounds (test_repository.RepositoryTests.test_file_count_size_and_binary_bounds) ... ok
+test_ignored_directories_and_secrets_cannot_be_read (test_repository.RepositoryTests.test_ignored_directories_and_secrets_cannot_be_read) ... ok
+test_invalid_ranges_and_queries (test_repository.RepositoryTests.test_invalid_ranges_and_queries) ... ok
+test_search_and_read_preserve_real_lines (test_repository.RepositoryTests.test_search_and_read_preserve_real_lines) ... ok
+test_search_is_literal_and_reports_truncation (test_repository.RepositoryTests.test_search_is_literal_and_reports_truncation) ... ok
+test_symlinks_cannot_escape_or_be_read_directly (test_repository.RepositoryTests.test_symlinks_cannot_escape_or_be_read_directly) ... skipped 'This Windows account cannot create symlinks'
+test_traversal_and_absolute_paths_are_rejected (test_repository.RepositoryTests.test_traversal_and_absolute_paths_are_rejected) ... ok
+test_complete_import_analyze_read_flow (test_server.ServerTests.test_complete_import_analyze_read_flow) ... ok
+test_file_reads_reject_traversal_and_excluded_paths (test_server.ServerTests.test_file_reads_reject_traversal_and_excluded_paths) ... ok
+test_foreign_hosts_and_origins_cannot_access_repository_api (test_server.ServerTests.test_foreign_hosts_and_origins_cannot_access_repository_api) ... ok
+test_invalid_github_urls_do_not_start_git (test_server.ServerTests.test_invalid_github_urls_do_not_start_git) ... ok
+test_invalid_line_ranges_return_errors (test_server.ServerTests.test_invalid_line_ranges_return_errors) ... ok
+test_listener_cannot_bind_public_interfaces (test_server.ServerTests.test_listener_cannot_bind_public_interfaces) ... ok
+test_local_import_reads_source_without_executing_it (test_server.ServerTests.test_local_import_reads_source_without_executing_it) ... ok
+test_malformed_requests_are_rejected (test_server.ServerTests.test_malformed_requests_are_rejected) ... ok
+test_status_does_not_expose_credentials (test_server.ServerTests.test_status_does_not_expose_credentials) ... ok
+test_unconfigured_model_returns_actionable_error (test_server.ServerTests.test_unconfigured_model_returns_actionable_error) ... ok
+test_unknown_repository_returns_not_found (test_server.ServerTests.test_unknown_repository_returns_not_found) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 2.428s
+
+OK (skipped=1)

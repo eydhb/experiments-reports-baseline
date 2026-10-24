@@ -1,0 +1,5798 @@
+[
+  {
+    "tool": "search_code",
+    "query": "KeyboardInterrupt",
+    "result": {
+      "query": "KeyboardInterrupt",
+      "matches": [
+        {
+          "path": "CHANGES.md",
+          "line": 489,
+          "snippet": "  - `echo_via_pager` will not ignore `KeyboardInterrupt` anymore. This"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 586,
+          "snippet": "- `EOFError` and `KeyboardInterrupt` tracebacks are not suppressed when"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1210,
+          "snippet": "- `click.getchar()` correctly raises `KeyboardInterrupt` on \"^C\""
+        },
+        {
+          "path": "docs/exceptions.md",
+          "line": 22,
+          "snippet": "standard {exc}`EOFError` and {exc}`KeyboardInterrupt` exceptions. The"
+        },
+        {
+          "path": "docs/exceptions.md",
+          "line": 27,
+          "snippet": "1. If an {exc}`EOFError` or {exc}`KeyboardInterrupt` happens, reraise it"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 629,
+          "snippet": "            except KeyboardInterrupt:"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 871,
+          "snippet": "        raise KeyboardInterrupt()"
+        },
+        {
+          "path": "src/click/_winconsole.py",
+          "line": 148,
+          "snippet": "            # wait for KeyboardInterrupt"
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 1563,
+          "snippet": "            except (EOFError, KeyboardInterrupt) as e:"
+        },
+        {
+          "path": "src/click/termui.py",
+          "line": 239,
+          "snippet": "        except (KeyboardInterrupt, EOFError):"
+        },
+        {
+          "path": "src/click/termui.py",
+          "line": 331,
+          "snippet": "        except (KeyboardInterrupt, EOFError):"
+        },
+        {
+          "path": "src/click/termui.py",
+          "line": 1020,
+          "snippet": "        except (KeyboardInterrupt, EOFError):"
+        },
+        {
+          "path": "tests/test_commands.py",
+          "line": 659,
+          "snippet": "@pytest.mark.parametrize(\"exc\", (EOFError, KeyboardInterrupt))"
+        },
+        {
+          "path": "tests/test_termui.py",
+          "line": 413,
+          "snippet": "    (\"key_char\", \"exc\"), [(\"\\x03\", KeyboardInterrupt), (\"\\x1a\", EOFError)]"
+        },
+        {
+          "path": "tests/test_utils/test_echo_via_pager.py",
+          "line": 52,
+          "snippet": "    raise KeyboardInterrupt()"
+        },
+        {
+          "path": "tests/test_utils/test_echo_via_pager.py",
+          "line": 135,
+          "snippet": "            expected_error=KeyboardInterrupt,"
+        },
+        {
+          "path": "tests/test_utils/test_prompt.py",
+          "line": 46,
+          "snippet": "        raise KeyboardInterrupt()"
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "during",
+    "result": {
+      "query": "during",
+      "matches": [
+        {
+          "path": "CHANGES.md",
+          "line": 134,
+          "snippet": "- `get_parameter_source()` is available during eager callbacks and type"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 331,
+          "snippet": "- When `Sentinel.UNSET` is found during parsing, it will skip calls to"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 470,
+          "snippet": "- Contexts created during shell completion are closed properly, fixing"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 539,
+          "snippet": "- Exceptions generated during a command will use the context's `color`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 751,
+          "snippet": "- Default values are not cast to the parameter type twice during"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1145,
+          "snippet": "- Fix how default values for file-type options are shown during"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1233,
+          "snippet": "- Avoid `BrokenPipeError` during interpreter shutdown when stdout or"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1275,
+          "snippet": "- Fix `ResourceWarning` that occurs during some tests. {pr}`878`"
+        },
+        {
+          "path": "docs/entry-points.md",
+          "line": 74,
+          "snippet": "based on the configuration. During development, you can install in editable"
+        },
+        {
+          "path": "docs/options.md",
+          "line": 573,
+          "snippet": "order they fire during the parsing pipeline."
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 351,
+          "snippet": "        during construction, and updates the progress bar *after* the"
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 680,
+          "snippet": "        This can be used to close resources opened during the script"
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 1150,
+          "snippet": "                            \"other's value during parsing. Give each parameter \""
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 1422,
+          "snippet": "        commands are valid at any point during command completion."
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 2836,
+          "snippet": "        ``shell_complete`` function was given during init, it is used."
+        },
+        {
+          "path": "src/click/shell_completion.py",
+          "line": 570,
+          "snippet": "    variable during completion."
+        },
+        {
+          "path": "src/click/termui.py",
+          "line": 98,
+          "snippet": "    # which patches it there during test isolation, is honored."
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 532,
+          "snippet": "            \"\"\"Default ``pdb.Pdb`` to real terminal streams during"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 537,
+          "snippet": "            when no explicit streams are provided. During isolation"
+        },
+        {
+          "path": "src/click/utils.py",
+          "line": 535,
+          "snippet": "    from ``.flush()`` being called on broken pipe during the shutdown/final-GC"
+        },
+        {
+          "path": "src/click/utils.py",
+          "line": 578,
+          "snippet": "        during internal testing."
+        },
+        {
+          "path": "tests/test_context.py",
+          "line": 200,
+          "snippet": "        \"\"\"An option that checks internal state during processing.\"\"\""
+        },
+        {
+          "path": "tests/test_defaults.py",
+          "line": 216,
+          "snippet": "    # Integration: the callable is invoked during value resolution."
+        },
+        {
+          "path": "tests/test_defaults.py",
+          "line": 271,
+          "snippet": "def test_parameter_source_during_paramtype_convert(runner):"
+        },
+        {
+          "path": "tests/test_defaults.py",
+          "line": 272,
+          "snippet": "    \"\"\"``get_parameter_source()`` is available during ``ParamType.convert``."
+        },
+        {
+          "path": "tests/test_defaults.py",
+          "line": 314,
+          "snippet": "def test_parameter_source_during_eager_callback(runner):"
+        },
+        {
+          "path": "tests/test_defaults.py",
+          "line": 315,
+          "snippet": "    \"\"\"``get_parameter_source()`` is available during eager callbacks."
+        },
+        {
+          "path": "tests/test_stream_lifecycle.py",
+          "line": 314,
+          "snippet": "    \"\"\"Threads writing to ``click.echo()`` during invocation.\"\"\""
+        },
+        {
+          "path": "tests/test_utils/test_echo_via_pager.py",
+          "line": 128,
+          "snippet": "            # Due to the keyboard interrupt during pager execution, click program"
+        },
+        {
+          "path": "tests/test_utils/test_echo_via_pager.py",
+          "line": 138,
+          "snippet": "            description=\"Writing to stdout during generator execution\","
+        },
+        {
+          "path": "tests/test_utils/test_echo_via_pager.py",
+          "line": 146,
+          "snippet": "            description=\"Writing to stderr during generator execution\","
+        },
+        {
+          "path": "tests/test_utils/test_echo_via_pager.py",
+          "line": 232,
+          "snippet": "    \"\"\"Repeated exceptions during ``echo_via_pager`` must not leak subprocesses."
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "click",
+    "result": {
+      "query": "click",
+      "matches": [
+        {
+          "path": ".devcontainer/devcontainer.json",
+          "line": 2,
+          "snippet": "  \"name\": \"pallets/click\","
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 3,
+          "snippet": "about: Report a bug in Click (not other projects which depend on Click)"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 7,
+          "snippet": "This issue tracker is a tool to address bugs in Click itself. Please use"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 27,
+          "snippet": "- Click version:"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "line": 4,
+          "snippet": "    url: https://github.com/pallets/click/discussions/"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+          "line": 3,
+          "snippet": "about: Suggest a new feature for Click"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+          "line": 13,
+          "snippet": "would resolve. Is this problem solvable without changes to Click, such"
+        },
+        {
+          "path": ".github/workflows/nightly.yaml",
+          "line": 52,
+          "snippet": "      # Check out Flask, not Click: the Click branch under test is installed"
+        },
+        {
+          "path": ".github/workflows/nightly.yaml",
+          "line": 65,
+          "snippet": "      # --with overlays the Click branch on top of the version Flask's lock"
+        },
+        {
+          "path": ".github/workflows/nightly.yaml",
+          "line": 67,
+          "snippet": "      - run: uv run --with \"git+https://github.com/pallets/click.git@${CLICK_REF}\" -- pytest"
+        },
+        {
+          "path": ".github/workflows/nightly.yaml",
+          "line": 69,
+          "snippet": "          CLICK_REF: ${{ matrix.branch }}"
+        },
+        {
+          "path": ".github/workflows/publish.yaml",
+          "line": 50,
+          "snippet": "      url: https://pypi.org/project/Click/${{ github.ref_name }}"
+        },
+        {
+          "path": ".pre-commit-config.yaml",
+          "line": 21,
+          "snippet": "        exclude: ^(src/click/testing\\.py|tests/test_testing\\.py)$"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 30,
+          "snippet": "  [discussion #3527](https://github.com/pallets/click/discussions/3527). {pr}`3581`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 35,
+          "snippet": "  `_click_default_help` instead of `help`, so a parameter named `help` no"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 53,
+          "snippet": "  will be removed in Click 9.0. {issue}`3481` {pr}`3695`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 54,
+          "snippet": "- The following `click.utils` names were never intentionally public and are"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 56,
+          "snippet": "  `DeprecationWarning` until Click 9.0: `LazyFile`, `KeepOpenFile`,"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 182,
+          "snippet": "  instead of being stringified. Previously `type=click.UNPROCESSED` had"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 208,
+          "snippet": "- Add `click.get_pager_file` for file-like access to an output"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 211,
+          "snippet": "- {func}`~click.formatting.wrap_text` now measures line width in visible"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 360,
+          "snippet": "  `click.core.Context.with_resource()`. {issue}`2447` {pr}`3058`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 379,
+          "snippet": "- Fix a rare race in `click.testing.StreamMixer`'s finalization that manifested"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 405,
+          "snippet": "  `importlib.metadata.version(\"click\")`, instead. {issue}`2598`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 471,
+          "snippet": "  a `ResourceWarning` when using `click.File`. {issue}`2644` {pr}`2800`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 474,
+          "snippet": "- `click.edit(filename)` now supports passing an iterable of filenames in"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 510,
+          "snippet": "- Incorrect `click.edit` typing has been corrected. {pr}`2804`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 523,
+          "snippet": "- Fix an issue with type hints for `click.open_file()`. {issue}`2717`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 524,
+          "snippet": "- Fix issue where error message for invalid `click.Path` displays on"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 532,
+          "snippet": "- Fix `click.echo(color=...)` passing `color` to coloroma so it can be"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 560,
+          "snippet": "- Fix an issue with type hints for `@click.group()`. {issue}`2558`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 566,
+          "snippet": "- Fix an issue with type hints for `@click.command()`, `@click.option()`, and"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 582,
+          "snippet": "- Improve responsiveness of `click.clear()`. {issue}`2284`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 645,
+          "snippet": "  instead of ASCII. Click's locale encoding detection is removed."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 885,
+          "snippet": "- If only a name is passed to `option()`, Click suggests renaming it"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 891,
+          "snippet": "- `click.style()` can output 256 and RGB color codes. Most modern"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1005,
+          "snippet": "- `click.get_terminal_size()` is deprecated and will be removed in"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1012,
+          "snippet": "- `click.confirm()` will prompt until input is given if called with"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1057,
+          "snippet": "  applications to translate Click's built-in strings. {issue}`303`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1075,
+          "snippet": "- Fix a bug of `click.utils.make_default_short_help` for which the"
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "prompt",
+    "result": {
+      "query": "prompt",
+      "matches": [
+        {
+          "path": "CHANGES.md",
+          "line": 19,
+          "snippet": "- `confirm()` and `prompt()` strip ANSI color and style codes from the"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 20,
+          "snippet": "  prompt when the output stream does not support them, matching `echo()`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 22,
+          "snippet": "  prompt with `input()` directly. {issue}`3572` {pr}`3653`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 67,
+          "snippet": "- `prompt()` is now generically typed and returns the type produced by"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 190,
+          "snippet": "- Fix readline functionality on non-Windows platforms. Prompt text is now"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 220,
+          "snippet": "- Show custom error messages from types when {func}`prompt` with"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 283,
+          "snippet": "- Show custom `show_default` string in prompts, matching the existing"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 329,
+          "snippet": "- Fix rendering when `prompt` and `confirm` parameter `prompt_suffix` is"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 435,
+          "snippet": "- Do not display default values in prompts when `Option.show_default` is"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 499,
+          "snippet": "  - Parameters cannot be required nor prompted or an error is raised."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 676,
+          "snippet": "- Allow empty str input for `prompt()` when"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 677,
+          "snippet": "  `confirmation_prompt=True` and `default=\"\"`. {issue}`2157`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 725,
+          "snippet": "- Importing `readline` does not cause the `confirm()` prompt to"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 745,
+          "snippet": "- Fix type annotation for `type` argument in `prompt` function."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 811,
+          "snippet": "- If validation fails for a prompt with `hide_input=True`, the value"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 957,
+          "snippet": "- Added `ParameterSource.PROMPT` to track parameter values that were"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 958,
+          "snippet": "  prompted for. {issue}`1649`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 971,
+          "snippet": "  prompts. {issue}`1548`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 973,
+          "snippet": "- Add `prompt_required` param to `Option`. When set to `False`,"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 974,
+          "snippet": "  the user will only be prompted for an input if no value was passed."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 978,
+          "snippet": "  `is_flag=False`, and the value can instead be prompted for or"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 987,
+          "snippet": "- The default value passed to `prompt` will be cast to the correct"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1012,
+          "snippet": "- `click.confirm()` will prompt until input is given if called with"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1015,
+          "snippet": "- Option prompts validate the value with the option's callback in"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1018,
+          "snippet": "- `confirmation_prompt` can be set to a custom string. {issue}`723`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1062,
+          "snippet": "- Fix an issue where `readline` would clear the entire `prompt()`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1146,
+          "snippet": "  prompts. {issue}`914`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1397,
+          "snippet": "- For users running Python on Windows the `echo` and `prompt`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1439,
+          "snippet": "- `prompt(hide_input=True)` now prints a newline on `^C`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1480,
+          "snippet": "- Added support for writing prompts to stderr."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1637,
+          "snippet": "- Changed \"yN\" / \"Yn\" to \"y/N\" and \"Y/n\" in confirmation prompts."
+        },
+        {
+          "path": "docs/advanced.md",
+          "line": 78,
+          "snippet": "type conversion. It is called for all sources, including prompts."
+        },
+        {
+          "path": "docs/advanced.md",
+          "line": 101,
+          "snippet": "        default=\"1d6\", prompt=True,"
+        },
+        {
+          "path": "docs/api.md",
+          "line": 84,
+          "snippet": ".. autofunction:: prompt"
+        },
+        {
+          "path": "docs/command-line-reference.md",
+          "line": 42,
+          "snippet": "    .. group-tab:: Command Prompt"
+        },
+        {
+          "path": "docs/commands-and-groups.md",
+          "line": 375,
+          "snippet": "1.  **Prompt** (`PROMPT`): interactively provided by the user at a prompt."
+        },
+        {
+          "path": "docs/commands-and-groups.md",
+          "line": 389,
+          "snippet": "# True if the value was explicitly set (command line, prompt, or env var)."
+        },
+        {
+          "path": "docs/handling-files.md",
+          "line": 92,
+          "snippet": "  parameters, but is necessary for manually prompting. For manual prompts with the {func}`prompt` function you do not"
+        },
+        {
+          "path": "docs/index.md",
+          "line": 33,
+          "snippet": "    @click.option('--name', prompt='Your name',"
+        },
+        {
+          "path": "docs/index.md",
+          "line": 118,
+          "snippet": "prompts"
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "can",
+    "result": {
+      "query": "can",
+      "matches": [
+        {
+          "path": ".github/workflows/lock.yaml",
+          "line": 13,
+          "snippet": "  cancel-in-progress: true"
+        },
+        {
+          "path": ".github/workflows/nightly.yaml",
+          "line": 9,
+          "snippet": "  cancel-in-progress: false"
+        },
+        {
+          "path": ".github/workflows/pre-commit.yaml",
+          "line": 9,
+          "snippet": "  cancel-in-progress: true"
+        },
+        {
+          "path": ".github/workflows/publish.yaml",
+          "line": 8,
+          "snippet": "  cancel-in-progress: true"
+        },
+        {
+          "path": ".github/workflows/tests.yaml",
+          "line": 11,
+          "snippet": "  cancel-in-progress: true"
+        },
+        {
+          "path": ".github/workflows/zizmor.yaml",
+          "line": 11,
+          "snippet": "  cancel-in-progress: true"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 90,
+          "snippet": "  `errors=\"replace\"` to match the pipe backend. Any text stdout can encode"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 168,
+          "snippet": "    that it cannot be instantiated directly."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 196,
+          "snippet": "  replacing the `start` built-in which cannot be invoked without"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 276,
+          "snippet": "  `breakpoint()`, and debuggers subclassing `pdb.Pdb` (ipdb, pdbpp) can"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 297,
+          "snippet": "  its members from most to least explicit, so values can be compared to"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 345,
+          "snippet": "  - The `default` parameter can now be any type (`bool`, `None`, etc.)"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 493,
+          "snippet": "- `deprecated: bool | str` can now be used on options and arguments. This"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 494,
+          "snippet": "  previously was only available for `Command`. The message can now also be"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 499,
+          "snippet": "  - Parameters cannot be required nor prompted or an error is raised."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 532,
+          "snippet": "- Fix `click.echo(color=...)` passing `color` to coloroma so it can be"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 651,
+          "snippet": "- The `command` and `group` decorators can be applied with or"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 654,
+          "snippet": "- The `Path` type can check whether the target is executable."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 711,
+          "snippet": "- A callable default value can customize its help text by overriding"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 817,
+          "snippet": "- `IntRange` and `FloatRange` bounds can be open (`<`) instead"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 827,
+          "snippet": "- Resolving commands returns the canonical command name instead of the"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 891,
+          "snippet": "- `click.style()` can output 256 and RGB color codes. Most modern"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 916,
+          "snippet": "    can differ from the name they were created with."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 977,
+          "snippet": "- Providing the value to an option can be made optional through"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 978,
+          "snippet": "  `is_flag=False`, and the value can instead be prompted for or"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1018,
+          "snippet": "- `confirmation_prompt` can be set to a custom string. {issue}`723`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1036,
+          "snippet": "- The `Path` param type can be passed `path_type=pathlib.Path` to"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1157,
+          "snippet": "  `click.edit` can contains spaces. {pr}`1470`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1190,
+          "snippet": "- `secho`'s first argument can now be `None`, like in `echo`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1197,
+          "snippet": "- Document that options can be `required=True`. {issue}`514`,"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1288,
+          "snippet": "- Add copy option attrs so that custom classes can be reused."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1393,
+          "snippet": "  unicode by default in the `Path` type which means that this can"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1411,
+          "snippet": "- Arguments with positive nargs can now have defaults implemented."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1467,
+          "snippet": "  function). Now you can forcefully enable or disable it, overriding"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1474,
+          "snippet": "- Added support for handling of unprocessed options which can be"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1477,
+          "snippet": "- Added `max_content_width` parameter to the context which can be"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1484,
+          "snippet": "- Reject `nargs=-1` for options properly. Options cannot be"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1616,
+          "snippet": "- Introduced {exc}`BadParameter` which can be used to easily perform"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1633,
+          "snippet": "- Nargs of -1 for arguments can now be forced to be a single item"
+        },
+        {
+          "path": "docs/advanced.md",
+          "line": 75,
+          "snippet": "If you want to apply custom validation logic, you can do this in the"
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "race",
+    "result": {
+      "query": "race",
+      "matches": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 17,
+          "snippet": "Include the full traceback if there was an exception."
+        },
+        {
+          "path": ".github/workflows/nightly.yaml",
+          "line": 11,
+          "snippet": "  race-tests:"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 275,
+          "snippet": "- Patch `pdb.Pdb` in `CliRunner` isolation so `pdb.set_trace()`,"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 280,
+          "snippet": "  `pytest-xdist` to detect test pollution and race conditions. {pr}`3151`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 379,
+          "snippet": "- Fix a rare race in `click.testing.StreamMixer`'s finalization that manifested"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 586,
+          "snippet": "- `EOFError` and `KeyboardInterrupt` tracebacks are not suppressed when"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 882,
+          "snippet": "  curly braces to indicate that one is required (`{a|b|c}`)."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1534,
+          "snippet": "- The CLI runner's result object now has a traceback attached."
+        },
+        {
+          "path": "docs/arguments.md",
+          "line": 56,
+          "snippet": "   tools should gracefully degrade into becoming no ops. We think this"
+        },
+        {
+          "path": "docs/contributing.md",
+          "line": 14,
+          "snippet": "-   `tox r -e stress` runs stress tests for race conditions"
+        },
+        {
+          "path": "docs/testing.md",
+          "line": 185,
+          "snippet": "bugs and races."
+        },
+        {
+          "path": "docs/unicode-support.md",
+          "line": 67,
+          "snippet": "Traceback (most recent call last):"
+        },
+        {
+          "path": "pyproject.toml",
+          "line": 89,
+          "snippet": "    \"stress: high-iteration stress tests for race conditions (deselect with '-m \\\"not stress\\\"')\","
+        },
+        {
+          "path": "pyproject.toml",
+          "line": 170,
+          "snippet": "description = \"randomized parallel tests to detect test pollution and race conditions\""
+        },
+        {
+          "path": "pyproject.toml",
+          "line": 179,
+          "snippet": "description = \"high-iteration stress tests for race conditions\""
+        },
+        {
+          "path": "src/click/_compat.py",
+          "line": 10,
+          "snippet": "from types import TracebackType"
+        },
+        {
+          "path": "src/click/_compat.py",
+          "line": 483,
+          "snippet": "        tb: TracebackType | None,"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 20,
+          "snippet": "from types import TracebackType"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 124,
+          "snippet": "        tb: TracebackType | None,"
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 21,
+          "snippet": "from types import TracebackType"
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 558,
+          "snippet": "        tb: TracebackType | None,"
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 700,
+          "snippet": "        tb: TracebackType | None,"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 12,
+          "snippet": "from types import TracebackType"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 29,
+          "snippet": "ExceptionInfo: t.TypeAlias = tuple[type[BaseException], BaseException, TracebackType]"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 243,
+          "snippet": "        traceback type)."
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 547,
+          "snippet": "            This covers ``pdb.set_trace()``, ``breakpoint()``,"
+        },
+        {
+          "path": "src/click/testing.py",
+          "line": 647,
+          "snippet": "            traceback if available."
+        },
+        {
+          "path": "src/click/types.py",
+          "line": 426,
+          "snippet": "        # Use curly braces to indicate a required argument."
+        },
+        {
+          "path": "src/click/types.py",
+          "line": 430,
+          "snippet": "        # Use square braces to indicate an option or optional argument."
+        },
+        {
+          "path": "src/click/utils.py",
+          "line": 11,
+          "snippet": "from types import TracebackType"
+        },
+        {
+          "path": "src/click/utils.py",
+          "line": 202,
+          "snippet": "        tb: TracebackType | None,"
+        },
+        {
+          "path": "src/click/utils.py",
+          "line": 241,
+          "snippet": "        tb: TracebackType | None,"
+        },
+        {
+          "path": "tests/test_context.py",
+          "line": 4,
+          "snippet": "from types import TracebackType"
+        },
+        {
+          "path": "tests/test_context.py",
+          "line": 556,
+          "snippet": "            traceback: TracebackType | None,"
+        },
+        {
+          "path": "tests/test_context.py",
+          "line": 610,
+          "snippet": "            traceback: TracebackType | None,"
+        },
+        {
+          "path": "tests/test_stream_lifecycle.py",
+          "line": 5,
+          "snippet": "- Issue #2993: Race condition in ``StreamMixer`` finalization (multi-threaded)"
+        },
+        {
+          "path": "tests/test_stream_lifecycle.py",
+          "line": 16,
+          "snippet": "6. Stress tests (marked ``stress``): high-iteration reproducers for races"
+        },
+        {
+          "path": "tests/test_stream_lifecycle.py",
+          "line": 484,
+          "snippet": "# Category 6: Stress tests - high-iteration reproducers for race conditions"
+        },
+        {
+          "path": "tests/test_stream_lifecycle.py",
+          "line": 529,
+          "snippet": "    \"\"\"Force GC after each invocation to provoke finalizer races.\"\"\""
+        },
+        {
+          "path": "tests/test_testing.py",
+          "line": 485,
+          "snippet": "    absolute paths, so there is no ``os.chdir`` and no process-global CWD race"
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "Bug",
+    "result": {
+      "query": "Bug",
+      "matches": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 2,
+          "snippet": "name: Bug report"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 3,
+          "snippet": "about: Report a bug in Click (not other projects which depend on Click)"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 7,
+          "snippet": "This issue tracker is a tool to address bugs in Click itself. Please use"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 10,
+          "snippet": "Replace this comment with a clear outline of what the bug is."
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 14,
+          "snippet": "Describe how to replicate the bug."
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+          "line": 16,
+          "snippet": "Include a minimal reproducible example that demonstrates the bug."
+        },
+        {
+          "path": ".pre-commit-config.yaml",
+          "line": 20,
+          "snippet": "      - id: debug-statements"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 276,
+          "snippet": "  `breakpoint()`, and debuggers subclassing `pdb.Pdb` (ipdb, pdbpp) can"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 797,
+          "snippet": "  debugging. {issue}`1267`, {pr}`1295`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1075,
+          "snippet": "- Fix a bug of `click.utils.make_default_short_help` for which the"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1160,
+          "snippet": "  showing the name for friendlier debugging. {issue}`1267`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1238,
+          "snippet": "- Fix bug in test runner when calling `sys.exit` with `None`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1243,
+          "snippet": "- Fix bug that caused bash completion to give improper completions on"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1253,
+          "snippet": "- Fix path validation bug. {issue}`795`, {pr}`1020`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1332,
+          "snippet": "- Fix bug in bash completion with nested subcommands. {pr}`639`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1342,
+          "snippet": "- Fix bug in `click.Path` where it would crash when passed a `-`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1349,
+          "snippet": "- Fix bug in bash completion where click would discard one or more"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1358,
+          "snippet": "- Fixed a bug that cased locale detection to error out on Python 3."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1384,
+          "snippet": "- Click will now attempt to aid you with debugging locale errors"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1394,
+          "snippet": "  introduce small bugs for code not aware of this."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1419,
+          "snippet": "- Fix a bug in `pass_obj` that would accidentally pass the context"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1430,
+          "snippet": "- Fix a bug where return code and error messages were incorrect when"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1449,
+          "snippet": "- Fix a bug where error messages would include a trailing `None`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1451,
+          "snippet": "- Fix a bug where Click would crash on docstrings with trailing"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1481,
+          "snippet": "- Fix a bug when showing the default for multiple arguments."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1483,
+          "snippet": "- Fix bug in `clear()` on Windows when colorama is installed."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1567,
+          "snippet": "- Fixed a bug with text wrapping on Python 3."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1573,
+          "snippet": "- Corrected a bug in the change of the help option in 2.3."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 1657,
+          "snippet": "- Fixed a bug that caused text files in Python 2 to not accept native"
+        },
+        {
+          "path": "docs/commands-and-groups.md",
+          "line": 308,
+          "snippet": "   @click.option('--debug/--no-debug')"
+        },
+        {
+          "path": "docs/commands-and-groups.md",
+          "line": 309,
+          "snippet": "   def cli(debug):"
+        },
+        {
+          "path": "docs/commands-and-groups.md",
+          "line": 310,
+          "snippet": "       click.echo(f\"Debug mode is {'on' if debug else 'off'}\")"
+        },
+        {
+          "path": "docs/commands-and-groups.md",
+          "line": 323,
+          "snippet": "          env={'GREETER_GREET_USERNAME': 'John', 'GREETER_DEBUG': 'false'},"
+        },
+        {
+          "path": "docs/commands.md",
+          "line": 31,
+          "snippet": "    @click.option('--debug/--no-debug', default=False)"
+        },
+        {
+          "path": "docs/commands.md",
+          "line": 32,
+          "snippet": "    def cli(debug):"
+        },
+        {
+          "path": "docs/commands.md",
+          "line": 33,
+          "snippet": "        click.echo(f\"Debug mode is {'on' if debug else 'off'}\")"
+        },
+        {
+          "path": "docs/commands.md",
+          "line": 45,
+          "snippet": "    invoke(cli, prog_name='tool.py', args=['--debug', 'sync'])"
+        },
+        {
+          "path": "docs/commands.md",
+          "line": 51,
+          "snippet": "debug argument which is passed to its callback, but not to the sync"
+        },
+        {
+          "path": "docs/commands.md",
+          "line": 73,
+          "snippet": "    @click.option('--debug/--no-debug', default=False)"
+        },
+        {
+          "path": "docs/commands.md",
+          "line": 75,
+          "snippet": "    def cli(ctx, debug):"
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "When",
+    "result": {
+      "query": "When",
+      "matches": [
+        {
+          "path": "CHANGES.md",
+          "line": 18,
+          "snippet": "  a `Positional arguments` section when argument help is available. {issue}`2983` {pr}`3473`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 20,
+          "snippet": "  prompt when the output stream does not support them, matching `echo()`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 21,
+          "snippet": "  This stripping was lost in `8.4.0` when {pr}`2969` began writing the"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 23,
+          "snippet": "- Fix test failures when using pytest >= 9.1. {pr}`3656`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 25,
+          "snippet": "  an error under `python -bb`, when checking a value against the `-`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 79,
+          "snippet": "- {func}`progressbar` settles on its final position when `update_min_steps`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 80,
+          "snippet": "  does not divide the total. Steps below that threshold are applied when the"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 118,
+          "snippet": "  stream when no external pager runs, completing the partial"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 141,
+          "snippet": "- Fix `open_url` on Windows when the file path contains spaces."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 170,
+          "snippet": "    When `expose_value=False`, the name is set to `\"\"` instead"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 199,
+          "snippet": "- Fix Fish shell completion errors when option help text contains newlines."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 205,
+          "snippet": "- Use {class}`ValueError` message when conversion in {class}`FuncParamType` would"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 214,
+          "snippet": "- Fix {meth}`HelpFormatter.write_usage` emitting only a blank line when"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 216,
+          "snippet": "  written even when no arguments follow, and the trailing separator"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 220,
+          "snippet": "- Show custom error messages from types when {func}`prompt` with"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 243,
+          "snippet": "  parameter name) silently dropping an explicit `default` when a sibling"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 267,
+          "snippet": "- Fix `TypeError` when rendering help for an option whose default value is"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 304,
+          "snippet": "- Fix handling of `flag_value` when `is_flag=False` to allow such options to be"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 306,
+          "snippet": "- Hide `Sentinel.UNSET` values as `None` when using `lookup_default()`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 314,
+          "snippet": "- Fix callable `flag_value` being instantiated when used as a default via"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 327,
+          "snippet": "- Hide `Sentinel.UNSET` values as `None` when looking up for other parameters"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 329,
+          "snippet": "- Fix rendering when `prompt` and `confirm` parameter `prompt_suffix` is"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 331,
+          "snippet": "- When `Sentinel.UNSET` is found during parsing, it will skip calls to"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 378,
+          "snippet": "- Don't include envvar in error hint when not configured. {issue}`2971` {pr}`2972`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 427,
+          "snippet": "- When generating a command's name from a decorated function's name, the"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 435,
+          "snippet": "- Do not display default values in prompts when `Option.show_default` is"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 456,
+          "snippet": "- A `UserWarning` will be shown when multiple parameters attempt to use the"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 459,
+          "snippet": "- When using `Option.envvar` with `Option.flag_value`, the `flag_value`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 471,
+          "snippet": "  a `ResourceWarning` when using `click.File`. {issue}`2644` {pr}`2800`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 490,
+          "snippet": "    allows the user to search for future output of the generator when"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 500,
+          "snippet": "  - A warning will be printed when something deprecated is used."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 516,
+          "snippet": "- Fix setup of help option's defaults when using a custom class on its"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 530,
+          "snippet": "- Show correct value for flag default when using `default_map`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 540,
+          "snippet": "  setting when being displayed. {issue}`2193`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 541,
+          "snippet": "- Error message when defining option with invalid name is more descriptive."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 583,
+          "snippet": "- Improve command name detection when using Shiv or PEX. {issue}`2332`"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 585,
+          "snippet": "- ZSH completion script works when loaded from `fpath`. {issue}`2344`."
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 586,
+          "snippet": "- `EOFError` and `KeyboardInterrupt` tracebacks are not suppressed when"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 592,
+          "snippet": "- Make the decorators returned by `@argument()` and `@option()` reusable when the"
+        },
+        {
+          "path": "CHANGES.md",
+          "line": 594,
+          "snippet": "- Don't fail when writing filenames to streams with strict errors. Replace invalid"
+        }
+      ],
+      "truncated": true
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/core.py",
+      "start_line": 9,
+      "end_line": 108,
+      "lines": [
+        {
+          "line": 9,
+          "text": "import typing as t"
+        },
+        {
+          "line": 10,
+          "text": "from abc import ABC"
+        },
+        {
+          "line": 11,
+          "text": "from abc import abstractmethod"
+        },
+        {
+          "line": 12,
+          "text": "from collections import abc"
+        },
+        {
+          "line": 13,
+          "text": "from collections import Counter"
+        },
+        {
+          "line": 14,
+          "text": "from contextlib import AbstractContextManager"
+        },
+        {
+          "line": 15,
+          "text": "from contextlib import contextmanager"
+        },
+        {
+          "line": 16,
+          "text": "from contextlib import ExitStack"
+        },
+        {
+          "line": 17,
+          "text": "from functools import update_wrapper"
+        },
+        {
+          "line": 18,
+          "text": "from gettext import gettext as _"
+        },
+        {
+          "line": 19,
+          "text": "from gettext import ngettext"
+        },
+        {
+          "line": 20,
+          "text": "from itertools import repeat"
+        },
+        {
+          "line": 21,
+          "text": "from types import TracebackType"
+        },
+        {
+          "line": 22,
+          "text": ""
+        },
+        {
+          "line": 23,
+          "text": "from . import types"
+        },
+        {
+          "line": 24,
+          "text": "from ._utils import FLAG_NEEDS_VALUE"
+        },
+        {
+          "line": 25,
+          "text": "from ._utils import UNSET"
+        },
+        {
+          "line": 26,
+          "text": "from .exceptions import Abort"
+        },
+        {
+          "line": 27,
+          "text": "from .exceptions import BadParameter"
+        },
+        {
+          "line": 28,
+          "text": "from .exceptions import ClickException"
+        },
+        {
+          "line": 29,
+          "text": "from .exceptions import Exit"
+        },
+        {
+          "line": 30,
+          "text": "from .exceptions import MissingParameter"
+        },
+        {
+          "line": 31,
+          "text": "from .exceptions import NoArgsIsHelpError"
+        },
+        {
+          "line": 32,
+          "text": "from .exceptions import NoSuchCommand"
+        },
+        {
+          "line": 33,
+          "text": "from .exceptions import UsageError"
+        },
+        {
+          "line": 34,
+          "text": "from .formatting import HelpFormatter"
+        },
+        {
+          "line": 35,
+          "text": "from .formatting import join_options"
+        },
+        {
+          "line": 36,
+          "text": "from .globals import pop_context"
+        },
+        {
+          "line": 37,
+          "text": "from .globals import push_context"
+        },
+        {
+          "line": 38,
+          "text": "from .parser import _OptionParser"
+        },
+        {
+          "line": 39,
+          "text": "from .parser import _split_opt"
+        },
+        {
+          "line": 40,
+          "text": "from .termui import confirm"
+        },
+        {
+          "line": 41,
+          "text": "from .termui import prompt"
+        },
+        {
+          "line": 42,
+          "text": "from .termui import style"
+        },
+        {
+          "line": 43,
+          "text": "from .utils import _detect_program_name"
+        },
+        {
+          "line": 44,
+          "text": "from .utils import _expand_args"
+        },
+        {
+          "line": 45,
+          "text": "from .utils import _make_default_short_help"
+        },
+        {
+          "line": 46,
+          "text": "from .utils import _PacifyFlushWrapper"
+        },
+        {
+          "line": 47,
+          "text": "from .utils import echo"
+        },
+        {
+          "line": 48,
+          "text": "from .utils import make_str"
+        },
+        {
+          "line": 49,
+          "text": ""
+        },
+        {
+          "line": 50,
+          "text": "if t.TYPE_CHECKING:"
+        },
+        {
+          "line": 51,
+          "text": "    from typing_extensions import Self"
+        },
+        {
+          "line": 52,
+          "text": ""
+        },
+        {
+          "line": 53,
+          "text": "    from .shell_completion import CompletionItem"
+        },
+        {
+          "line": 54,
+          "text": ""
+        },
+        {
+          "line": 55,
+          "text": "F = t.TypeVar(\"F\", bound=\"t.Callable[..., t.Any]\")"
+        },
+        {
+          "line": 56,
+          "text": "V = t.TypeVar(\"V\")"
+        },
+        {
+          "line": 57,
+          "text": ""
+        },
+        {
+          "line": 58,
+          "text": "# Reserved storage name of the automatic help option. No user parameter is"
+        },
+        {
+          "line": 59,
+          "text": "# expected to claim it."
+        },
+        {
+          "line": 60,
+          "text": "_HELP_OPTION_STORAGE_NAME = \"_click_default_help\""
+        },
+        {
+          "line": 61,
+          "text": ""
+        },
+        {
+          "line": 62,
+          "text": ""
+        },
+        {
+          "line": 63,
+          "text": "def _complete_visible_commands("
+        },
+        {
+          "line": 64,
+          "text": "    ctx: Context, incomplete: str"
+        },
+        {
+          "line": 65,
+          "text": ") -> cabc.Iterator[tuple[str, Command]]:"
+        },
+        {
+          "line": 66,
+          "text": "    \"\"\"List all the subcommands of a group that start with the"
+        },
+        {
+          "line": 67,
+          "text": "    incomplete value and aren't hidden."
+        },
+        {
+          "line": 68,
+          "text": ""
+        },
+        {
+          "line": 69,
+          "text": "    :param ctx: Invocation context for the group."
+        },
+        {
+          "line": 70,
+          "text": "    :param incomplete: Value being completed. May be empty."
+        },
+        {
+          "line": 71,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 72,
+          "text": "    multi = t.cast(Group, ctx.command)"
+        },
+        {
+          "line": 73,
+          "text": ""
+        },
+        {
+          "line": 74,
+          "text": "    for name in multi.list_commands(ctx):"
+        },
+        {
+          "line": 75,
+          "text": "        if name.startswith(incomplete):"
+        },
+        {
+          "line": 76,
+          "text": "            command = multi.get_command(ctx, name)"
+        },
+        {
+          "line": 77,
+          "text": ""
+        },
+        {
+          "line": 78,
+          "text": "            if command is not None and not command.hidden:"
+        },
+        {
+          "line": 79,
+          "text": "                yield name, command"
+        },
+        {
+          "line": 80,
+          "text": ""
+        },
+        {
+          "line": 81,
+          "text": ""
+        },
+        {
+          "line": 82,
+          "text": "def _check_nested_chain("
+        },
+        {
+          "line": 83,
+          "text": "    base_command: Group, cmd_name: str, cmd: Command, register: bool = False"
+        },
+        {
+          "line": 84,
+          "text": ") -> None:"
+        },
+        {
+          "line": 85,
+          "text": "    if not base_command.chain or not isinstance(cmd, Group):"
+        },
+        {
+          "line": 86,
+          "text": "        return"
+        },
+        {
+          "line": 87,
+          "text": ""
+        },
+        {
+          "line": 88,
+          "text": "    if register:"
+        },
+        {
+          "line": 89,
+          "text": "        message = ("
+        },
+        {
+          "line": 90,
+          "text": "            f\"It is not possible to add the group {cmd_name!r} to another\""
+        },
+        {
+          "line": 91,
+          "text": "            f\" group {base_command.name!r} that is in chain mode.\""
+        },
+        {
+          "line": 92,
+          "text": "        )"
+        },
+        {
+          "line": 93,
+          "text": "    else:"
+        },
+        {
+          "line": 94,
+          "text": "        message = ("
+        },
+        {
+          "line": 95,
+          "text": "            f\"Found the group {cmd_name!r} as subcommand to another group \""
+        },
+        {
+          "line": 96,
+          "text": "            f\" {base_command.name!r} that is in chain mode. This is not supported.\""
+        },
+        {
+          "line": 97,
+          "text": "        )"
+        },
+        {
+          "line": 98,
+          "text": ""
+        },
+        {
+          "line": 99,
+          "text": "    raise RuntimeError(message)"
+        },
+        {
+          "line": 100,
+          "text": ""
+        },
+        {
+          "line": 101,
+          "text": ""
+        },
+        {
+          "line": 102,
+          "text": "def _format_deprecated_label(deprecated: bool | str) -> str:"
+        },
+        {
+          "line": 103,
+          "text": "    \"\"\"Return the parenthesized deprecation label shown in help text.\"\"\""
+        },
+        {
+          "line": 104,
+          "text": "    label = _(\"deprecated\").upper()"
+        },
+        {
+          "line": 105,
+          "text": "    if isinstance(deprecated, str):"
+        },
+        {
+          "line": 106,
+          "text": "        return f\"({label}: {deprecated})\""
+        },
+        {
+          "line": 107,
+          "text": "    return f\"({label})\""
+        },
+        {
+          "line": 108,
+          "text": ""
+        }
+      ],
+      "content": "import typing as t\nfrom abc import ABC\nfrom abc import abstractmethod\nfrom collections import abc\nfrom collections import Counter\nfrom contextlib import AbstractContextManager\nfrom contextlib import contextmanager\nfrom contextlib import ExitStack\nfrom functools import update_wrapper\nfrom gettext import gettext as _\nfrom gettext import ngettext\nfrom itertools import repeat\nfrom types import TracebackType\n\nfrom . import types\nfrom ._utils import FLAG_NEEDS_VALUE\nfrom ._utils import UNSET\nfrom .exceptions import Abort\nfrom .exceptions import BadParameter\nfrom .exceptions import ClickException\nfrom .exceptions import Exit\nfrom .exceptions import MissingParameter\nfrom .exceptions import NoArgsIsHelpError\nfrom .exceptions import NoSuchCommand\nfrom .exceptions import UsageError\nfrom .formatting import HelpFormatter\nfrom .formatting import join_options\nfrom .globals import pop_context\nfrom .globals import push_context\nfrom .parser import _OptionParser\nfrom .parser import _split_opt\nfrom .termui import confirm\nfrom .termui import prompt\nfrom .termui import style\nfrom .utils import _detect_program_name\nfrom .utils import _expand_args\nfrom .utils import _make_default_short_help\nfrom .utils import _PacifyFlushWrapper\nfrom .utils import echo\nfrom .utils import make_str\n\nif t.TYPE_CHECKING:\n    from typing_extensions import Self\n\n    from .shell_completion import CompletionItem\n\nF = t.TypeVar(\"F\", bound=\"t.Callable[..., t.Any]\")\nV = t.TypeVar(\"V\")\n\n# Reserved storage name of the automatic help option. No user parameter is\n# expected to claim it.\n_HELP_OPTION_STORAGE_NAME = \"_click_default_help\"\n\n\ndef _complete_visible_commands(\n    ctx: Context, incomplete: str\n) -> cabc.Iterator[tuple[str, Command]]:\n    \"\"\"List all the subcommands of a group that start with the\n    incomplete value and aren't hidden.\n\n    :param ctx: Invocation context for the group.\n    :param incomplete: Value being completed. May be empty.\n    \"\"\"\n    multi = t.cast(Group, ctx.command)\n\n    for name in multi.list_commands(ctx):\n        if name.startswith(incomplete):\n            command = multi.get_command(ctx, name)\n\n            if command is not None and not command.hidden:\n                yield name, command\n\n\ndef _check_nested_chain(\n    base_command: Group, cmd_name: str, cmd: Command, register: bool = False\n) -> None:\n    if not base_command.chain or not isinstance(cmd, Group):\n        return\n\n    if register:\n        message = (\n            f\"It is not possible to add the group {cmd_name!r} to another\"\n            f\" group {base_command.name!r} that is in chain mode.\"\n        )\n    else:\n        message = (\n            f\"Found the group {cmd_name!r} as subcommand to another group \"\n            f\" {base_command.name!r} that is in chain mode. This is not supported.\"\n        )\n\n    raise RuntimeError(message)\n\n\ndef _format_deprecated_label(deprecated: bool | str) -> str:\n    \"\"\"Return the parenthesized deprecation label shown in help text.\"\"\"\n    label = _(\"deprecated\").upper()\n    if isinstance(deprecated, str):\n        return f\"({label}: {deprecated})\"\n    return f\"({label})\"\n",
+      "sha256": "4c65a613c1c407dce907a4e123b12cec5fe0f62088a8b9f86fabd4b60c4b6d78"
+    }
+  },
+  {
+    "tool": "search_code",
+    "query": "ClickException",
+    "result": {
+      "query": "ClickException",
+      "matches": [
+        {
+          "path": "CHANGES.md",
+          "line": 1099,
+          "snippet": "- Fix `ClickException` output going to stdout instead of stderr."
+        },
+        {
+          "path": "docs/api.md",
+          "line": 271,
+          "snippet": ".. autoexception:: ClickException"
+        },
+        {
+          "path": "docs/exceptions.md",
+          "line": 21,
+          "snippet": "there it handles all subclasses of {exc}`ClickException` as well as the"
+        },
+        {
+          "path": "docs/exceptions.md",
+          "line": 29,
+          "snippet": "2. If a {exc}`ClickException` is raised, invoke the"
+        },
+        {
+          "path": "docs/exceptions.md",
+          "line": 30,
+          "snippet": "   {meth}`ClickException.show` method on it to display it and then exit"
+        },
+        {
+          "path": "docs/exceptions.md",
+          "line": 31,
+          "snippet": "   the program with {attr}`ClickException.exit_code`."
+        },
+        {
+          "path": "docs/exceptions.md",
+          "line": 66,
+          "snippet": "Click has two exception bases: {exc}`ClickException` which is raised for"
+        },
+        {
+          "path": "docs/exceptions.md",
+          "line": 70,
+          "snippet": "A {exc}`ClickException` has a {meth}`ClickException.show` method which"
+        },
+        {
+          "path": "src/click/__init__.py",
+          "line": 34,
+          "snippet": "from .exceptions import ClickException as ClickException"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 29,
+          "snippet": "from .exceptions import ClickException"
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 735,
+          "snippet": "                raise ClickException("
+        },
+        {
+          "path": "src/click/_termui_impl.py",
+          "line": 739,
+          "snippet": "            raise ClickException("
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 28,
+          "snippet": "from .exceptions import ClickException"
+        },
+        {
+          "path": "src/click/core.py",
+          "line": 1566,
+          "snippet": "            except ClickException as e:"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "line": 35,
+          "snippet": "class ClickException(Exception):"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "line": 68,
+          "snippet": "class UsageError(ClickException):"
+        },
+        {
+          "path": "src/click/exceptions.py",
+          "line": 342,
+          "snippet": "class FileError(ClickException):"
+        },
+        {
+          "path": "tests/test_termui.py",
+          "line": 610,
+          "snippet": "        with pytest.raises(click.ClickException, match=\"Editing failed\"):"
+        },
+        {
+          "path": "tests/test_termui.py",
+          "line": 616,
+          "snippet": "        with pytest.raises(click.ClickException, match=\"not found\"):"
+        },
+        {
+          "path": "tests/test_testing.py",
+          "line": 11,
+          "snippet": "from click.exceptions import ClickException"
+        },
+        {
+          "path": "tests/test_testing.py",
+          "line": 230,
+          "snippet": "    class CLIError(ClickException):"
+        }
+      ],
+      "truncated": false
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/_termui_impl.py",
+      "start_line": 8,
+      "end_line": 107,
+      "lines": [
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "import collections.abc as cabc"
+        },
+        {
+          "line": 10,
+          "text": "import contextlib"
+        },
+        {
+          "line": 11,
+          "text": "import math"
+        },
+        {
+          "line": 12,
+          "text": "import os"
+        },
+        {
+          "line": 13,
+          "text": "import shlex"
+        },
+        {
+          "line": 14,
+          "text": "import sys"
+        },
+        {
+          "line": 15,
+          "text": "import time"
+        },
+        {
+          "line": 16,
+          "text": "import typing as t"
+        },
+        {
+          "line": 17,
+          "text": "from gettext import gettext as _"
+        },
+        {
+          "line": 18,
+          "text": "from io import StringIO"
+        },
+        {
+          "line": 19,
+          "text": "from pathlib import Path"
+        },
+        {
+          "line": 20,
+          "text": "from types import TracebackType"
+        },
+        {
+          "line": 21,
+          "text": ""
+        },
+        {
+          "line": 22,
+          "text": "from ._compat import _default_text_stdout"
+        },
+        {
+          "line": 23,
+          "text": "from ._compat import CYGWIN"
+        },
+        {
+          "line": 24,
+          "text": "from ._compat import get_best_encoding"
+        },
+        {
+          "line": 25,
+          "text": "from ._compat import isatty"
+        },
+        {
+          "line": 26,
+          "text": "from ._compat import strip_ansi"
+        },
+        {
+          "line": 27,
+          "text": "from ._compat import term_len"
+        },
+        {
+          "line": 28,
+          "text": "from ._compat import WIN"
+        },
+        {
+          "line": 29,
+          "text": "from .exceptions import ClickException"
+        },
+        {
+          "line": 30,
+          "text": "from .utils import echo"
+        },
+        {
+          "line": 31,
+          "text": ""
+        },
+        {
+          "line": 32,
+          "text": "V = t.TypeVar(\"V\")"
+        },
+        {
+          "line": 33,
+          "text": ""
+        },
+        {
+          "line": 34,
+          "text": ""
+        },
+        {
+          "line": 35,
+          "text": "if os.name == \"nt\":"
+        },
+        {
+          "line": 36,
+          "text": "    BEFORE_BAR = \"\\r\""
+        },
+        {
+          "line": 37,
+          "text": "    AFTER_BAR = \"\\n\""
+        },
+        {
+          "line": 38,
+          "text": "else:"
+        },
+        {
+          "line": 39,
+          "text": "    BEFORE_BAR = \"\\r\\033[?25l\""
+        },
+        {
+          "line": 40,
+          "text": "    AFTER_BAR = \"\\033[?25h\\n\""
+        },
+        {
+          "line": 41,
+          "text": ""
+        },
+        {
+          "line": 42,
+          "text": ""
+        },
+        {
+          "line": 43,
+          "text": "class ProgressBar(t.Generic[V]):"
+        },
+        {
+          "line": 44,
+          "text": "    def __init__("
+        },
+        {
+          "line": 45,
+          "text": "        self,"
+        },
+        {
+          "line": 46,
+          "text": "        iterable: cabc.Iterable[V] | None,"
+        },
+        {
+          "line": 47,
+          "text": "        length: int | None = None,"
+        },
+        {
+          "line": 48,
+          "text": "        fill_char: str = \"#\","
+        },
+        {
+          "line": 49,
+          "text": "        empty_char: str = \" \","
+        },
+        {
+          "line": 50,
+          "text": "        bar_template: str = \"%(bar)s\","
+        },
+        {
+          "line": 51,
+          "text": "        info_sep: str = \"  \","
+        },
+        {
+          "line": 52,
+          "text": "        hidden: bool = False,"
+        },
+        {
+          "line": 53,
+          "text": "        show_eta: bool = True,"
+        },
+        {
+          "line": 54,
+          "text": "        show_percent: bool | None = None,"
+        },
+        {
+          "line": 55,
+          "text": "        show_pos: bool = False,"
+        },
+        {
+          "line": 56,
+          "text": "        item_show_func: t.Callable[[V | None], str | None] | None = None,"
+        },
+        {
+          "line": 57,
+          "text": "        label: str | None = None,"
+        },
+        {
+          "line": 58,
+          "text": "        file: t.TextIO | None = None,"
+        },
+        {
+          "line": 59,
+          "text": "        color: bool | None = None,"
+        },
+        {
+          "line": 60,
+          "text": "        update_min_steps: int = 1,"
+        },
+        {
+          "line": 61,
+          "text": "        width: int = 30,"
+        },
+        {
+          "line": 62,
+          "text": "    ) -> None:"
+        },
+        {
+          "line": 63,
+          "text": "        self.fill_char = fill_char"
+        },
+        {
+          "line": 64,
+          "text": "        self.empty_char = empty_char"
+        },
+        {
+          "line": 65,
+          "text": "        self.bar_template = bar_template"
+        },
+        {
+          "line": 66,
+          "text": "        self.info_sep = info_sep"
+        },
+        {
+          "line": 67,
+          "text": "        self.hidden = hidden"
+        },
+        {
+          "line": 68,
+          "text": "        self.show_eta = show_eta"
+        },
+        {
+          "line": 69,
+          "text": "        self.show_percent = show_percent"
+        },
+        {
+          "line": 70,
+          "text": "        self.show_pos = show_pos"
+        },
+        {
+          "line": 71,
+          "text": "        self.item_show_func = item_show_func"
+        },
+        {
+          "line": 72,
+          "text": "        self.label: str = label or \"\""
+        },
+        {
+          "line": 73,
+          "text": ""
+        },
+        {
+          "line": 74,
+          "text": "        if file is None:"
+        },
+        {
+          "line": 75,
+          "text": "            file = _default_text_stdout()"
+        },
+        {
+          "line": 76,
+          "text": ""
+        },
+        {
+          "line": 77,
+          "text": "            # There are no standard streams attached to write to. For example,"
+        },
+        {
+          "line": 78,
+          "text": "            # pythonw on Windows."
+        },
+        {
+          "line": 79,
+          "text": "            if file is None:"
+        },
+        {
+          "line": 80,
+          "text": "                file = StringIO()"
+        },
+        {
+          "line": 81,
+          "text": ""
+        },
+        {
+          "line": 82,
+          "text": "        self.file = file"
+        },
+        {
+          "line": 83,
+          "text": "        self.color = color"
+        },
+        {
+          "line": 84,
+          "text": "        self.update_min_steps = update_min_steps"
+        },
+        {
+          "line": 85,
+          "text": "        self._completed_intervals = 0"
+        },
+        {
+          "line": 86,
+          "text": "        self.width: int = width"
+        },
+        {
+          "line": 87,
+          "text": "        self.autowidth: bool = width == 0"
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": "        if length is None:"
+        },
+        {
+          "line": 90,
+          "text": "            from operator import length_hint"
+        },
+        {
+          "line": 91,
+          "text": ""
+        },
+        {
+          "line": 92,
+          "text": "            length = length_hint(iterable, -1)"
+        },
+        {
+          "line": 93,
+          "text": ""
+        },
+        {
+          "line": 94,
+          "text": "            if length == -1:"
+        },
+        {
+          "line": 95,
+          "text": "                length = None"
+        },
+        {
+          "line": 96,
+          "text": "        if iterable is None:"
+        },
+        {
+          "line": 97,
+          "text": "            if length is None:"
+        },
+        {
+          "line": 98,
+          "text": "                raise TypeError(\"iterable or length is required\")"
+        },
+        {
+          "line": 99,
+          "text": "            iterable = t.cast(\"cabc.Iterable[V]\", range(length))"
+        },
+        {
+          "line": 100,
+          "text": "        self.iter: cabc.Iterable[V] = iter(iterable)"
+        },
+        {
+          "line": 101,
+          "text": "        self.length = length"
+        },
+        {
+          "line": 102,
+          "text": "        self.pos: int = 0"
+        },
+        {
+          "line": 103,
+          "text": "        self.avg: list[float] = []"
+        },
+        {
+          "line": 104,
+          "text": "        self.last_eta: float"
+        },
+        {
+          "line": 105,
+          "text": "        self.start: float"
+        },
+        {
+          "line": 106,
+          "text": "        self.start = self.last_eta = time.time()"
+        },
+        {
+          "line": 107,
+          "text": "        self.eta_known: bool = False"
+        }
+      ],
+      "content": "\nimport collections.abc as cabc\nimport contextlib\nimport math\nimport os\nimport shlex\nimport sys\nimport time\nimport typing as t\nfrom gettext import gettext as _\nfrom io import StringIO\nfrom pathlib import Path\nfrom types import TracebackType\n\nfrom ._compat import _default_text_stdout\nfrom ._compat import CYGWIN\nfrom ._compat import get_best_encoding\nfrom ._compat import isatty\nfrom ._compat import strip_ansi\nfrom ._compat import term_len\nfrom ._compat import WIN\nfrom .exceptions import ClickException\nfrom .utils import echo\n\nV = t.TypeVar(\"V\")\n\n\nif os.name == \"nt\":\n    BEFORE_BAR = \"\\r\"\n    AFTER_BAR = \"\\n\"\nelse:\n    BEFORE_BAR = \"\\r\\033[?25l\"\n    AFTER_BAR = \"\\033[?25h\\n\"\n\n\nclass ProgressBar(t.Generic[V]):\n    def __init__(\n        self,\n        iterable: cabc.Iterable[V] | None,\n        length: int | None = None,\n        fill_char: str = \"#\",\n        empty_char: str = \" \",\n        bar_template: str = \"%(bar)s\",\n        info_sep: str = \"  \",\n        hidden: bool = False,\n        show_eta: bool = True,\n        show_percent: bool | None = None,\n        show_pos: bool = False,\n        item_show_func: t.Callable[[V | None], str | None] | None = None,\n        label: str | None = None,\n        file: t.TextIO | None = None,\n        color: bool | None = None,\n        update_min_steps: int = 1,\n        width: int = 30,\n    ) -> None:\n        self.fill_char = fill_char\n        self.empty_char = empty_char\n        self.bar_template = bar_template\n        self.info_sep = info_sep\n        self.hidden = hidden\n        self.show_eta = show_eta\n        self.show_percent = show_percent\n        self.show_pos = show_pos\n        self.item_show_func = item_show_func\n        self.label: str = label or \"\"\n\n        if file is None:\n            file = _default_text_stdout()\n\n            # There are no standard streams attached to write to. For example,\n            # pythonw on Windows.\n            if file is None:\n                file = StringIO()\n\n        self.file = file\n        self.color = color\n        self.update_min_steps = update_min_steps\n        self._completed_intervals = 0\n        self.width: int = width\n        self.autowidth: bool = width == 0\n\n        if length is None:\n            from operator import length_hint\n\n            length = length_hint(iterable, -1)\n\n            if length == -1:\n                length = None\n        if iterable is None:\n            if length is None:\n                raise TypeError(\"iterable or length is required\")\n            iterable = t.cast(\"cabc.Iterable[V]\", range(length))\n        self.iter: cabc.Iterable[V] = iter(iterable)\n        self.length = length\n        self.pos: int = 0\n        self.avg: list[float] = []\n        self.last_eta: float\n        self.start: float\n        self.start = self.last_eta = time.time()\n        self.eta_known: bool = False",
+      "sha256": "88b97d9b7a5b947b10a16d8ab269837bc84c7e55c28ba72ea5f2fb339112336a"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/utils.py",
+      "start_line": 1,
+      "end_line": 100,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "import collections.abc as cabc"
+        },
+        {
+          "line": 4,
+          "text": "import os"
+        },
+        {
+          "line": 5,
+          "text": "import re"
+        },
+        {
+          "line": 6,
+          "text": "import sys"
+        },
+        {
+          "line": 7,
+          "text": "import typing as t"
+        },
+        {
+          "line": 8,
+          "text": "from functools import update_wrapper"
+        },
+        {
+          "line": 9,
+          "text": "from gettext import gettext as _"
+        },
+        {
+          "line": 10,
+          "text": "from types import ModuleType"
+        },
+        {
+          "line": 11,
+          "text": "from types import TracebackType"
+        },
+        {
+          "line": 12,
+          "text": ""
+        },
+        {
+          "line": 13,
+          "text": "from ._compat import _default_text_stderr"
+        },
+        {
+          "line": 14,
+          "text": "from ._compat import _default_text_stdout"
+        },
+        {
+          "line": 15,
+          "text": "from ._compat import _find_binary_writer"
+        },
+        {
+          "line": 16,
+          "text": "from ._compat import binary_streams"
+        },
+        {
+          "line": 17,
+          "text": "from ._compat import open_stream"
+        },
+        {
+          "line": 18,
+          "text": "from ._compat import should_strip_ansi"
+        },
+        {
+          "line": 19,
+          "text": "from ._compat import strip_ansi"
+        },
+        {
+          "line": 20,
+          "text": "from ._compat import text_streams"
+        },
+        {
+          "line": 21,
+          "text": "from ._compat import WIN"
+        },
+        {
+          "line": 22,
+          "text": "from .globals import resolve_color_default"
+        },
+        {
+          "line": 23,
+          "text": ""
+        },
+        {
+          "line": 24,
+          "text": "if t.TYPE_CHECKING:"
+        },
+        {
+          "line": 25,
+          "text": "    import typing_extensions as te"
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "    P = te.ParamSpec(\"P\")"
+        },
+        {
+          "line": 28,
+          "text": ""
+        },
+        {
+          "line": 29,
+          "text": "R = t.TypeVar(\"R\")"
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": ""
+        },
+        {
+          "line": 32,
+          "text": "def _posixify(name: str) -> str:"
+        },
+        {
+          "line": 33,
+          "text": "    return \"-\".join(name.split()).lower()"
+        },
+        {
+          "line": 34,
+          "text": ""
+        },
+        {
+          "line": 35,
+          "text": ""
+        },
+        {
+          "line": 36,
+          "text": "def _safecall(func: t.Callable[P, R]) -> t.Callable[P, R | None]:"
+        },
+        {
+          "line": 37,
+          "text": "    \"\"\"Wraps a function so that it swallows exceptions."
+        },
+        {
+          "line": 38,
+          "text": ""
+        },
+        {
+          "line": 39,
+          "text": "    :meta private:"
+        },
+        {
+          "line": 40,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 41,
+          "text": ""
+        },
+        {
+          "line": 42,
+          "text": "    def wrapper(*args: P.args, **kwargs: P.kwargs) -> R | None:"
+        },
+        {
+          "line": 43,
+          "text": "        try:"
+        },
+        {
+          "line": 44,
+          "text": "            return func(*args, **kwargs)"
+        },
+        {
+          "line": 45,
+          "text": "        except Exception:"
+        },
+        {
+          "line": 46,
+          "text": "            pass"
+        },
+        {
+          "line": 47,
+          "text": "        return None"
+        },
+        {
+          "line": 48,
+          "text": ""
+        },
+        {
+          "line": 49,
+          "text": "    return update_wrapper(wrapper, func)"
+        },
+        {
+          "line": 50,
+          "text": ""
+        },
+        {
+          "line": 51,
+          "text": ""
+        },
+        {
+          "line": 52,
+          "text": "def make_str(value: t.Any) -> str:"
+        },
+        {
+          "line": 53,
+          "text": "    \"\"\"Converts a value into a valid string.\"\"\""
+        },
+        {
+          "line": 54,
+          "text": "    if isinstance(value, bytes):"
+        },
+        {
+          "line": 55,
+          "text": "        try:"
+        },
+        {
+          "line": 56,
+          "text": "            return value.decode(sys.getfilesystemencoding())"
+        },
+        {
+          "line": 57,
+          "text": "        except UnicodeError:"
+        },
+        {
+          "line": 58,
+          "text": "            return value.decode(\"utf-8\", \"replace\")"
+        },
+        {
+          "line": 59,
+          "text": "    return str(value)"
+        },
+        {
+          "line": 60,
+          "text": ""
+        },
+        {
+          "line": 61,
+          "text": ""
+        },
+        {
+          "line": 62,
+          "text": "def _make_default_short_help(help: str, max_length: int = 45) -> str:"
+        },
+        {
+          "line": 63,
+          "text": "    \"\"\"Returns a condensed version of help string."
+        },
+        {
+          "line": 64,
+          "text": ""
+        },
+        {
+          "line": 65,
+          "text": "    :meta private:"
+        },
+        {
+          "line": 66,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 67,
+          "text": "    # Consider only the first paragraph."
+        },
+        {
+          "line": 68,
+          "text": "    paragraph_end = help.find(\"\\n\\n\")"
+        },
+        {
+          "line": 69,
+          "text": ""
+        },
+        {
+          "line": 70,
+          "text": "    if paragraph_end != -1:"
+        },
+        {
+          "line": 71,
+          "text": "        help = help[:paragraph_end]"
+        },
+        {
+          "line": 72,
+          "text": ""
+        },
+        {
+          "line": 73,
+          "text": "    # Collapse newlines, tabs, and spaces."
+        },
+        {
+          "line": 74,
+          "text": "    words = help.split()"
+        },
+        {
+          "line": 75,
+          "text": ""
+        },
+        {
+          "line": 76,
+          "text": "    if not words:"
+        },
+        {
+          "line": 77,
+          "text": "        return \"\""
+        },
+        {
+          "line": 78,
+          "text": ""
+        },
+        {
+          "line": 79,
+          "text": "    # The first paragraph started with a \"no rewrap\" marker, ignore it."
+        },
+        {
+          "line": 80,
+          "text": "    if words[0] == \"\\b\":"
+        },
+        {
+          "line": 81,
+          "text": "        words = words[1:]"
+        },
+        {
+          "line": 82,
+          "text": ""
+        },
+        {
+          "line": 83,
+          "text": "    total_length = 0"
+        },
+        {
+          "line": 84,
+          "text": "    last_index = len(words) - 1"
+        },
+        {
+          "line": 85,
+          "text": ""
+        },
+        {
+          "line": 86,
+          "text": "    for i, word in enumerate(words):"
+        },
+        {
+          "line": 87,
+          "text": "        total_length += len(word) + (i > 0)"
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": "        if total_length > max_length:  # too long, truncate"
+        },
+        {
+          "line": 90,
+          "text": "            break"
+        },
+        {
+          "line": 91,
+          "text": ""
+        },
+        {
+          "line": 92,
+          "text": "        if word[-1] == \".\":  # sentence end, truncate without \"...\""
+        },
+        {
+          "line": 93,
+          "text": "            return \" \".join(words[: i + 1])"
+        },
+        {
+          "line": 94,
+          "text": ""
+        },
+        {
+          "line": 95,
+          "text": "        if total_length == max_length and i != last_index:"
+        },
+        {
+          "line": 96,
+          "text": "            break  # not at sentence end, truncate with \"...\""
+        },
+        {
+          "line": 97,
+          "text": "    else:"
+        },
+        {
+          "line": 98,
+          "text": "        return \" \".join(words)  # no truncation needed"
+        },
+        {
+          "line": 99,
+          "text": ""
+        },
+        {
+          "line": 100,
+          "text": "    # Account for the length of the suffix."
+        }
+      ],
+      "content": "from __future__ import annotations\n\nimport collections.abc as cabc\nimport os\nimport re\nimport sys\nimport typing as t\nfrom functools import update_wrapper\nfrom gettext import gettext as _\nfrom types import ModuleType\nfrom types import TracebackType\n\nfrom ._compat import _default_text_stderr\nfrom ._compat import _default_text_stdout\nfrom ._compat import _find_binary_writer\nfrom ._compat import binary_streams\nfrom ._compat import open_stream\nfrom ._compat import should_strip_ansi\nfrom ._compat import strip_ansi\nfrom ._compat import text_streams\nfrom ._compat import WIN\nfrom .globals import resolve_color_default\n\nif t.TYPE_CHECKING:\n    import typing_extensions as te\n\n    P = te.ParamSpec(\"P\")\n\nR = t.TypeVar(\"R\")\n\n\ndef _posixify(name: str) -> str:\n    return \"-\".join(name.split()).lower()\n\n\ndef _safecall(func: t.Callable[P, R]) -> t.Callable[P, R | None]:\n    \"\"\"Wraps a function so that it swallows exceptions.\n\n    :meta private:\n    \"\"\"\n\n    def wrapper(*args: P.args, **kwargs: P.kwargs) -> R | None:\n        try:\n            return func(*args, **kwargs)\n        except Exception:\n            pass\n        return None\n\n    return update_wrapper(wrapper, func)\n\n\ndef make_str(value: t.Any) -> str:\n    \"\"\"Converts a value into a valid string.\"\"\"\n    if isinstance(value, bytes):\n        try:\n            return value.decode(sys.getfilesystemencoding())\n        except UnicodeError:\n            return value.decode(\"utf-8\", \"replace\")\n    return str(value)\n\n\ndef _make_default_short_help(help: str, max_length: int = 45) -> str:\n    \"\"\"Returns a condensed version of help string.\n\n    :meta private:\n    \"\"\"\n    # Consider only the first paragraph.\n    paragraph_end = help.find(\"\\n\\n\")\n\n    if paragraph_end != -1:\n        help = help[:paragraph_end]\n\n    # Collapse newlines, tabs, and spaces.\n    words = help.split()\n\n    if not words:\n        return \"\"\n\n    # The first paragraph started with a \"no rewrap\" marker, ignore it.\n    if words[0] == \"\\b\":\n        words = words[1:]\n\n    total_length = 0\n    last_index = len(words) - 1\n\n    for i, word in enumerate(words):\n        total_length += len(word) + (i > 0)\n\n        if total_length > max_length:  # too long, truncate\n            break\n\n        if word[-1] == \".\":  # sentence end, truncate without \"...\"\n            return \" \".join(words[: i + 1])\n\n        if total_length == max_length and i != last_index:\n            break  # not at sentence end, truncate with \"...\"\n    else:\n        return \" \".join(words)  # no truncation needed\n\n    # Account for the length of the suffix.",
+      "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/termui.py",
+      "start_line": 86,
+      "end_line": 185,
+      "lines": [
+        {
+          "line": 86,
+          "text": "    \"\"\"Call a prompt function, passing the full prompt so readline can"
+        },
+        {
+          "line": 87,
+          "text": "    handle line editing and cursor positioning correctly."
+        },
+        {
+          "line": 88,
+          "text": ""
+        },
+        {
+          "line": 89,
+          "text": "    The prompt is handed to *func* (such as :func:`input`) rather than"
+        },
+        {
+          "line": 90,
+          "text": "    written through :func:`echo`, so it has to strip ANSI color and style"
+        },
+        {
+          "line": 91,
+          "text": "    codes itself when the destination stream does not support them. Without"
+        },
+        {
+          "line": 92,
+          "text": "    this the prompt would keep codes that :func:`echo` removes from the"
+        },
+        {
+          "line": 93,
+          "text": "    rest of the output."
+        },
+        {
+          "line": 94,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 95,
+          "text": "    stream = sys.stderr if err else sys.stdout"
+        },
+        {
+          "line": 96,
+          "text": ""
+        },
+        {
+          "line": 97,
+          "text": "    # Look up ``should_strip_ansi`` on the module so that ``CliRunner``,"
+        },
+        {
+          "line": 98,
+          "text": "    # which patches it there during test isolation, is honored."
+        },
+        {
+          "line": 99,
+          "text": "    if _compat.should_strip_ansi(stream, resolve_color_default()):"
+        },
+        {
+          "line": 100,
+          "text": "        text = strip_ansi(text)"
+        },
+        {
+          "line": 101,
+          "text": ""
+        },
+        {
+          "line": 102,
+          "text": "    if err:"
+        },
+        {
+          "line": 103,
+          "text": "        with redirect_stdout(sys.stderr):"
+        },
+        {
+          "line": 104,
+          "text": "            return func(text)"
+        },
+        {
+          "line": 105,
+          "text": "    return func(text)"
+        },
+        {
+          "line": 106,
+          "text": ""
+        },
+        {
+          "line": 107,
+          "text": ""
+        },
+        {
+          "line": 108,
+          "text": "def _build_prompt("
+        },
+        {
+          "line": 109,
+          "text": "    text: str,"
+        },
+        {
+          "line": 110,
+          "text": "    suffix: str,"
+        },
+        {
+          "line": 111,
+          "text": "    show_default: bool | str = False,"
+        },
+        {
+          "line": 112,
+          "text": "    default: object | None = None,"
+        },
+        {
+          "line": 113,
+          "text": "    show_choices: bool = True,"
+        },
+        {
+          "line": 114,
+          "text": "    type: object | None = None,"
+        },
+        {
+          "line": 115,
+          "text": ") -> str:"
+        },
+        {
+          "line": 116,
+          "text": "    prompt = text"
+        },
+        {
+          "line": 117,
+          "text": "    if type is not None and show_choices and isinstance(type, Choice):"
+        },
+        {
+          "line": 118,
+          "text": "        prompt += f\" ({', '.join(map(str, type.choices))})\""
+        },
+        {
+          "line": 119,
+          "text": "    default_preview = \"\""
+        },
+        {
+          "line": 120,
+          "text": "    if show_default:"
+        },
+        {
+          "line": 121,
+          "text": "        if isinstance(show_default, str):"
+        },
+        {
+          "line": 122,
+          "text": "            default_preview = f\" [({show_default})]\""
+        },
+        {
+          "line": 123,
+          "text": "        elif default is not None:"
+        },
+        {
+          "line": 124,
+          "text": "            default_preview = f\" [{_format_default(default)}]\""
+        },
+        {
+          "line": 125,
+          "text": "    return f\"{prompt}{default_preview}{suffix}\""
+        },
+        {
+          "line": 126,
+          "text": ""
+        },
+        {
+          "line": 127,
+          "text": ""
+        },
+        {
+          "line": 128,
+          "text": "def _format_default(default: V) -> V | str:"
+        },
+        {
+          "line": 129,
+          "text": "    if isinstance(default, (io.IOBase, _LazyFile)):"
+        },
+        {
+          "line": 130,
+          "text": "        name = getattr(default, \"name\", None)"
+        },
+        {
+          "line": 131,
+          "text": ""
+        },
+        {
+          "line": 132,
+          "text": "        if name is not None:"
+        },
+        {
+          "line": 133,
+          "text": "            return str(name)"
+        },
+        {
+          "line": 134,
+          "text": ""
+        },
+        {
+          "line": 135,
+          "text": "    return default"
+        },
+        {
+          "line": 136,
+          "text": ""
+        },
+        {
+          "line": 137,
+          "text": ""
+        },
+        {
+          "line": 138,
+          "text": "@t.overload"
+        },
+        {
+          "line": 139,
+          "text": "def prompt("
+        },
+        {
+          "line": 140,
+          "text": "    text: str,"
+        },
+        {
+          "line": 141,
+          "text": "    default: str | None = None,"
+        },
+        {
+          "line": 142,
+          "text": "    hide_input: bool = False,"
+        },
+        {
+          "line": 143,
+          "text": "    confirmation_prompt: bool | str = False,"
+        },
+        {
+          "line": 144,
+          "text": "    type: None = None,"
+        },
+        {
+          "line": 145,
+          "text": "    value_proc: None = None,"
+        },
+        {
+          "line": 146,
+          "text": "    prompt_suffix: str = \": \","
+        },
+        {
+          "line": 147,
+          "text": "    show_default: bool | str = True,"
+        },
+        {
+          "line": 148,
+          "text": "    err: bool = False,"
+        },
+        {
+          "line": 149,
+          "text": "    show_choices: bool = True,"
+        },
+        {
+          "line": 150,
+          "text": ") -> str: ..."
+        },
+        {
+          "line": 151,
+          "text": ""
+        },
+        {
+          "line": 152,
+          "text": ""
+        },
+        {
+          "line": 153,
+          "text": "@t.overload"
+        },
+        {
+          "line": 154,
+          "text": "def prompt("
+        },
+        {
+          "line": 155,
+          "text": "    text: str,"
+        },
+        {
+          "line": 156,
+          "text": "    default: V | str | None = None,"
+        },
+        {
+          "line": 157,
+          "text": "    hide_input: bool = False,"
+        },
+        {
+          "line": 158,
+          "text": "    confirmation_prompt: bool | str = False,"
+        },
+        {
+          "line": 159,
+          "text": "    type: ParamType[V, str] | type[V] | None = None,"
+        },
+        {
+          "line": 160,
+          "text": "    value_proc: t.Callable[[str], V] | None = None,"
+        },
+        {
+          "line": 161,
+          "text": "    prompt_suffix: str = \": \","
+        },
+        {
+          "line": 162,
+          "text": "    show_default: bool | str = True,"
+        },
+        {
+          "line": 163,
+          "text": "    err: bool = False,"
+        },
+        {
+          "line": 164,
+          "text": "    show_choices: bool = True,"
+        },
+        {
+          "line": 165,
+          "text": ") -> V: ..."
+        },
+        {
+          "line": 166,
+          "text": ""
+        },
+        {
+          "line": 167,
+          "text": ""
+        },
+        {
+          "line": 168,
+          "text": "def prompt("
+        },
+        {
+          "line": 169,
+          "text": "    text: str,"
+        },
+        {
+          "line": 170,
+          "text": "    default: V | str | None = None,"
+        },
+        {
+          "line": 171,
+          "text": "    hide_input: bool = False,"
+        },
+        {
+          "line": 172,
+          "text": "    confirmation_prompt: bool | str = False,"
+        },
+        {
+          "line": 173,
+          "text": "    type: ParamType[V, str] | type[V] | None = None,"
+        },
+        {
+          "line": 174,
+          "text": "    value_proc: t.Callable[[str], V] | None = None,"
+        },
+        {
+          "line": 175,
+          "text": "    prompt_suffix: str = \": \","
+        },
+        {
+          "line": 176,
+          "text": "    show_default: bool | str = True,"
+        },
+        {
+          "line": 177,
+          "text": "    err: bool = False,"
+        },
+        {
+          "line": 178,
+          "text": "    show_choices: bool = True,"
+        },
+        {
+          "line": 179,
+          "text": ") -> V:"
+        },
+        {
+          "line": 180,
+          "text": "    \"\"\"Prompts a user for input.  This is a convenience function that can"
+        },
+        {
+          "line": 181,
+          "text": "    be used to prompt a user for input later."
+        },
+        {
+          "line": 182,
+          "text": ""
+        },
+        {
+          "line": 183,
+          "text": "    If the user aborts the input by sending an interrupt signal, this"
+        },
+        {
+          "line": 184,
+          "text": "    function will catch it and raise a :exc:`Abort` exception."
+        },
+        {
+          "line": 185,
+          "text": ""
+        }
+      ],
+      "content": "    \"\"\"Call a prompt function, passing the full prompt so readline can\n    handle line editing and cursor positioning correctly.\n\n    The prompt is handed to *func* (such as :func:`input`) rather than\n    written through :func:`echo`, so it has to strip ANSI color and style\n    codes itself when the destination stream does not support them. Without\n    this the prompt would keep codes that :func:`echo` removes from the\n    rest of the output.\n    \"\"\"\n    stream = sys.stderr if err else sys.stdout\n\n    # Look up ``should_strip_ansi`` on the module so that ``CliRunner``,\n    # which patches it there during test isolation, is honored.\n    if _compat.should_strip_ansi(stream, resolve_color_default()):\n        text = strip_ansi(text)\n\n    if err:\n        with redirect_stdout(sys.stderr):\n            return func(text)\n    return func(text)\n\n\ndef _build_prompt(\n    text: str,\n    suffix: str,\n    show_default: bool | str = False,\n    default: object | None = None,\n    show_choices: bool = True,\n    type: object | None = None,\n) -> str:\n    prompt = text\n    if type is not None and show_choices and isinstance(type, Choice):\n        prompt += f\" ({', '.join(map(str, type.choices))})\"\n    default_preview = \"\"\n    if show_default:\n        if isinstance(show_default, str):\n            default_preview = f\" [({show_default})]\"\n        elif default is not None:\n            default_preview = f\" [{_format_default(default)}]\"\n    return f\"{prompt}{default_preview}{suffix}\"\n\n\ndef _format_default(default: V) -> V | str:\n    if isinstance(default, (io.IOBase, _LazyFile)):\n        name = getattr(default, \"name\", None)\n\n        if name is not None:\n            return str(name)\n\n    return default\n\n\n@t.overload\ndef prompt(\n    text: str,\n    default: str | None = None,\n    hide_input: bool = False,\n    confirmation_prompt: bool | str = False,\n    type: None = None,\n    value_proc: None = None,\n    prompt_suffix: str = \": \",\n    show_default: bool | str = True,\n    err: bool = False,\n    show_choices: bool = True,\n) -> str: ...\n\n\n@t.overload\ndef prompt(\n    text: str,\n    default: V | str | None = None,\n    hide_input: bool = False,\n    confirmation_prompt: bool | str = False,\n    type: ParamType[V, str] | type[V] | None = None,\n    value_proc: t.Callable[[str], V] | None = None,\n    prompt_suffix: str = \": \",\n    show_default: bool | str = True,\n    err: bool = False,\n    show_choices: bool = True,\n) -> V: ...\n\n\ndef prompt(\n    text: str,\n    default: V | str | None = None,\n    hide_input: bool = False,\n    confirmation_prompt: bool | str = False,\n    type: ParamType[V, str] | type[V] | None = None,\n    value_proc: t.Callable[[str], V] | None = None,\n    prompt_suffix: str = \": \",\n    show_default: bool | str = True,\n    err: bool = False,\n    show_choices: bool = True,\n) -> V:\n    \"\"\"Prompts a user for input.  This is a convenience function that can\n    be used to prompt a user for input later.\n\n    If the user aborts the input by sending an interrupt signal, this\n    function will catch it and raise a :exc:`Abort` exception.\n",
+      "sha256": "16f6546b36d647d191788fc912e32d93e8b64289517f004e6d9604f4896ad1ca"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/exceptions.py",
+      "start_line": 23,
+      "end_line": 122,
+      "lines": [
+        {
+          "line": 23,
+          "text": "    return param_hint"
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": ""
+        },
+        {
+          "line": 26,
+          "text": "def _format_possibilities(possibilities: list[str]) -> str:"
+        },
+        {
+          "line": 27,
+          "text": "    possibility_str = \", \".join(repr(p) for p in sorted(possibilities))"
+        },
+        {
+          "line": 28,
+          "text": "    return ngettext("
+        },
+        {
+          "line": 29,
+          "text": "        \"Did you mean {possibility}?\","
+        },
+        {
+          "line": 30,
+          "text": "        \"(Did you mean one of: {possibilities}?)\","
+        },
+        {
+          "line": 31,
+          "text": "        len(possibilities),"
+        },
+        {
+          "line": 32,
+          "text": "    ).format(possibility=possibility_str, possibilities=possibility_str)"
+        },
+        {
+          "line": 33,
+          "text": ""
+        },
+        {
+          "line": 34,
+          "text": ""
+        },
+        {
+          "line": 35,
+          "text": "class ClickException(Exception):"
+        },
+        {
+          "line": 36,
+          "text": "    \"\"\"An exception that Click can handle and show to the user.\"\"\""
+        },
+        {
+          "line": 37,
+          "text": ""
+        },
+        {
+          "line": 38,
+          "text": "    #: The exit code for this exception."
+        },
+        {
+          "line": 39,
+          "text": "    exit_code: t.ClassVar[int] = 1"
+        },
+        {
+          "line": 40,
+          "text": ""
+        },
+        {
+          "line": 41,
+          "text": "    show_color: t.Final[bool | None]"
+        },
+        {
+          "line": 42,
+          "text": "    message: t.Final[str]"
+        },
+        {
+          "line": 43,
+          "text": ""
+        },
+        {
+          "line": 44,
+          "text": "    def __init__(self, message: str) -> None:"
+        },
+        {
+          "line": 45,
+          "text": "        super().__init__(message)"
+        },
+        {
+          "line": 46,
+          "text": "        # The context will be removed by the time we print the message, so cache"
+        },
+        {
+          "line": 47,
+          "text": "        # the color settings here to be used later on (in `show`)"
+        },
+        {
+          "line": 48,
+          "text": "        self.show_color = resolve_color_default()"
+        },
+        {
+          "line": 49,
+          "text": "        self.message = message"
+        },
+        {
+          "line": 50,
+          "text": ""
+        },
+        {
+          "line": 51,
+          "text": "    def format_message(self) -> str:"
+        },
+        {
+          "line": 52,
+          "text": "        return self.message"
+        },
+        {
+          "line": 53,
+          "text": ""
+        },
+        {
+          "line": 54,
+          "text": "    def __str__(self) -> str:"
+        },
+        {
+          "line": 55,
+          "text": "        return self.message"
+        },
+        {
+          "line": 56,
+          "text": ""
+        },
+        {
+          "line": 57,
+          "text": "    def show(self, file: t.IO[t.Any] | None = None) -> None:"
+        },
+        {
+          "line": 58,
+          "text": "        if file is None:"
+        },
+        {
+          "line": 59,
+          "text": "            file = get_text_stderr()"
+        },
+        {
+          "line": 60,
+          "text": ""
+        },
+        {
+          "line": 61,
+          "text": "        echo("
+        },
+        {
+          "line": 62,
+          "text": "            _(\"Error: {message}\").format(message=self.format_message()),"
+        },
+        {
+          "line": 63,
+          "text": "            file=file,"
+        },
+        {
+          "line": 64,
+          "text": "            color=self.show_color,"
+        },
+        {
+          "line": 65,
+          "text": "        )"
+        },
+        {
+          "line": 66,
+          "text": ""
+        },
+        {
+          "line": 67,
+          "text": ""
+        },
+        {
+          "line": 68,
+          "text": "class UsageError(ClickException):"
+        },
+        {
+          "line": 69,
+          "text": "    \"\"\"An internal exception that signals a usage error.  This typically"
+        },
+        {
+          "line": 70,
+          "text": "    aborts any further handling."
+        },
+        {
+          "line": 71,
+          "text": ""
+        },
+        {
+          "line": 72,
+          "text": "    :param message: the error message to display."
+        },
+        {
+          "line": 73,
+          "text": "    :param ctx: optionally the context that caused this error.  Click will"
+        },
+        {
+          "line": 74,
+          "text": "                fill in the context automatically in some situations."
+        },
+        {
+          "line": 75,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 76,
+          "text": ""
+        },
+        {
+          "line": 77,
+          "text": "    exit_code: t.ClassVar[int] = 2"
+        },
+        {
+          "line": 78,
+          "text": ""
+        },
+        {
+          "line": 79,
+          "text": "    ctx: Context | None"
+        },
+        {
+          "line": 80,
+          "text": "    cmd: t.Final[Command | None]"
+        },
+        {
+          "line": 81,
+          "text": ""
+        },
+        {
+          "line": 82,
+          "text": "    def __init__(self, message: str, ctx: Context | None = None) -> None:"
+        },
+        {
+          "line": 83,
+          "text": "        super().__init__(message)"
+        },
+        {
+          "line": 84,
+          "text": "        self.ctx = ctx"
+        },
+        {
+          "line": 85,
+          "text": "        self.cmd = self.ctx.command if self.ctx else None"
+        },
+        {
+          "line": 86,
+          "text": ""
+        },
+        {
+          "line": 87,
+          "text": "    def show(self, file: t.IO[t.Any] | None = None) -> None:"
+        },
+        {
+          "line": 88,
+          "text": "        if file is None:"
+        },
+        {
+          "line": 89,
+          "text": "            file = get_text_stderr()"
+        },
+        {
+          "line": 90,
+          "text": "        color = None"
+        },
+        {
+          "line": 91,
+          "text": "        hint = \"\""
+        },
+        {
+          "line": 92,
+          "text": "        if ("
+        },
+        {
+          "line": 93,
+          "text": "            self.ctx is not None"
+        },
+        {
+          "line": 94,
+          "text": "            and self.ctx.command.get_help_option(self.ctx) is not None"
+        },
+        {
+          "line": 95,
+          "text": "        ):"
+        },
+        {
+          "line": 96,
+          "text": "            help_names = self.ctx.command.get_help_option_names(self.ctx)"
+        },
+        {
+          "line": 97,
+          "text": "            # Pick the longest name (like ``--help`` over ``-h``) for"
+        },
+        {
+          "line": 98,
+          "text": "            # readability in error messages."
+        },
+        {
+          "line": 99,
+          "text": "            hint = _(\"Try '{command} {option}' for help.\").format("
+        },
+        {
+          "line": 100,
+          "text": "                command=self.ctx.command_path,"
+        },
+        {
+          "line": 101,
+          "text": "                option=max(help_names, key=len),"
+        },
+        {
+          "line": 102,
+          "text": "            )"
+        },
+        {
+          "line": 103,
+          "text": "            hint = f\"{hint}\\n\""
+        },
+        {
+          "line": 104,
+          "text": "        if self.ctx is not None:"
+        },
+        {
+          "line": 105,
+          "text": "            color = self.ctx.color"
+        },
+        {
+          "line": 106,
+          "text": "            echo(f\"{self.ctx.get_usage()}\\n{hint}\", file=file, color=color)"
+        },
+        {
+          "line": 107,
+          "text": "        echo("
+        },
+        {
+          "line": 108,
+          "text": "            _(\"Error: {message}\").format(message=self.format_message()),"
+        },
+        {
+          "line": 109,
+          "text": "            file=file,"
+        },
+        {
+          "line": 110,
+          "text": "            color=color,"
+        },
+        {
+          "line": 111,
+          "text": "        )"
+        },
+        {
+          "line": 112,
+          "text": ""
+        },
+        {
+          "line": 113,
+          "text": ""
+        },
+        {
+          "line": 114,
+          "text": "class BadParameter(UsageError):"
+        },
+        {
+          "line": 115,
+          "text": "    \"\"\"An exception that formats out a standardized error message for a"
+        },
+        {
+          "line": 116,
+          "text": "    bad parameter.  This is useful when thrown from a callback or type as"
+        },
+        {
+          "line": 117,
+          "text": "    Click will attach contextual information to it (for instance, which"
+        },
+        {
+          "line": 118,
+          "text": "    parameter it is)."
+        },
+        {
+          "line": 119,
+          "text": ""
+        },
+        {
+          "line": 120,
+          "text": "    .. versionadded:: 2.0"
+        },
+        {
+          "line": 121,
+          "text": ""
+        },
+        {
+          "line": 122,
+          "text": "    :param param: the parameter object that caused this error.  This can"
+        }
+      ],
+      "content": "    return param_hint\n\n\ndef _format_possibilities(possibilities: list[str]) -> str:\n    possibility_str = \", \".join(repr(p) for p in sorted(possibilities))\n    return ngettext(\n        \"Did you mean {possibility}?\",\n        \"(Did you mean one of: {possibilities}?)\",\n        len(possibilities),\n    ).format(possibility=possibility_str, possibilities=possibility_str)\n\n\nclass ClickException(Exception):\n    \"\"\"An exception that Click can handle and show to the user.\"\"\"\n\n    #: The exit code for this exception.\n    exit_code: t.ClassVar[int] = 1\n\n    show_color: t.Final[bool | None]\n    message: t.Final[str]\n\n    def __init__(self, message: str) -> None:\n        super().__init__(message)\n        # The context will be removed by the time we print the message, so cache\n        # the color settings here to be used later on (in `show`)\n        self.show_color = resolve_color_default()\n        self.message = message\n\n    def format_message(self) -> str:\n        return self.message\n\n    def __str__(self) -> str:\n        return self.message\n\n    def show(self, file: t.IO[t.Any] | None = None) -> None:\n        if file is None:\n            file = get_text_stderr()\n\n        echo(\n            _(\"Error: {message}\").format(message=self.format_message()),\n            file=file,\n            color=self.show_color,\n        )\n\n\nclass UsageError(ClickException):\n    \"\"\"An internal exception that signals a usage error.  This typically\n    aborts any further handling.\n\n    :param message: the error message to display.\n    :param ctx: optionally the context that caused this error.  Click will\n                fill in the context automatically in some situations.\n    \"\"\"\n\n    exit_code: t.ClassVar[int] = 2\n\n    ctx: Context | None\n    cmd: t.Final[Command | None]\n\n    def __init__(self, message: str, ctx: Context | None = None) -> None:\n        super().__init__(message)\n        self.ctx = ctx\n        self.cmd = self.ctx.command if self.ctx else None\n\n    def show(self, file: t.IO[t.Any] | None = None) -> None:\n        if file is None:\n            file = get_text_stderr()\n        color = None\n        hint = \"\"\n        if (\n            self.ctx is not None\n            and self.ctx.command.get_help_option(self.ctx) is not None\n        ):\n            help_names = self.ctx.command.get_help_option_names(self.ctx)\n            # Pick the longest name (like ``--help`` over ``-h``) for\n            # readability in error messages.\n            hint = _(\"Try '{command} {option}' for help.\").format(\n                command=self.ctx.command_path,\n                option=max(help_names, key=len),\n            )\n            hint = f\"{hint}\\n\"\n        if self.ctx is not None:\n            color = self.ctx.color\n            echo(f\"{self.ctx.get_usage()}\\n{hint}\", file=file, color=color)\n        echo(\n            _(\"Error: {message}\").format(message=self.format_message()),\n            file=file,\n            color=color,\n        )\n\n\nclass BadParameter(UsageError):\n    \"\"\"An exception that formats out a standardized error message for a\n    bad parameter.  This is useful when thrown from a callback or type as\n    Click will attach contextual information to it (for instance, which\n    parameter it is).\n\n    .. versionadded:: 2.0\n\n    :param param: the parameter object that caused this error.  This can",
+      "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/_compat.py",
+      "start_line": 1,
+      "end_line": 100,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "import codecs"
+        },
+        {
+          "line": 4,
+          "text": "import collections.abc as cabc"
+        },
+        {
+          "line": 5,
+          "text": "import io"
+        },
+        {
+          "line": 6,
+          "text": "import os"
+        },
+        {
+          "line": 7,
+          "text": "import re"
+        },
+        {
+          "line": 8,
+          "text": "import sys"
+        },
+        {
+          "line": 9,
+          "text": "import typing as t"
+        },
+        {
+          "line": 10,
+          "text": "from types import TracebackType"
+        },
+        {
+          "line": 11,
+          "text": "from weakref import WeakKeyDictionary"
+        },
+        {
+          "line": 12,
+          "text": ""
+        },
+        {
+          "line": 13,
+          "text": "CYGWIN = sys.platform.startswith(\"cygwin\")"
+        },
+        {
+          "line": 14,
+          "text": "WIN = sys.platform.startswith(\"win\")"
+        },
+        {
+          "line": 15,
+          "text": "# One CSI escape sequence per the ECMA-48 grammar: parameter bytes (0x30-0x3F),"
+        },
+        {
+          "line": 16,
+          "text": "# intermediate bytes (0x20-0x2F), then a final byte (0x40-0x7E). Broader than the"
+        },
+        {
+          "line": 17,
+          "text": "# SGR codes Click emits, so foreign sequences (colon-delimited true-color, mouse"
+        },
+        {
+          "line": 18,
+          "text": "# reporting) are stripped too."
+        },
+        {
+          "line": 19,
+          "text": "_ansi_re = re.compile(r\"\\033\\[[0-?]*[ -/]*[@-~]\")"
+        },
+        {
+          "line": 20,
+          "text": ""
+        },
+        {
+          "line": 21,
+          "text": ""
+        },
+        {
+          "line": 22,
+          "text": "def _make_text_stream("
+        },
+        {
+          "line": 23,
+          "text": "    stream: t.BinaryIO,"
+        },
+        {
+          "line": 24,
+          "text": "    encoding: str | None,"
+        },
+        {
+          "line": 25,
+          "text": "    errors: str | None,"
+        },
+        {
+          "line": 26,
+          "text": "    force_readable: bool = False,"
+        },
+        {
+          "line": 27,
+          "text": "    force_writable: bool = False,"
+        },
+        {
+          "line": 28,
+          "text": ") -> t.TextIO:"
+        },
+        {
+          "line": 29,
+          "text": "    if encoding is None:"
+        },
+        {
+          "line": 30,
+          "text": "        encoding = get_best_encoding(stream)"
+        },
+        {
+          "line": 31,
+          "text": "    if errors is None:"
+        },
+        {
+          "line": 32,
+          "text": "        errors = \"replace\""
+        },
+        {
+          "line": 33,
+          "text": "    return _NonClosingTextIOWrapper("
+        },
+        {
+          "line": 34,
+          "text": "        stream,"
+        },
+        {
+          "line": 35,
+          "text": "        encoding,"
+        },
+        {
+          "line": 36,
+          "text": "        errors,"
+        },
+        {
+          "line": 37,
+          "text": "        line_buffering=True,"
+        },
+        {
+          "line": 38,
+          "text": "        force_readable=force_readable,"
+        },
+        {
+          "line": 39,
+          "text": "        force_writable=force_writable,"
+        },
+        {
+          "line": 40,
+          "text": "    )"
+        },
+        {
+          "line": 41,
+          "text": ""
+        },
+        {
+          "line": 42,
+          "text": ""
+        },
+        {
+          "line": 43,
+          "text": "def is_ascii_encoding(encoding: str) -> bool:"
+        },
+        {
+          "line": 44,
+          "text": "    \"\"\"Checks if a given encoding is ascii.\"\"\""
+        },
+        {
+          "line": 45,
+          "text": "    try:"
+        },
+        {
+          "line": 46,
+          "text": "        return codecs.lookup(encoding).name == \"ascii\""
+        },
+        {
+          "line": 47,
+          "text": "    except LookupError:"
+        },
+        {
+          "line": 48,
+          "text": "        return False"
+        },
+        {
+          "line": 49,
+          "text": ""
+        },
+        {
+          "line": 50,
+          "text": ""
+        },
+        {
+          "line": 51,
+          "text": "def get_best_encoding(stream: t.IO[t.Any]) -> str:"
+        },
+        {
+          "line": 52,
+          "text": "    \"\"\"Returns the default stream encoding if not found.\"\"\""
+        },
+        {
+          "line": 53,
+          "text": "    rv = getattr(stream, \"encoding\", None) or sys.getdefaultencoding()"
+        },
+        {
+          "line": 54,
+          "text": "    if is_ascii_encoding(rv):"
+        },
+        {
+          "line": 55,
+          "text": "        return \"utf-8\""
+        },
+        {
+          "line": 56,
+          "text": "    return rv"
+        },
+        {
+          "line": 57,
+          "text": ""
+        },
+        {
+          "line": 58,
+          "text": ""
+        },
+        {
+          "line": 59,
+          "text": "class _NonClosingTextIOWrapper(io.TextIOWrapper):"
+        },
+        {
+          "line": 60,
+          "text": "    def __init__("
+        },
+        {
+          "line": 61,
+          "text": "        self,"
+        },
+        {
+          "line": 62,
+          "text": "        stream: t.BinaryIO,"
+        },
+        {
+          "line": 63,
+          "text": "        encoding: str | None,"
+        },
+        {
+          "line": 64,
+          "text": "        errors: str | None,"
+        },
+        {
+          "line": 65,
+          "text": "        force_readable: bool = False,"
+        },
+        {
+          "line": 66,
+          "text": "        force_writable: bool = False,"
+        },
+        {
+          "line": 67,
+          "text": "        **extra: t.Any,"
+        },
+        {
+          "line": 68,
+          "text": "    ) -> None:"
+        },
+        {
+          "line": 69,
+          "text": "        self._stream = stream = t.cast("
+        },
+        {
+          "line": 70,
+          "text": "            t.BinaryIO, _FixupStream(stream, force_readable, force_writable)"
+        },
+        {
+          "line": 71,
+          "text": "        )"
+        },
+        {
+          "line": 72,
+          "text": "        super().__init__(stream, encoding, errors, **extra)"
+        },
+        {
+          "line": 73,
+          "text": ""
+        },
+        {
+          "line": 74,
+          "text": "    def __del__(self) -> None:"
+        },
+        {
+          "line": 75,
+          "text": "        try:"
+        },
+        {
+          "line": 76,
+          "text": "            self.detach()"
+        },
+        {
+          "line": 77,
+          "text": "        except Exception:"
+        },
+        {
+          "line": 78,
+          "text": "            pass"
+        },
+        {
+          "line": 79,
+          "text": ""
+        },
+        {
+          "line": 80,
+          "text": "    def isatty(self) -> bool:"
+        },
+        {
+          "line": 81,
+          "text": "        # https://bitbucket.org/pypy/pypy/issue/1803"
+        },
+        {
+          "line": 82,
+          "text": "        return self._stream.isatty()"
+        },
+        {
+          "line": 83,
+          "text": ""
+        },
+        {
+          "line": 84,
+          "text": ""
+        },
+        {
+          "line": 85,
+          "text": "class _FixupStream:"
+        },
+        {
+          "line": 86,
+          "text": "    \"\"\"The new io interface needs more from streams than streams"
+        },
+        {
+          "line": 87,
+          "text": "    traditionally implement.  As such, this fix-up code is necessary in"
+        },
+        {
+          "line": 88,
+          "text": "    some circumstances."
+        },
+        {
+          "line": 89,
+          "text": ""
+        },
+        {
+          "line": 90,
+          "text": "    The forcing of readable and writable flags are there because some tools"
+        },
+        {
+          "line": 91,
+          "text": "    put badly patched objects on sys (one such offender are certain version"
+        },
+        {
+          "line": 92,
+          "text": "    of jupyter notebook)."
+        },
+        {
+          "line": 93,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 94,
+          "text": ""
+        },
+        {
+          "line": 95,
+          "text": "    def __init__("
+        },
+        {
+          "line": 96,
+          "text": "        self,"
+        },
+        {
+          "line": 97,
+          "text": "        stream: t.BinaryIO,"
+        },
+        {
+          "line": 98,
+          "text": "        force_readable: bool = False,"
+        },
+        {
+          "line": 99,
+          "text": "        force_writable: bool = False,"
+        },
+        {
+          "line": 100,
+          "text": "    ):"
+        }
+      ],
+      "content": "from __future__ import annotations\n\nimport codecs\nimport collections.abc as cabc\nimport io\nimport os\nimport re\nimport sys\nimport typing as t\nfrom types import TracebackType\nfrom weakref import WeakKeyDictionary\n\nCYGWIN = sys.platform.startswith(\"cygwin\")\nWIN = sys.platform.startswith(\"win\")\n# One CSI escape sequence per the ECMA-48 grammar: parameter bytes (0x30-0x3F),\n# intermediate bytes (0x20-0x2F), then a final byte (0x40-0x7E). Broader than the\n# SGR codes Click emits, so foreign sequences (colon-delimited true-color, mouse\n# reporting) are stripped too.\n_ansi_re = re.compile(r\"\\033\\[[0-?]*[ -/]*[@-~]\")\n\n\ndef _make_text_stream(\n    stream: t.BinaryIO,\n    encoding: str | None,\n    errors: str | None,\n    force_readable: bool = False,\n    force_writable: bool = False,\n) -> t.TextIO:\n    if encoding is None:\n        encoding = get_best_encoding(stream)\n    if errors is None:\n        errors = \"replace\"\n    return _NonClosingTextIOWrapper(\n        stream,\n        encoding,\n        errors,\n        line_buffering=True,\n        force_readable=force_readable,\n        force_writable=force_writable,\n    )\n\n\ndef is_ascii_encoding(encoding: str) -> bool:\n    \"\"\"Checks if a given encoding is ascii.\"\"\"\n    try:\n        return codecs.lookup(encoding).name == \"ascii\"\n    except LookupError:\n        return False\n\n\ndef get_best_encoding(stream: t.IO[t.Any]) -> str:\n    \"\"\"Returns the default stream encoding if not found.\"\"\"\n    rv = getattr(stream, \"encoding\", None) or sys.getdefaultencoding()\n    if is_ascii_encoding(rv):\n        return \"utf-8\"\n    return rv\n\n\nclass _NonClosingTextIOWrapper(io.TextIOWrapper):\n    def __init__(\n        self,\n        stream: t.BinaryIO,\n        encoding: str | None,\n        errors: str | None,\n        force_readable: bool = False,\n        force_writable: bool = False,\n        **extra: t.Any,\n    ) -> None:\n        self._stream = stream = t.cast(\n            t.BinaryIO, _FixupStream(stream, force_readable, force_writable)\n        )\n        super().__init__(stream, encoding, errors, **extra)\n\n    def __del__(self) -> None:\n        try:\n            self.detach()\n        except Exception:\n            pass\n\n    def isatty(self) -> bool:\n        # https://bitbucket.org/pypy/pypy/issue/1803\n        return self._stream.isatty()\n\n\nclass _FixupStream:\n    \"\"\"The new io interface needs more from streams than streams\n    traditionally implement.  As such, this fix-up code is necessary in\n    some circumstances.\n\n    The forcing of readable and writable flags are there because some tools\n    put badly patched objects on sys (one such offender are certain version\n    of jupyter notebook).\n    \"\"\"\n\n    def __init__(\n        self,\n        stream: t.BinaryIO,\n        force_readable: bool = False,\n        force_writable: bool = False,\n    ):",
+      "sha256": "8db1da2965cf3e5dc66c6c53833cbc613ea1cd2440b9d0eb6aa8360eb46d4913"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/types.py",
+      "start_line": 414,
+      "end_line": 513,
+      "lines": [
+        {
+          "line": 414,
+          "text": ""
+        },
+        {
+          "line": 415,
+          "text": "    def get_metavar(self, param: Parameter, ctx: Context) -> str | None:"
+        },
+        {
+          "line": 416,
+          "text": "        if param.param_type_name == \"option\" and not param.show_choices:  # type: ignore[attr-defined]"
+        },
+        {
+          "line": 417,
+          "text": "            choice_metavars = ["
+        },
+        {
+          "line": 418,
+          "text": "                convert_type(type(choice)).name.upper() for choice in self.choices"
+        },
+        {
+          "line": 419,
+          "text": "            ]"
+        },
+        {
+          "line": 420,
+          "text": "            choices_str = \"|\".join([*dict.fromkeys(choice_metavars)])"
+        },
+        {
+          "line": 421,
+          "text": "        else:"
+        },
+        {
+          "line": 422,
+          "text": "            choices_str = \"|\".join("
+        },
+        {
+          "line": 423,
+          "text": "                [str(i) for i in self._normalized_mapping(ctx=ctx).values()]"
+        },
+        {
+          "line": 424,
+          "text": "            )"
+        },
+        {
+          "line": 425,
+          "text": ""
+        },
+        {
+          "line": 426,
+          "text": "        # Use curly braces to indicate a required argument."
+        },
+        {
+          "line": 427,
+          "text": "        if param.required and param.param_type_name == \"argument\":"
+        },
+        {
+          "line": 428,
+          "text": "            return f\"{{{choices_str}}}\""
+        },
+        {
+          "line": 429,
+          "text": ""
+        },
+        {
+          "line": 430,
+          "text": "        # Use square braces to indicate an option or optional argument."
+        },
+        {
+          "line": 431,
+          "text": "        return f\"[{choices_str}]\""
+        },
+        {
+          "line": 432,
+          "text": ""
+        },
+        {
+          "line": 433,
+          "text": "    def get_missing_message(self, param: Parameter, ctx: Context | None) -> str:"
+        },
+        {
+          "line": 434,
+          "text": "        \"\"\""
+        },
+        {
+          "line": 435,
+          "text": "        Message shown when no choice is passed."
+        },
+        {
+          "line": 436,
+          "text": ""
+        },
+        {
+          "line": 437,
+          "text": "        .. versionchanged:: 8.2.0 Added ``ctx`` argument."
+        },
+        {
+          "line": 438,
+          "text": "        \"\"\""
+        },
+        {
+          "line": 439,
+          "text": "        return _(\"Choose from:\\n\\t{choices}\").format("
+        },
+        {
+          "line": 440,
+          "text": "            choices=\",\\n\\t\".join(self._normalized_mapping(ctx=ctx).values())"
+        },
+        {
+          "line": 441,
+          "text": "        )"
+        },
+        {
+          "line": 442,
+          "text": ""
+        },
+        {
+          "line": 443,
+          "text": "    def convert("
+        },
+        {
+          "line": 444,
+          "text": "        self, value: t.Any, param: Parameter | None, ctx: Context | None"
+        },
+        {
+          "line": 445,
+          "text": "    ) -> _ValueT_co:"
+        },
+        {
+          "line": 446,
+          "text": "        \"\"\""
+        },
+        {
+          "line": 447,
+          "text": "        For a given value from the parser, normalize it and find its"
+        },
+        {
+          "line": 448,
+          "text": "        matching normalized value in the list of choices. Then return the"
+        },
+        {
+          "line": 449,
+          "text": "        matched \"original\" choice."
+        },
+        {
+          "line": 450,
+          "text": "        \"\"\""
+        },
+        {
+          "line": 451,
+          "text": "        normed_value = self.normalize_choice(choice=value, ctx=ctx)"
+        },
+        {
+          "line": 452,
+          "text": "        normalized_mapping = self._normalized_mapping(ctx=ctx)"
+        },
+        {
+          "line": 453,
+          "text": ""
+        },
+        {
+          "line": 454,
+          "text": "        try:"
+        },
+        {
+          "line": 455,
+          "text": "            return next("
+        },
+        {
+          "line": 456,
+          "text": "                original"
+        },
+        {
+          "line": 457,
+          "text": "                for original, normalized in normalized_mapping.items()"
+        },
+        {
+          "line": 458,
+          "text": "                if normalized == normed_value"
+        },
+        {
+          "line": 459,
+          "text": "            )"
+        },
+        {
+          "line": 460,
+          "text": "        except StopIteration:"
+        },
+        {
+          "line": 461,
+          "text": "            self.fail("
+        },
+        {
+          "line": 462,
+          "text": "                self.get_invalid_choice_message(value=value, ctx=ctx),"
+        },
+        {
+          "line": 463,
+          "text": "                param=param,"
+        },
+        {
+          "line": 464,
+          "text": "                ctx=ctx,"
+        },
+        {
+          "line": 465,
+          "text": "            )"
+        },
+        {
+          "line": 466,
+          "text": ""
+        },
+        {
+          "line": 467,
+          "text": "    def get_invalid_choice_message(self, value: t.Any, ctx: Context | None) -> str:"
+        },
+        {
+          "line": 468,
+          "text": "        \"\"\"Get the error message when the given choice is invalid."
+        },
+        {
+          "line": 469,
+          "text": ""
+        },
+        {
+          "line": 470,
+          "text": "        :param value: The invalid value."
+        },
+        {
+          "line": 471,
+          "text": ""
+        },
+        {
+          "line": 472,
+          "text": "        .. versionadded:: 8.2"
+        },
+        {
+          "line": 473,
+          "text": "        \"\"\""
+        },
+        {
+          "line": 474,
+          "text": "        choices_str = \", \".join(map(repr, self._normalized_mapping(ctx=ctx).values()))"
+        },
+        {
+          "line": 475,
+          "text": "        return ngettext("
+        },
+        {
+          "line": 476,
+          "text": "            \"{value!r} is not {choice}.\","
+        },
+        {
+          "line": 477,
+          "text": "            \"{value!r} is not one of {choices}.\","
+        },
+        {
+          "line": 478,
+          "text": "            len(self.choices),"
+        },
+        {
+          "line": 479,
+          "text": "        ).format(value=value, choice=choices_str, choices=choices_str)"
+        },
+        {
+          "line": 480,
+          "text": ""
+        },
+        {
+          "line": 481,
+          "text": "    def __repr__(self) -> str:"
+        },
+        {
+          "line": 482,
+          "text": "        return _(\"Choice({choices})\").format(choices=list(self.choices))"
+        },
+        {
+          "line": 483,
+          "text": ""
+        },
+        {
+          "line": 484,
+          "text": "    def shell_complete("
+        },
+        {
+          "line": 485,
+          "text": "        self, ctx: Context, param: Parameter, incomplete: str"
+        },
+        {
+          "line": 486,
+          "text": "    ) -> list[CompletionItem]:"
+        },
+        {
+          "line": 487,
+          "text": "        \"\"\"Complete choices that start with the incomplete value."
+        },
+        {
+          "line": 488,
+          "text": ""
+        },
+        {
+          "line": 489,
+          "text": "        :param ctx: Invocation context for this command."
+        },
+        {
+          "line": 490,
+          "text": "        :param param: The parameter that is requesting completion."
+        },
+        {
+          "line": 491,
+          "text": "        :param incomplete: Value being completed. May be empty."
+        },
+        {
+          "line": 492,
+          "text": ""
+        },
+        {
+          "line": 493,
+          "text": "        .. versionadded:: 8.0"
+        },
+        {
+          "line": 494,
+          "text": "        \"\"\""
+        },
+        {
+          "line": 495,
+          "text": "        from click.shell_completion import CompletionItem"
+        },
+        {
+          "line": 496,
+          "text": ""
+        },
+        {
+          "line": 497,
+          "text": "        str_choices = [self.normalize_choice(choice, ctx) for choice in self.choices]"
+        },
+        {
+          "line": 498,
+          "text": "        if self.case_sensitive:"
+        },
+        {
+          "line": 499,
+          "text": "            matched = (c for c in str_choices if c.startswith(incomplete))"
+        },
+        {
+          "line": 500,
+          "text": "        else:"
+        },
+        {
+          "line": 501,
+          "text": "            incomplete = incomplete.lower()"
+        },
+        {
+          "line": 502,
+          "text": "            matched = (c for c in str_choices if c.lower().startswith(incomplete))"
+        },
+        {
+          "line": 503,
+          "text": ""
+        },
+        {
+          "line": 504,
+          "text": "        return [CompletionItem(c) for c in matched]"
+        },
+        {
+          "line": 505,
+          "text": ""
+        },
+        {
+          "line": 506,
+          "text": ""
+        },
+        {
+          "line": 507,
+          "text": "class DateTimeInfoDict(ParamTypeInfoDict):"
+        },
+        {
+          "line": 508,
+          "text": "    formats: cabc.Sequence[str]"
+        },
+        {
+          "line": 509,
+          "text": ""
+        },
+        {
+          "line": 510,
+          "text": ""
+        },
+        {
+          "line": 511,
+          "text": "class DateTime(ParamType[datetime]):"
+        },
+        {
+          "line": 512,
+          "text": "    \"\"\"The DateTime type converts date strings into `datetime` objects."
+        },
+        {
+          "line": 513,
+          "text": ""
+        }
+      ],
+      "content": "\n    def get_metavar(self, param: Parameter, ctx: Context) -> str | None:\n        if param.param_type_name == \"option\" and not param.show_choices:  # type: ignore[attr-defined]\n            choice_metavars = [\n                convert_type(type(choice)).name.upper() for choice in self.choices\n            ]\n            choices_str = \"|\".join([*dict.fromkeys(choice_metavars)])\n        else:\n            choices_str = \"|\".join(\n                [str(i) for i in self._normalized_mapping(ctx=ctx).values()]\n            )\n\n        # Use curly braces to indicate a required argument.\n        if param.required and param.param_type_name == \"argument\":\n            return f\"{{{choices_str}}}\"\n\n        # Use square braces to indicate an option or optional argument.\n        return f\"[{choices_str}]\"\n\n    def get_missing_message(self, param: Parameter, ctx: Context | None) -> str:\n        \"\"\"\n        Message shown when no choice is passed.\n\n        .. versionchanged:: 8.2.0 Added ``ctx`` argument.\n        \"\"\"\n        return _(\"Choose from:\\n\\t{choices}\").format(\n            choices=\",\\n\\t\".join(self._normalized_mapping(ctx=ctx).values())\n        )\n\n    def convert(\n        self, value: t.Any, param: Parameter | None, ctx: Context | None\n    ) -> _ValueT_co:\n        \"\"\"\n        For a given value from the parser, normalize it and find its\n        matching normalized value in the list of choices. Then return the\n        matched \"original\" choice.\n        \"\"\"\n        normed_value = self.normalize_choice(choice=value, ctx=ctx)\n        normalized_mapping = self._normalized_mapping(ctx=ctx)\n\n        try:\n            return next(\n                original\n                for original, normalized in normalized_mapping.items()\n                if normalized == normed_value\n            )\n        except StopIteration:\n            self.fail(\n                self.get_invalid_choice_message(value=value, ctx=ctx),\n                param=param,\n                ctx=ctx,\n            )\n\n    def get_invalid_choice_message(self, value: t.Any, ctx: Context | None) -> str:\n        \"\"\"Get the error message when the given choice is invalid.\n\n        :param value: The invalid value.\n\n        .. versionadded:: 8.2\n        \"\"\"\n        choices_str = \", \".join(map(repr, self._normalized_mapping(ctx=ctx).values()))\n        return ngettext(\n            \"{value!r} is not {choice}.\",\n            \"{value!r} is not one of {choices}.\",\n            len(self.choices),\n        ).format(value=value, choice=choices_str, choices=choices_str)\n\n    def __repr__(self) -> str:\n        return _(\"Choice({choices})\").format(choices=list(self.choices))\n\n    def shell_complete(\n        self, ctx: Context, param: Parameter, incomplete: str\n    ) -> list[CompletionItem]:\n        \"\"\"Complete choices that start with the incomplete value.\n\n        :param ctx: Invocation context for this command.\n        :param param: The parameter that is requesting completion.\n        :param incomplete: Value being completed. May be empty.\n\n        .. versionadded:: 8.0\n        \"\"\"\n        from click.shell_completion import CompletionItem\n\n        str_choices = [self.normalize_choice(choice, ctx) for choice in self.choices]\n        if self.case_sensitive:\n            matched = (c for c in str_choices if c.startswith(incomplete))\n        else:\n            incomplete = incomplete.lower()\n            matched = (c for c in str_choices if c.lower().startswith(incomplete))\n\n        return [CompletionItem(c) for c in matched]\n\n\nclass DateTimeInfoDict(ParamTypeInfoDict):\n    formats: cabc.Sequence[str]\n\n\nclass DateTime(ParamType[datetime]):\n    \"\"\"The DateTime type converts date strings into `datetime` objects.\n",
+      "sha256": "1e988904a7a7f68abad630c7fb9c038a4345fa2e6701c976a6e51f10bdfb52dd"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/_winconsole.py",
+      "start_line": 136,
+      "end_line": 235,
+      "lines": [
+        {
+          "line": 136,
+          "text": "        buffer = get_buffer(b, writable=True)"
+        },
+        {
+          "line": 137,
+          "text": "        code_units_to_be_read = bytes_to_be_read // 2"
+        },
+        {
+          "line": 138,
+          "text": "        code_units_read = c_ulong()"
+        },
+        {
+          "line": 139,
+          "text": ""
+        },
+        {
+          "line": 140,
+          "text": "        rv = ReadConsoleW("
+        },
+        {
+          "line": 141,
+          "text": "            HANDLE(self.handle),"
+        },
+        {
+          "line": 142,
+          "text": "            buffer,"
+        },
+        {
+          "line": 143,
+          "text": "            code_units_to_be_read,"
+        },
+        {
+          "line": 144,
+          "text": "            byref(code_units_read),"
+        },
+        {
+          "line": 145,
+          "text": "            None,"
+        },
+        {
+          "line": 146,
+          "text": "        )"
+        },
+        {
+          "line": 147,
+          "text": "        if GetLastError() == ERROR_OPERATION_ABORTED:"
+        },
+        {
+          "line": 148,
+          "text": "            # wait for KeyboardInterrupt"
+        },
+        {
+          "line": 149,
+          "text": "            time.sleep(0.1)"
+        },
+        {
+          "line": 150,
+          "text": "        if not rv:"
+        },
+        {
+          "line": 151,
+          "text": "            raise OSError(_(\"Windows error: {error}\").format(error=GetLastError()))"
+        },
+        {
+          "line": 152,
+          "text": ""
+        },
+        {
+          "line": 153,
+          "text": "        if buffer[0] == EOF:"
+        },
+        {
+          "line": 154,
+          "text": "            return 0"
+        },
+        {
+          "line": 155,
+          "text": "        return 2 * code_units_read.value"
+        },
+        {
+          "line": 156,
+          "text": ""
+        },
+        {
+          "line": 157,
+          "text": ""
+        },
+        {
+          "line": 158,
+          "text": "class _WindowsConsoleWriter(_WindowsConsoleRawIOBase):"
+        },
+        {
+          "line": 159,
+          "text": "    def writable(self) -> t.Literal[True]:"
+        },
+        {
+          "line": 160,
+          "text": "        return True"
+        },
+        {
+          "line": 161,
+          "text": ""
+        },
+        {
+          "line": 162,
+          "text": "    @staticmethod"
+        },
+        {
+          "line": 163,
+          "text": "    def _get_error_message(errno: int) -> str:"
+        },
+        {
+          "line": 164,
+          "text": "        if errno == ERROR_SUCCESS:"
+        },
+        {
+          "line": 165,
+          "text": "            return \"ERROR_SUCCESS\""
+        },
+        {
+          "line": 166,
+          "text": "        elif errno == ERROR_NOT_ENOUGH_MEMORY:"
+        },
+        {
+          "line": 167,
+          "text": "            return \"ERROR_NOT_ENOUGH_MEMORY\""
+        },
+        {
+          "line": 168,
+          "text": "        return _(\"Windows error: {error}\").format(error=errno)"
+        },
+        {
+          "line": 169,
+          "text": ""
+        },
+        {
+          "line": 170,
+          "text": "    def write(self, b: Buffer) -> int:"
+        },
+        {
+          "line": 171,
+          "text": "        bytes_to_be_written = len(b)"
+        },
+        {
+          "line": 172,
+          "text": "        buf = get_buffer(b)"
+        },
+        {
+          "line": 173,
+          "text": "        code_units_to_be_written = min(bytes_to_be_written, MAX_BYTES_WRITTEN) // 2"
+        },
+        {
+          "line": 174,
+          "text": "        code_units_written = c_ulong()"
+        },
+        {
+          "line": 175,
+          "text": ""
+        },
+        {
+          "line": 176,
+          "text": "        WriteConsoleW("
+        },
+        {
+          "line": 177,
+          "text": "            HANDLE(self.handle),"
+        },
+        {
+          "line": 178,
+          "text": "            buf,"
+        },
+        {
+          "line": 179,
+          "text": "            code_units_to_be_written,"
+        },
+        {
+          "line": 180,
+          "text": "            byref(code_units_written),"
+        },
+        {
+          "line": 181,
+          "text": "            None,"
+        },
+        {
+          "line": 182,
+          "text": "        )"
+        },
+        {
+          "line": 183,
+          "text": "        bytes_written = 2 * code_units_written.value"
+        },
+        {
+          "line": 184,
+          "text": ""
+        },
+        {
+          "line": 185,
+          "text": "        if bytes_written == 0 and bytes_to_be_written > 0:"
+        },
+        {
+          "line": 186,
+          "text": "            raise OSError(self._get_error_message(GetLastError()))"
+        },
+        {
+          "line": 187,
+          "text": "        return bytes_written"
+        },
+        {
+          "line": 188,
+          "text": ""
+        },
+        {
+          "line": 189,
+          "text": ""
+        },
+        {
+          "line": 190,
+          "text": "class ConsoleStream:"
+        },
+        {
+          "line": 191,
+          "text": "    def __init__(self, text_stream: t.TextIO, byte_stream: t.BinaryIO) -> None:"
+        },
+        {
+          "line": 192,
+          "text": "        self._text_stream = text_stream"
+        },
+        {
+          "line": 193,
+          "text": "        self.buffer = byte_stream"
+        },
+        {
+          "line": 194,
+          "text": ""
+        },
+        {
+          "line": 195,
+          "text": "    @property"
+        },
+        {
+          "line": 196,
+          "text": "    def name(self) -> str:"
+        },
+        {
+          "line": 197,
+          "text": "        return self.buffer.name"
+        },
+        {
+          "line": 198,
+          "text": ""
+        },
+        {
+          "line": 199,
+          "text": "    def write(self, x: t.AnyStr) -> int:"
+        },
+        {
+          "line": 200,
+          "text": "        if isinstance(x, str):"
+        },
+        {
+          "line": 201,
+          "text": "            return self._text_stream.write(x)"
+        },
+        {
+          "line": 202,
+          "text": "        try:"
+        },
+        {
+          "line": 203,
+          "text": "            self.flush()"
+        },
+        {
+          "line": 204,
+          "text": "        except Exception:"
+        },
+        {
+          "line": 205,
+          "text": "            pass"
+        },
+        {
+          "line": 206,
+          "text": "        return self.buffer.write(x)"
+        },
+        {
+          "line": 207,
+          "text": ""
+        },
+        {
+          "line": 208,
+          "text": "    def writelines(self, lines: cabc.Iterable[t.AnyStr]) -> None:"
+        },
+        {
+          "line": 209,
+          "text": "        for line in lines:"
+        },
+        {
+          "line": 210,
+          "text": "            self.write(line)"
+        },
+        {
+          "line": 211,
+          "text": ""
+        },
+        {
+          "line": 212,
+          "text": "    def __getattr__(self, name: str) -> t.Any:"
+        },
+        {
+          "line": 213,
+          "text": "        return getattr(self._text_stream, name)"
+        },
+        {
+          "line": 214,
+          "text": ""
+        },
+        {
+          "line": 215,
+          "text": "    def isatty(self) -> bool:"
+        },
+        {
+          "line": 216,
+          "text": "        return self.buffer.isatty()"
+        },
+        {
+          "line": 217,
+          "text": ""
+        },
+        {
+          "line": 218,
+          "text": "    def __repr__(self) -> str:"
+        },
+        {
+          "line": 219,
+          "text": "        return f\"<ConsoleStream name={self.name!r} encoding={self.encoding!r}>\""
+        },
+        {
+          "line": 220,
+          "text": ""
+        },
+        {
+          "line": 221,
+          "text": ""
+        },
+        {
+          "line": 222,
+          "text": "def _get_text_stdin(buffer_stream: t.BinaryIO) -> t.TextIO:"
+        },
+        {
+          "line": 223,
+          "text": "    text_stream = _NonClosingTextIOWrapper("
+        },
+        {
+          "line": 224,
+          "text": "        io.BufferedReader(_WindowsConsoleReader(STDIN_HANDLE)),"
+        },
+        {
+          "line": 225,
+          "text": "        \"utf-16-le\","
+        },
+        {
+          "line": 226,
+          "text": "        \"strict\","
+        },
+        {
+          "line": 227,
+          "text": "        line_buffering=True,"
+        },
+        {
+          "line": 228,
+          "text": "    )"
+        },
+        {
+          "line": 229,
+          "text": "    return t.cast(t.TextIO, ConsoleStream(text_stream, buffer_stream))"
+        },
+        {
+          "line": 230,
+          "text": ""
+        },
+        {
+          "line": 231,
+          "text": ""
+        },
+        {
+          "line": 232,
+          "text": "def _get_text_stdout(buffer_stream: t.BinaryIO) -> t.TextIO:"
+        },
+        {
+          "line": 233,
+          "text": "    text_stream = _NonClosingTextIOWrapper("
+        },
+        {
+          "line": 234,
+          "text": "        io.BufferedWriter(_WindowsConsoleWriter(STDOUT_HANDLE)),"
+        },
+        {
+          "line": 235,
+          "text": "        \"utf-16-le\","
+        }
+      ],
+      "content": "        buffer = get_buffer(b, writable=True)\n        code_units_to_be_read = bytes_to_be_read // 2\n        code_units_read = c_ulong()\n\n        rv = ReadConsoleW(\n            HANDLE(self.handle),\n            buffer,\n            code_units_to_be_read,\n            byref(code_units_read),\n            None,\n        )\n        if GetLastError() == ERROR_OPERATION_ABORTED:\n            # wait for KeyboardInterrupt\n            time.sleep(0.1)\n        if not rv:\n            raise OSError(_(\"Windows error: {error}\").format(error=GetLastError()))\n\n        if buffer[0] == EOF:\n            return 0\n        return 2 * code_units_read.value\n\n\nclass _WindowsConsoleWriter(_WindowsConsoleRawIOBase):\n    def writable(self) -> t.Literal[True]:\n        return True\n\n    @staticmethod\n    def _get_error_message(errno: int) -> str:\n        if errno == ERROR_SUCCESS:\n            return \"ERROR_SUCCESS\"\n        elif errno == ERROR_NOT_ENOUGH_MEMORY:\n            return \"ERROR_NOT_ENOUGH_MEMORY\"\n        return _(\"Windows error: {error}\").format(error=errno)\n\n    def write(self, b: Buffer) -> int:\n        bytes_to_be_written = len(b)\n        buf = get_buffer(b)\n        code_units_to_be_written = min(bytes_to_be_written, MAX_BYTES_WRITTEN) // 2\n        code_units_written = c_ulong()\n\n        WriteConsoleW(\n            HANDLE(self.handle),\n            buf,\n            code_units_to_be_written,\n            byref(code_units_written),\n            None,\n        )\n        bytes_written = 2 * code_units_written.value\n\n        if bytes_written == 0 and bytes_to_be_written > 0:\n            raise OSError(self._get_error_message(GetLastError()))\n        return bytes_written\n\n\nclass ConsoleStream:\n    def __init__(self, text_stream: t.TextIO, byte_stream: t.BinaryIO) -> None:\n        self._text_stream = text_stream\n        self.buffer = byte_stream\n\n    @property\n    def name(self) -> str:\n        return self.buffer.name\n\n    def write(self, x: t.AnyStr) -> int:\n        if isinstance(x, str):\n            return self._text_stream.write(x)\n        try:\n            self.flush()\n        except Exception:\n            pass\n        return self.buffer.write(x)\n\n    def writelines(self, lines: cabc.Iterable[t.AnyStr]) -> None:\n        for line in lines:\n            self.write(line)\n\n    def __getattr__(self, name: str) -> t.Any:\n        return getattr(self._text_stream, name)\n\n    def isatty(self) -> bool:\n        return self.buffer.isatty()\n\n    def __repr__(self) -> str:\n        return f\"<ConsoleStream name={self.name!r} encoding={self.encoding!r}>\"\n\n\ndef _get_text_stdin(buffer_stream: t.BinaryIO) -> t.TextIO:\n    text_stream = _NonClosingTextIOWrapper(\n        io.BufferedReader(_WindowsConsoleReader(STDIN_HANDLE)),\n        \"utf-16-le\",\n        \"strict\",\n        line_buffering=True,\n    )\n    return t.cast(t.TextIO, ConsoleStream(text_stream, buffer_stream))\n\n\ndef _get_text_stdout(buffer_stream: t.BinaryIO) -> t.TextIO:\n    text_stream = _NonClosingTextIOWrapper(\n        io.BufferedWriter(_WindowsConsoleWriter(STDOUT_HANDLE)),\n        \"utf-16-le\",",
+      "sha256": "a6f0d49ef0be806a9730bd64a2e5b373a95d49de91fd7728595ff31d773f2db7"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/shell_completion.py",
+      "start_line": 558,
+      "end_line": 657,
+      "lines": [
+        {
+          "line": 558,
+          "text": "    \"powershell\": PowerShellComplete,"
+        },
+        {
+          "line": 559,
+          "text": "    \"zsh\": ZshComplete,"
+        },
+        {
+          "line": 560,
+          "text": "}"
+        },
+        {
+          "line": 561,
+          "text": ""
+        },
+        {
+          "line": 562,
+          "text": "_ShellCompleteT = t.TypeVar(\"_ShellCompleteT\", bound=\"ShellComplete\")"
+        },
+        {
+          "line": 563,
+          "text": ""
+        },
+        {
+          "line": 564,
+          "text": ""
+        },
+        {
+          "line": 565,
+          "text": "def add_completion_class("
+        },
+        {
+          "line": 566,
+          "text": "    cls: type[_ShellCompleteT], name: str | None = None"
+        },
+        {
+          "line": 567,
+          "text": ") -> type[_ShellCompleteT]:"
+        },
+        {
+          "line": 568,
+          "text": "    \"\"\"Register a :class:`ShellComplete` subclass under the given name."
+        },
+        {
+          "line": 569,
+          "text": "    The name will be provided by the completion instruction environment"
+        },
+        {
+          "line": 570,
+          "text": "    variable during completion."
+        },
+        {
+          "line": 571,
+          "text": ""
+        },
+        {
+          "line": 572,
+          "text": "    :param cls: The completion class that will handle completion for the"
+        },
+        {
+          "line": 573,
+          "text": "        shell."
+        },
+        {
+          "line": 574,
+          "text": "    :param name: Name to register the class under. Defaults to the"
+        },
+        {
+          "line": 575,
+          "text": "        class's ``name`` attribute."
+        },
+        {
+          "line": 576,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 577,
+          "text": "    if name is None:"
+        },
+        {
+          "line": 578,
+          "text": "        name = cls.name"
+        },
+        {
+          "line": 579,
+          "text": ""
+        },
+        {
+          "line": 580,
+          "text": "    _available_shells[name] = cls"
+        },
+        {
+          "line": 581,
+          "text": ""
+        },
+        {
+          "line": 582,
+          "text": "    return cls"
+        },
+        {
+          "line": 583,
+          "text": ""
+        },
+        {
+          "line": 584,
+          "text": ""
+        },
+        {
+          "line": 585,
+          "text": "@t.overload"
+        },
+        {
+          "line": 586,
+          "text": "def get_completion_class(shell: t.Literal[\"bash\"]) -> type[BashComplete]: ..."
+        },
+        {
+          "line": 587,
+          "text": "@t.overload"
+        },
+        {
+          "line": 588,
+          "text": "def get_completion_class(shell: t.Literal[\"fish\"]) -> type[FishComplete]: ..."
+        },
+        {
+          "line": 589,
+          "text": "@t.overload"
+        },
+        {
+          "line": 590,
+          "text": "def get_completion_class(shell: t.Literal[\"zsh\"]) -> type[ZshComplete]: ..."
+        },
+        {
+          "line": 591,
+          "text": "@t.overload"
+        },
+        {
+          "line": 592,
+          "text": "def get_completion_class(shell: str) -> type[ShellComplete] | None: ..."
+        },
+        {
+          "line": 593,
+          "text": "def get_completion_class(shell: str) -> type[ShellComplete] | None:"
+        },
+        {
+          "line": 594,
+          "text": "    \"\"\"Look up a registered :class:`ShellComplete` subclass by the name"
+        },
+        {
+          "line": 595,
+          "text": "    provided by the completion instruction environment variable. If the"
+        },
+        {
+          "line": 596,
+          "text": "    name isn't registered, returns ``None``."
+        },
+        {
+          "line": 597,
+          "text": ""
+        },
+        {
+          "line": 598,
+          "text": "    :param shell: Name the class is registered under."
+        },
+        {
+          "line": 599,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 600,
+          "text": "    return _available_shells.get(shell)"
+        },
+        {
+          "line": 601,
+          "text": ""
+        },
+        {
+          "line": 602,
+          "text": ""
+        },
+        {
+          "line": 603,
+          "text": "def split_arg_string(string: str) -> list[str]:"
+        },
+        {
+          "line": 604,
+          "text": "    \"\"\"Split an argument string as with :func:`shlex.split`, but don't"
+        },
+        {
+          "line": 605,
+          "text": "    fail if the string is incomplete. Ignores a missing closing quote or"
+        },
+        {
+          "line": 606,
+          "text": "    incomplete escape sequence and uses the partial token as-is."
+        },
+        {
+          "line": 607,
+          "text": ""
+        },
+        {
+          "line": 608,
+          "text": "    .. code-block:: python"
+        },
+        {
+          "line": 609,
+          "text": ""
+        },
+        {
+          "line": 610,
+          "text": "        split_arg_string(\"example 'my file\")"
+        },
+        {
+          "line": 611,
+          "text": "        [\"example\", \"my file\"]"
+        },
+        {
+          "line": 612,
+          "text": ""
+        },
+        {
+          "line": 613,
+          "text": "        split_arg_string(\"example my\\\\\")"
+        },
+        {
+          "line": 614,
+          "text": "        [\"example\", \"my\"]"
+        },
+        {
+          "line": 615,
+          "text": ""
+        },
+        {
+          "line": 616,
+          "text": "    :param string: String to split."
+        },
+        {
+          "line": 617,
+          "text": ""
+        },
+        {
+          "line": 618,
+          "text": "    .. versionchanged:: 8.2"
+        },
+        {
+          "line": 619,
+          "text": "        Moved to ``shell_completion`` from ``parser``."
+        },
+        {
+          "line": 620,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 621,
+          "text": "    import shlex"
+        },
+        {
+          "line": 622,
+          "text": ""
+        },
+        {
+          "line": 623,
+          "text": "    lex = shlex.shlex(string, posix=True)"
+        },
+        {
+          "line": 624,
+          "text": "    lex.whitespace_split = True"
+        },
+        {
+          "line": 625,
+          "text": "    lex.commenters = \"\""
+        },
+        {
+          "line": 626,
+          "text": "    out: list[str] = []"
+        },
+        {
+          "line": 627,
+          "text": ""
+        },
+        {
+          "line": 628,
+          "text": "    try:"
+        },
+        {
+          "line": 629,
+          "text": "        out.extend(lex)"
+        },
+        {
+          "line": 630,
+          "text": "    except ValueError:"
+        },
+        {
+          "line": 631,
+          "text": "        # Raised when end-of-string is reached in an invalid state. Use"
+        },
+        {
+          "line": 632,
+          "text": "        # the partial token as-is. The quote or escape character is in"
+        },
+        {
+          "line": 633,
+          "text": "        # lex.state, not lex.token."
+        },
+        {
+          "line": 634,
+          "text": "        out.append(lex.token)"
+        },
+        {
+          "line": 635,
+          "text": ""
+        },
+        {
+          "line": 636,
+          "text": "    return out"
+        },
+        {
+          "line": 637,
+          "text": ""
+        },
+        {
+          "line": 638,
+          "text": ""
+        },
+        {
+          "line": 639,
+          "text": "def _is_incomplete_argument(ctx: Context, param: Parameter) -> bool:"
+        },
+        {
+          "line": 640,
+          "text": "    \"\"\"Determine if the given parameter is an argument that can still"
+        },
+        {
+          "line": 641,
+          "text": "    accept values."
+        },
+        {
+          "line": 642,
+          "text": ""
+        },
+        {
+          "line": 643,
+          "text": "    :param ctx: Invocation context for the command represented by the"
+        },
+        {
+          "line": 644,
+          "text": "        parsed complete args."
+        },
+        {
+          "line": 645,
+          "text": "    :param param: Argument object being checked."
+        },
+        {
+          "line": 646,
+          "text": "    \"\"\""
+        },
+        {
+          "line": 647,
+          "text": "    if not isinstance(param, Argument):"
+        },
+        {
+          "line": 648,
+          "text": "        return False"
+        },
+        {
+          "line": 649,
+          "text": ""
+        },
+        {
+          "line": 650,
+          "text": "    value = ctx.params.get(param.name)"
+        },
+        {
+          "line": 651,
+          "text": "    return ("
+        },
+        {
+          "line": 652,
+          "text": "        param.nargs == -1"
+        },
+        {
+          "line": 653,
+          "text": "        or ctx.get_parameter_source(param.name) is not ParameterSource.COMMANDLINE"
+        },
+        {
+          "line": 654,
+          "text": "        or ("
+        },
+        {
+          "line": 655,
+          "text": "            param.nargs > 1"
+        },
+        {
+          "line": 656,
+          "text": "            and isinstance(value, (tuple, list))"
+        },
+        {
+          "line": 657,
+          "text": "            and len(value) < param.nargs"
+        }
+      ],
+      "content": "    \"powershell\": PowerShellComplete,\n    \"zsh\": ZshComplete,\n}\n\n_ShellCompleteT = t.TypeVar(\"_ShellCompleteT\", bound=\"ShellComplete\")\n\n\ndef add_completion_class(\n    cls: type[_ShellCompleteT], name: str | None = None\n) -> type[_ShellCompleteT]:\n    \"\"\"Register a :class:`ShellComplete` subclass under the given name.\n    The name will be provided by the completion instruction environment\n    variable during completion.\n\n    :param cls: The completion class that will handle completion for the\n        shell.\n    :param name: Name to register the class under. Defaults to the\n        class's ``name`` attribute.\n    \"\"\"\n    if name is None:\n        name = cls.name\n\n    _available_shells[name] = cls\n\n    return cls\n\n\n@t.overload\ndef get_completion_class(shell: t.Literal[\"bash\"]) -> type[BashComplete]: ...\n@t.overload\ndef get_completion_class(shell: t.Literal[\"fish\"]) -> type[FishComplete]: ...\n@t.overload\ndef get_completion_class(shell: t.Literal[\"zsh\"]) -> type[ZshComplete]: ...\n@t.overload\ndef get_completion_class(shell: str) -> type[ShellComplete] | None: ...\ndef get_completion_class(shell: str) -> type[ShellComplete] | None:\n    \"\"\"Look up a registered :class:`ShellComplete` subclass by the name\n    provided by the completion instruction environment variable. If the\n    name isn't registered, returns ``None``.\n\n    :param shell: Name the class is registered under.\n    \"\"\"\n    return _available_shells.get(shell)\n\n\ndef split_arg_string(string: str) -> list[str]:\n    \"\"\"Split an argument string as with :func:`shlex.split`, but don't\n    fail if the string is incomplete. Ignores a missing closing quote or\n    incomplete escape sequence and uses the partial token as-is.\n\n    .. code-block:: python\n\n        split_arg_string(\"example 'my file\")\n        [\"example\", \"my file\"]\n\n        split_arg_string(\"example my\\\\\")\n        [\"example\", \"my\"]\n\n    :param string: String to split.\n\n    .. versionchanged:: 8.2\n        Moved to ``shell_completion`` from ``parser``.\n    \"\"\"\n    import shlex\n\n    lex = shlex.shlex(string, posix=True)\n    lex.whitespace_split = True\n    lex.commenters = \"\"\n    out: list[str] = []\n\n    try:\n        out.extend(lex)\n    except ValueError:\n        # Raised when end-of-string is reached in an invalid state. Use\n        # the partial token as-is. The quote or escape character is in\n        # lex.state, not lex.token.\n        out.append(lex.token)\n\n    return out\n\n\ndef _is_incomplete_argument(ctx: Context, param: Parameter) -> bool:\n    \"\"\"Determine if the given parameter is an argument that can still\n    accept values.\n\n    :param ctx: Invocation context for the command represented by the\n        parsed complete args.\n    :param param: Argument object being checked.\n    \"\"\"\n    if not isinstance(param, Argument):\n        return False\n\n    value = ctx.params.get(param.name)\n    return (\n        param.nargs == -1\n        or ctx.get_parameter_source(param.name) is not ParameterSource.COMMANDLINE\n        or (\n            param.nargs > 1\n            and isinstance(value, (tuple, list))\n            and len(value) < param.nargs",
+      "sha256": "18522f75ddffe655e943978d1953255c447842867d3fd67fbdc1543d3df7da09"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": ".github/workflows/nightly.yaml",
+      "start_line": 1,
+      "end_line": 69,
+      "lines": [
+        {
+          "line": 1,
+          "text": "name: Nightly tests"
+        },
+        {
+          "line": 2,
+          "text": "on:"
+        },
+        {
+          "line": 3,
+          "text": "  schedule:"
+        },
+        {
+          "line": 4,
+          "text": "    - cron: '0 6 * * *'"
+        },
+        {
+          "line": 5,
+          "text": "  workflow_dispatch:"
+        },
+        {
+          "line": 6,
+          "text": "permissions: {}"
+        },
+        {
+          "line": 7,
+          "text": "concurrency:"
+        },
+        {
+          "line": 8,
+          "text": "  group: ${{ github.workflow }}"
+        },
+        {
+          "line": 9,
+          "text": "  cancel-in-progress: false"
+        },
+        {
+          "line": 10,
+          "text": "jobs:"
+        },
+        {
+          "line": 11,
+          "text": "  race-tests:"
+        },
+        {
+          "line": 12,
+          "text": "    name: ${{ matrix.config.name }} (${{ matrix.branch }})"
+        },
+        {
+          "line": 13,
+          "text": "    runs-on: ${{ matrix.config.os || 'ubuntu-latest' }}"
+        },
+        {
+          "line": 14,
+          "text": "    strategy:"
+        },
+        {
+          "line": 15,
+          "text": "      fail-fast: false"
+        },
+        {
+          "line": 16,
+          "text": "      matrix:"
+        },
+        {
+          "line": 17,
+          "text": "        branch: [main, stable]"
+        },
+        {
+          "line": 18,
+          "text": "        config:"
+        },
+        {
+          "line": 19,
+          "text": "          - {name: Random 3.14, python: '3.14', tox: random}"
+        },
+        {
+          "line": 20,
+          "text": "          - {name: Random 3.14t, python: '3.14t', tox: random}"
+        },
+        {
+          "line": 21,
+          "text": "          - {name: Random 3.13, python: '3.13', tox: random}"
+        },
+        {
+          "line": 22,
+          "text": "          - {name: Random 3.12, python: '3.12', tox: random}"
+        },
+        {
+          "line": 23,
+          "text": "          - {name: Random 3.11, python: '3.11', tox: random}"
+        },
+        {
+          "line": 24,
+          "text": "          - {name: Random 3.10, python: '3.10', tox: random}"
+        },
+        {
+          "line": 25,
+          "text": "          - {name: Random Windows, python: '3.14', tox: random, os: windows-latest}"
+        },
+        {
+          "line": 26,
+          "text": "          - {name: Random Mac, python: '3.14', tox: random, os: macos-latest}"
+        },
+        {
+          "line": 27,
+          "text": "          - {name: Stress 3.14, python: '3.14', tox: stress-py3.14}"
+        },
+        {
+          "line": 28,
+          "text": "          - {name: Stress 3.14t, python: '3.14t', tox: stress-py3.14t}"
+        },
+        {
+          "line": 29,
+          "text": "          - {name: Stress Mac 3.14t, python: '3.14t', tox: stress-py3.14t, os: macos-latest}"
+        },
+        {
+          "line": 30,
+          "text": "    steps:"
+        },
+        {
+          "line": 31,
+          "text": "      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1"
+        },
+        {
+          "line": 32,
+          "text": "        with:"
+        },
+        {
+          "line": 33,
+          "text": "          persist-credentials: false"
+        },
+        {
+          "line": 34,
+          "text": "          ref: ${{ matrix.branch }}"
+        },
+        {
+          "line": 35,
+          "text": "      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0"
+        },
+        {
+          "line": 36,
+          "text": "        with:"
+        },
+        {
+          "line": 37,
+          "text": "          enable-cache: true"
+        },
+        {
+          "line": 38,
+          "text": "      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0"
+        },
+        {
+          "line": 39,
+          "text": "        with:"
+        },
+        {
+          "line": 40,
+          "text": "          python-version: ${{ matrix.config.python }}"
+        },
+        {
+          "line": 41,
+          "text": "      - run: uv run --locked --no-default-groups --group dev tox run"
+        },
+        {
+          "line": 42,
+          "text": "        env:"
+        },
+        {
+          "line": 43,
+          "text": "          TOX_ENV: ${{ matrix.config.tox }}"
+        },
+        {
+          "line": 44,
+          "text": "  flask-tests:"
+        },
+        {
+          "line": 45,
+          "text": "    name: Flask (${{ matrix.branch }})"
+        },
+        {
+          "line": 46,
+          "text": "    runs-on: ubuntu-latest"
+        },
+        {
+          "line": 47,
+          "text": "    strategy:"
+        },
+        {
+          "line": 48,
+          "text": "      fail-fast: false"
+        },
+        {
+          "line": 49,
+          "text": "      matrix:"
+        },
+        {
+          "line": 50,
+          "text": "        branch: [main, stable]"
+        },
+        {
+          "line": 51,
+          "text": "    steps:"
+        },
+        {
+          "line": 52,
+          "text": "      # Check out Flask, not Click: the Click branch under test is installed"
+        },
+        {
+          "line": 53,
+          "text": "      # from git below, so Flask's own suite runs against it."
+        },
+        {
+          "line": 54,
+          "text": "      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1"
+        },
+        {
+          "line": 55,
+          "text": "        with:"
+        },
+        {
+          "line": 56,
+          "text": "          persist-credentials: false"
+        },
+        {
+          "line": 57,
+          "text": "          repository: pallets/flask"
+        },
+        {
+          "line": 58,
+          "text": "      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0"
+        },
+        {
+          "line": 59,
+          "text": "        with:"
+        },
+        {
+          "line": 60,
+          "text": "          enable-cache: true"
+        },
+        {
+          "line": 61,
+          "text": "      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0"
+        },
+        {
+          "line": 62,
+          "text": "        with:"
+        },
+        {
+          "line": 63,
+          "text": "          python-version: '3.14'"
+        },
+        {
+          "line": 64,
+          "text": "      - run: uv sync --all-extras"
+        },
+        {
+          "line": 65,
+          "text": "      # --with overlays the Click branch on top of the version Flask's lock"
+        },
+        {
+          "line": 66,
+          "text": "      # pins, so a downstream regression shows up as a Flask test failure."
+        },
+        {
+          "line": 67,
+          "text": "      - run: uv run --with \"git+https://github.com/pallets/click.git@${CLICK_REF}\" -- pytest"
+        },
+        {
+          "line": 68,
+          "text": "        env:"
+        },
+        {
+          "line": 69,
+          "text": "          CLICK_REF: ${{ matrix.branch }}"
+        }
+      ],
+      "content": "name: Nightly tests\non:\n  schedule:\n    - cron: '0 6 * * *'\n  workflow_dispatch:\npermissions: {}\nconcurrency:\n  group: ${{ github.workflow }}\n  cancel-in-progress: false\njobs:\n  race-tests:\n    name: ${{ matrix.config.name }} (${{ matrix.branch }})\n    runs-on: ${{ matrix.config.os || 'ubuntu-latest' }}\n    strategy:\n      fail-fast: false\n      matrix:\n        branch: [main, stable]\n        config:\n          - {name: Random 3.14, python: '3.14', tox: random}\n          - {name: Random 3.14t, python: '3.14t', tox: random}\n          - {name: Random 3.13, python: '3.13', tox: random}\n          - {name: Random 3.12, python: '3.12', tox: random}\n          - {name: Random 3.11, python: '3.11', tox: random}\n          - {name: Random 3.10, python: '3.10', tox: random}\n          - {name: Random Windows, python: '3.14', tox: random, os: windows-latest}\n          - {name: Random Mac, python: '3.14', tox: random, os: macos-latest}\n          - {name: Stress 3.14, python: '3.14', tox: stress-py3.14}\n          - {name: Stress 3.14t, python: '3.14t', tox: stress-py3.14t}\n          - {name: Stress Mac 3.14t, python: '3.14t', tox: stress-py3.14t, os: macos-latest}\n    steps:\n      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1\n        with:\n          persist-credentials: false\n          ref: ${{ matrix.branch }}\n      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0\n        with:\n          enable-cache: true\n      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0\n        with:\n          python-version: ${{ matrix.config.python }}\n      - run: uv run --locked --no-default-groups --group dev tox run\n        env:\n          TOX_ENV: ${{ matrix.config.tox }}\n  flask-tests:\n    name: Flask (${{ matrix.branch }})\n    runs-on: ubuntu-latest\n    strategy:\n      fail-fast: false\n      matrix:\n        branch: [main, stable]\n    steps:\n      # Check out Flask, not Click: the Click branch under test is installed\n      # from git below, so Flask's own suite runs against it.\n      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1\n        with:\n          persist-credentials: false\n          repository: pallets/flask\n      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0\n        with:\n          enable-cache: true\n      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0\n        with:\n          python-version: '3.14'\n      - run: uv sync --all-extras\n      # --with overlays the Click branch on top of the version Flask's lock\n      # pins, so a downstream regression shows up as a Flask test failure.\n      - run: uv run --with \"git+https://github.com/pallets/click.git@${CLICK_REF}\" -- pytest\n        env:\n          CLICK_REF: ${{ matrix.branch }}",
+      "sha256": "40cd70bd796d109dc67428bea07dc2cc87e935ecf2f34539e732aee5dbf277ef"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/core.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        }
+      ],
+      "content": "from __future__ import annotations",
+      "sha256": "4c65a613c1c407dce907a4e123b12cec5fe0f62088a8b9f86fabd4b60c4b6d78"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/_termui_impl.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "\"\"\""
+        }
+      ],
+      "content": "\"\"\"",
+      "sha256": "88b97d9b7a5b947b10a16d8ab269837bc84c7e55c28ba72ea5f2fb339112336a"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/utils.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        }
+      ],
+      "content": "from __future__ import annotations",
+      "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/termui.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        }
+      ],
+      "content": "from __future__ import annotations",
+      "sha256": "16f6546b36d647d191788fc912e32d93e8b64289517f004e6d9604f4896ad1ca"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/exceptions.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        }
+      ],
+      "content": "from __future__ import annotations",
+      "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/_compat.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        }
+      ],
+      "content": "from __future__ import annotations",
+      "sha256": "8db1da2965cf3e5dc66c6c53833cbc613ea1cd2440b9d0eb6aa8360eb46d4913"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/types.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        }
+      ],
+      "content": "from __future__ import annotations",
+      "sha256": "1e988904a7a7f68abad630c7fb9c038a4345fa2e6701c976a6e51f10bdfb52dd"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/_winconsole.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "# This module is based on the excellent work by Adam Bartoš who"
+        }
+      ],
+      "content": "# This module is based on the excellent work by Adam Bartoš who",
+      "sha256": "a6f0d49ef0be806a9730bd64a2e5b373a95d49de91fd7728595ff31d773f2db7"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": "src/click/shell_completion.py",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "from __future__ import annotations"
+        }
+      ],
+      "content": "from __future__ import annotations",
+      "sha256": "18522f75ddffe655e943978d1953255c447842867d3fd67fbdc1543d3df7da09"
+    }
+  },
+  {
+    "tool": "read_file",
+    "result": {
+      "path": ".github/workflows/nightly.yaml",
+      "start_line": 1,
+      "end_line": 1,
+      "lines": [
+        {
+          "line": 1,
+          "text": "name: Nightly tests"
+        }
+      ],
+      "content": "name: Nightly tests",
+      "sha256": "40cd70bd796d109dc67428bea07dc2cc87e935ecf2f34539e732aee5dbf277ef"
+    }
+  }
+]

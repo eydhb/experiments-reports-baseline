@@ -1,0 +1,25 @@
+{
+  "case_id": "real_issue_001",
+  "issue_number": 3802,
+  "issue_title": "`KeyboardInterrupt` during `click.prompt()` can race",
+  "issue_url": "https://github.com/pallets/click/issues/3802",
+  "base_commit": "b47c0529e99129d4785fecc2cb39a8ec8b4aa5f8",
+  "fix_commit": "00f257bb8e714064bea16425007543bbc0800445",
+  "expected_files": [
+    "src/click/core.py"
+  ],
+  "ground_truth_notes": "生产代码标签仅 src/click/core.py；排除新增回归测试、CHANGES.md 和 docs/exceptions.md。",
+  "result_path": "../real_issue_001/result.json",
+  "result_sha256": "32092145f91ae6e0dfbcf1048bc56c1f6d134038a57f0dfd494d21b6ca21cf5a",
+  "source_manifest": "../real_issue_001/source-manifest.json",
+  "fix_evidence": "../real_issue_001/fix.json",
+  "failure_analysis": {
+    "status": "analyzed",
+    "categories": [
+      "retrieval",
+      "ranking",
+      "root_cause"
+    ],
+    "reason": "搜索已命中 core.py:1563，但 race 子串误匹配 TracebackType，读取窗口变为 9–108 行；最终引用无关的 98–100 行。修复文件与首位候选同分，按路径排序列第 2；报告未解释第二次中断的捕获范围。"
+  }
+}

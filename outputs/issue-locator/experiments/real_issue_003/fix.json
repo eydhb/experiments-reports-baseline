@@ -1,0 +1,19 @@
+{
+  "html_url": "https://github.com/pallets/click/commit/737cf793f5e5625c36e3627250beee34ee285f9d",
+  "sha": "737cf793f5e5625c36e3627250beee34ee285f9d",
+  "parents": [
+    "09b9d614ac79e2c97f5f486a30231be1e8fe68ad",
+    "e892389f540e07c3f4a7e4acaf0a6b0ba4f7161a"
+  ],
+  "message": "Merge pull request #2036 from jcrotts/fix-windows-permission-pager\n\nclose temporary file used by echo_via_pager",
+  "pull_request_url": "https://github.com/pallets/click/pull/2036",
+  "pull_request_body": "On Windows, `unlink` would fail because the file was still open.\r\n\r\n<!--\r\nBefore opening a PR, open a ticket describing the issue or feature the\r\nPR will address. Follow the steps in CONTRIBUTING.rst.\r\n\r\nReplace this comment with a description of the change. Describe how it\r\naddresses the linked ticket.\r\n-->\r\n\r\n<!--\r\nLink to relevant issues or previous PRs, one per line. Use \"fixes\" to\r\nautomatically close an issue.\r\n-->\r\n\r\n- fixes #<https://github.com/pallets/click/issues/1905>\r\n\r\n<!--\r\nEnsure each step in CONTRIBUTING.rst is complete by adding an \"x\" to\r\neach box below.\r\n\r\nIf only docs were changed, these aren't relevant and can be removed.\r\n-->\r\n\r\nChecklist:\r\n\r\n- [ ] Add tests that demonstrate the correct behavior of the change. Tests should fail without the change.\r\n- [ ] Add or update relevant docs, in the docs folder and in code.\r\n- [ ] Add an entry in `CHANGES.rst` summarizing the change and linking to the issue.\r\n- [ ] Add `.. versionchanged::` entries in any relevant code docs.\r\n- [ ] Run `pre-commit` hooks and fix any issues.\r\n- [ ] Run `pytest` and `tox`, no tests failed.\r\n",
+  "merged": true,
+  "files": [
+    {
+      "filename": "src/click/_termui_impl.py",
+      "status": "modified",
+      "patch": "@@ -426,7 +426,7 @@ def _tempfilepager(\n     \"\"\"Page through text by invoking a program on a temporary file.\"\"\"\n     import tempfile\n \n-    _, filename = tempfile.mkstemp()\n+    fd, filename = tempfile.mkstemp()\n     # TODO: This never terminates if the passed generator never terminates.\n     text = \"\".join(generator)\n     if not color:\n@@ -437,6 +437,7 @@ def _tempfilepager(\n     try:\n         os.system(f'{cmd} \"{filename}\"')\n     finally:\n+        os.close(fd)\n         os.unlink(filename)\n \n "
+    }
+  ]
+}

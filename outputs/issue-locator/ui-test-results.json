@@ -1,0 +1,33 @@
+{
+  "kind": "JSDOM integration against running HTTP service; no visual rendering",
+  "appUrl": "http://127.0.0.1:8766/",
+  "checks": [
+    "Sample auto-imports; offline is default; analysis does not run automatically",
+    "Default question renders six candidates including TokenService and UserController, real line ranges, evidence, and tool trace",
+    "Context button calls /api/file and displays every returned line and number exactly",
+    "Export builds a downloadable JSON Blob containing the actual analysis",
+    "Ctrl+Enter runs analysis; unrelated issue renders zero candidates and helpful empty state",
+    "Import error is visible and previous repository remains available",
+    "Source switching ignores hidden stale input and successful reimport clears old result",
+    "No DOM runtime exceptions or console errors"
+  ],
+  "candidates": [
+    "src/main/java/demo/auth/controller/UserController.java",
+    "src/main/java/demo/auth/service/UserService.java",
+    "src/main/java/demo/auth/exception/GlobalExceptionHandler.java",
+    "src/main/java/demo/auth/service/TokenService.java",
+    "src/main/java/demo/auth/exception/BadCredentialsException.java",
+    "src/main/java/demo/auth/exception/TokenExpiredException.java"
+  ],
+  "lineRanges": [
+    "L11–23",
+    "L15–21",
+    "L10–21",
+    "L8–12",
+    "L3–4",
+    "L3–4"
+  ],
+  "traceCount": 20,
+  "runtimeErrors": [],
+  "requestCount": 7
+}

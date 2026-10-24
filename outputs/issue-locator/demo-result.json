@@ -1,0 +1,379 @@
+{
+  "summary": "找到 6 个候选文件。依据来自实际搜索和读取；尚未确认本次 500 的根因。",
+  "candidates": [
+    {
+      "path": "src/main/java/demo/auth/controller/UserController.java",
+      "start_line": 11,
+      "end_line": 23,
+      "reason": "片段包含接口映射或登录入口，可从这里核对请求参数及后续认证调用。",
+      "evidence": [
+        {
+          "line": 11,
+          "text": "@RestController"
+        },
+        {
+          "line": 12,
+          "text": "@RequestMapping(\"/api\")"
+        },
+        {
+          "line": 13,
+          "text": "public class UserController {"
+        },
+        {
+          "line": 19,
+          "text": ""
+        },
+        {
+          "line": 20,
+          "text": "    @PostMapping(\"/login\")"
+        },
+        {
+          "line": 21,
+          "text": "    public LoginResponse login(@RequestBody LoginRequest request) {"
+        },
+        {
+          "line": 22,
+          "text": "        return userService.authenticate(request);"
+        },
+        {
+          "line": 23,
+          "text": "    }"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 25
+    },
+    {
+      "path": "src/main/java/demo/auth/service/UserService.java",
+      "start_line": 15,
+      "end_line": 21,
+      "reason": "片段包含认证方法或调用，是检查登录失败和异常传播路径的候选位置。",
+      "evidence": [
+        {
+          "line": 15,
+          "text": ""
+        },
+        {
+          "line": 16,
+          "text": "    public LoginResponse authenticate(LoginRequest request) {"
+        },
+        {
+          "line": 17,
+          "text": "        if (request.username() == null || request.username().isBlank()) {"
+        },
+        {
+          "line": 18,
+          "text": "            throw new BadCredentialsException(\"Username is required\");"
+        },
+        {
+          "line": 19,
+          "text": "        }"
+        },
+        {
+          "line": 20,
+          "text": "        tokenService.validateRefreshToken(request.refreshTokenExpiresAt());"
+        },
+        {
+          "line": 21,
+          "text": "        return new LoginResponse(request.username(), \"authenticated\");"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 19
+    },
+    {
+      "path": "src/main/java/demo/auth/exception/GlobalExceptionHandler.java",
+      "start_line": 10,
+      "end_line": 21,
+      "reason": "片段包含异常处理或 HTTP 500 状态映射；需结合实际异常类型确认是否进入该处理分支。",
+      "evidence": [
+        {
+          "line": 10,
+          "text": "public class GlobalExceptionHandler {"
+        },
+        {
+          "line": 11,
+          "text": "    @ExceptionHandler(BadCredentialsException.class)"
+        },
+        {
+          "line": 12,
+          "text": "    public ResponseEntity<Map<String, String>> handleBadCredentials("
+        },
+        {
+          "line": 17,
+          "text": ""
+        },
+        {
+          "line": 18,
+          "text": "    @ExceptionHandler(Exception.class)"
+        },
+        {
+          "line": 19,
+          "text": "    public ResponseEntity<Map<String, String>> handleUnexpected(Exception exception) {"
+        },
+        {
+          "line": 20,
+          "text": "        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)"
+        },
+        {
+          "line": 21,
+          "text": "                .body(Map.of(\"error\", \"Unexpected server error\"));"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 16
+    },
+    {
+      "path": "src/main/java/demo/auth/service/TokenService.java",
+      "start_line": 8,
+      "end_line": 12,
+      "reason": "片段显式抛出过期相关异常；需确认本次请求是否触发，以及上层如何映射 HTTP 状态。",
+      "evidence": [
+        {
+          "line": 8,
+          "text": "public class TokenService {"
+        },
+        {
+          "line": 9,
+          "text": "    public void validateRefreshToken(Instant expiresAt) {"
+        },
+        {
+          "line": 10,
+          "text": "        if (expiresAt == null || !expiresAt.isAfter(Instant.now())) {"
+        },
+        {
+          "line": 11,
+          "text": "            throw new TokenExpiredException(\"Refresh token has expired\");"
+        },
+        {
+          "line": 12,
+          "text": "        }"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 14
+    },
+    {
+      "path": "src/main/java/demo/auth/exception/BadCredentialsException.java",
+      "start_line": 3,
+      "end_line": 4,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 3,
+          "text": "public class BadCredentialsException extends RuntimeException {"
+        },
+        {
+          "line": 4,
+          "text": "    public BadCredentialsException(String message) {"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 7
+    },
+    {
+      "path": "src/main/java/demo/auth/exception/TokenExpiredException.java",
+      "start_line": 3,
+      "end_line": 4,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 3,
+          "text": "public class TokenExpiredException extends RuntimeException {"
+        },
+        {
+          "line": 4,
+          "text": "    public TokenExpiredException(String message) {"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 7
+    }
+  ],
+  "pending": [
+    "提供本次失败请求的异常类型与完整堆栈。",
+    "核对接口路径、请求参数、令牌状态及复现步骤。",
+    "结合全局异常处理和运行配置验证 HTTP 500 的产生位置。"
+  ],
+  "issue": "登录接口返回 500",
+  "mode": "offline",
+  "engine": "LangGraph",
+  "trace": [
+    {
+      "tool": "list_repo_files",
+      "args": {},
+      "result_count": 10
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "login"
+      },
+      "result_count": 12
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "authenticate"
+      },
+      "result_count": 4
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "signin"
+      },
+      "result_count": 0
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "登录"
+      },
+      "result_count": 1
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/main/java/demo/auth/controller/UserController.java",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 24
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "UserService"
+      },
+      "result_count": 8
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/main/java/demo/auth/service/UserService.java",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 23
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "BadCredentialsException"
+      },
+      "result_count": 6
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "TokenService"
+      },
+      "result_count": 6
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/main/java/demo/auth/exception/GlobalExceptionHandler.java",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 23
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "ExceptionHandler"
+      },
+      "result_count": 5
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "GlobalExceptionHandler"
+      },
+      "result_count": 2
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/main/java/demo/auth/service/TokenService.java",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 14
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "TokenExpiredException"
+      },
+      "result_count": 7
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/main/java/demo/auth/exception/BadCredentialsException.java",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 7
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/main/java/demo/auth/exception/TokenExpiredException.java",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 7
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/main/java/demo/auth/model/LoginRequest.java",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 6
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/main/java/demo/auth/model/LoginResponse.java",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 4
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "README.md",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 25
+    }
+  ],
+  "warnings": [
+    "当前为规则检索演示：使用关键词和符号关联，不是大模型语义推理，也不是完整调用图。"
+  ],
+  "elapsed_ms": 281,
+  "repository": {
+    "id": "e8df926930eb4173873110792e61920c",
+    "name": "sample_repo"
+  }
+}

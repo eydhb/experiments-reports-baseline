@@ -1,0 +1,11 @@
+{
+  "evaluation_recomputed_matches": true,
+  "evaluation_input_hashes_match": true,
+  "locator_code_unchanged_since_run": true,
+  "replay_identical_except_elapsed_ms": true,
+  "test_return_code": 0,
+  "tests_run": 37,
+  "passed": 36,
+  "skipped": 1,
+  "skip_reason": "Windows account cannot create symlinks"
+}

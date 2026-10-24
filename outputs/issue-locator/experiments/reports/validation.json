@@ -1,0 +1,36 @@
+{
+  "json_repeat_byte_identical": true,
+  "markdown_repeat_byte_identical": true,
+  "scoring_command": "python -S -m issue_locator.benchmark --manifest experiments/baseline_cases.json --output experiments/reports/baseline.json",
+  "baseline_sha256": "5a79c27e560d6e061e0450db67da7787c3ffefab83d3bd7b982c54da723d10c9",
+  "case_checks": [
+    {
+      "case_id": "real_issue_001",
+      "source_files_verified": 166,
+      "result_hash_verified": true,
+      "candidate_evidence_verified": true,
+      "recorded_locator_modules_unchanged": true
+    },
+    {
+      "case_id": "real_issue_002",
+      "source_files_verified": 120,
+      "result_hash_verified": true,
+      "candidate_evidence_verified": true,
+      "recorded_locator_modules_unchanged": true
+    },
+    {
+      "case_id": "real_issue_003",
+      "source_files_verified": 136,
+      "result_hash_verified": true,
+      "candidate_evidence_verified": true,
+      "recorded_locator_modules_unchanged": true
+    }
+  ],
+  "tests": {
+    "run": 43,
+    "passed": 42,
+    "skipped": 1,
+    "failed": 0,
+    "skip_reason": "Windows account cannot create symlinks"
+  }
+}

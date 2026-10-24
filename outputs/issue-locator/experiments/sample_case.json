@@ -1,0 +1,10 @@
+{
+  "case_id": "synthetic-login-demo",
+  "issue_url": "synthetic://sample_repo/login-500",
+  "base_commit": "not-applicable-synthetic-example",
+  "fix_commit": "not-applicable-synthetic-example",
+  "expected_files": [
+    "src/main/java/demo/auth/service/TokenService.java",
+    "src/main/java/demo/auth/exception/GlobalExceptionHandler.java"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "case_id": "real_issue_001",
+  "issue_url": "https://github.com/pallets/click/issues/3802",
+  "base_commit": "b47c0529e99129d4785fecc2cb39a8ec8b4aa5f8",
+  "fix_commit": "00f257bb8e714064bea16425007543bbc0800445",
+  "expected_files": ["src/click/core.py"]
+}

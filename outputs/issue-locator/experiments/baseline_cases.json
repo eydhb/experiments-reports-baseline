@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "cases": [
+    "cases/real_issue_001.json",
+    "cases/real_issue_002.json",
+    "cases/real_issue_003.json"
+  ]
+}

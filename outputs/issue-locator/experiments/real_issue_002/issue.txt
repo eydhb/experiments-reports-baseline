@@ -1,0 +1,9 @@
+default short help is too short
+
+My CLI tool has many commands with help strings. These are single sentences, intended to display on the command list page. I expect that if my terminal is wide enough, `program --help` will show full help strings for the commands. Instead, they are arbitrarily shortened after reaching 45 characters, regardless of terminal width and `max_content_width` of the context (as seen in #441).
+
+I _think_ I understand the intention behind separating `help` and `short_help`, and shortening the help if no separate `short_help` exists. I'd expect one of two things, though:
+- either applying `max_content_width` to short help and shortening based on terminal size,
+- or using `short_help` in place of `help` if the latter is not specified. As in, if I want the short and long help to be the same, then the same string should be displayed both in `program --help` and `program withcommand --help`, without me having to specify it twice.
+
+Maybe also something like, `make_default_short_help` would use first line of long help, or maybe first sentence (`help.split(r'\w\.\b')`)?

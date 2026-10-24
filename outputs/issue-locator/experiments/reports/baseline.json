@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "scorer": "unique-file-any-hit-v1",
+  "manifest_sha256": "486bce4f1dff42d44d9866bacdc767ec7f0c02724674f12bd03b80907994cb4d",
+  "summary": {
+    "case_count": 3,
+    "top_1_hits": 0,
+    "top_3_hits": 1,
+    "top_1_hit_rate": 0.0,
+    "top_3_hit_rate": 0.3333333333333333
+  },
+  "cases": [
+    {
+      "case_id": "real_issue_001",
+      "repository": "pallets/click",
+      "issue_number": 3802,
+      "issue_url": "https://github.com/pallets/click/issues/3802",
+      "base_commit": "b47c0529e99129d4785fecc2cb39a8ec8b4aa5f8",
+      "fix_commit": "00f257bb8e714064bea16425007543bbc0800445",
+      "mode": "offline",
+      "ranked_candidates": [
+        {
+          "rank": 1,
+          "path": "src/click/_termui_impl.py"
+        },
+        {
+          "rank": 2,
+          "path": "src/click/core.py"
+        },
+        {
+          "rank": 3,
+          "path": "src/click/utils.py"
+        },
+        {
+          "rank": 4,
+          "path": "src/click/termui.py"
+        },
+        {
+          "rank": 5,
+          "path": "src/click/exceptions.py"
+        },
+        {
+          "rank": 6,
+          "path": "src/click/_compat.py"
+        }
+      ],
+      "expected_files": [
+        "src/click/core.py"
+      ],
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": true,
+        "first_relevant_rank": 2,
+        "reciprocal_rank": 0.5,
+        "file_recall": 1.0
+      },
+      "matched_files": [
+        "src/click/core.py"
+      ],
+      "missed_files": [],
+      "failure_analysis": {
+        "status": "analyzed",
+        "categories": [
+          "retrieval",
+          "ranking",
+          "root_cause"
+        ],
+        "reason": "搜索已命中 core.py:1563，但 race 子串误匹配 TracebackType，读取窗口变为 9–108 行；最终引用无关的 98–100 行。修复文件与首位候选同分，按路径排序列第 2；报告未解释第二次中断的捕获范围。"
+      },
+      "case_path": "cases/real_issue_001.json",
+      "result_path": "real_issue_001/result.json",
+      "inputs_sha256": {
+        "case": "8497b1310164279881723fbdaa4936aa5bde1b7aa19db482d909dff8f387d849",
+        "result": "32092145f91ae6e0dfbcf1048bc56c1f6d134038a57f0dfd494d21b6ca21cf5a"
+      }
+    },
+    {
+      "case_id": "real_issue_002",
+      "repository": "pallets/click",
+      "issue_number": 936,
+      "issue_url": "https://github.com/pallets/click/issues/936",
+      "base_commit": "bd597172d7d6c7bd6d0a89ea89c0fd234452b290",
+      "fix_commit": "b4d2d3202d5b81746bc93cb7a2044c5773a21afc",
+      "mode": "offline",
+      "ranked_candidates": [
+        {
+          "rank": 1,
+          "path": "click/__init__.py"
+        },
+        {
+          "rank": 2,
+          "path": "click/_bashcomplete.py"
+        },
+        {
+          "rank": 3,
+          "path": "click/_compat.py"
+        },
+        {
+          "rank": 4,
+          "path": "click/_termui_impl.py"
+        },
+        {
+          "rank": 5,
+          "path": "click/_unicodefun.py"
+        },
+        {
+          "rank": 6,
+          "path": "click/core.py"
+        }
+      ],
+      "expected_files": [
+        "click/core.py"
+      ],
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": false,
+        "first_relevant_rank": 6,
+        "reciprocal_rank": 0.16666666666666666,
+        "file_recall": 1.0
+      },
+      "matched_files": [
+        "click/core.py"
+      ],
+      "missed_files": [],
+      "failure_analysis": {
+        "status": "analyzed",
+        "categories": [
+          "retrieval",
+          "ranking",
+          "root_cause"
+        ],
+        "reason": "short 搜索已命中 core.py:771–773 的相关实现，但通用词和文件头部 import 命中使读取窗口停在 1–100 行，输出只引用 58–60 行。多个文件均为 13 分，路径排序使 core.py 排第 6；未解释默认短帮助宽度限制。"
+      },
+      "case_path": "cases/real_issue_002.json",
+      "result_path": "real_issue_002/result.json",
+      "inputs_sha256": {
+        "case": "0d3e44794a693369ce1cb8fc9847b861f6f4723be2a341b33740376a1de7303c",
+        "result": "d3fbab84ca7b82e850dcb8d96c874d43957647a74b53a71fb0509d3e65bcbc45"
+      }
+    },
+    {
+      "case_id": "real_issue_003",
+      "repository": "pallets/click",
+      "issue_number": 1905,
+      "issue_url": "https://github.com/pallets/click/issues/1905",
+      "base_commit": "09b9d614ac79e2c97f5f486a30231be1e8fe68ad",
+      "fix_commit": "737cf793f5e5625c36e3627250beee34ee285f9d",
+      "mode": "offline",
+      "ranked_candidates": [
+        {
+          "rank": 1,
+          "path": "CHANGES.rst"
+        },
+        {
+          "rank": 2,
+          "path": "CONTRIBUTING.rst"
+        },
+        {
+          "rank": 3,
+          "path": "docs/commands.rst"
+        },
+        {
+          "rank": 4,
+          "path": "docs/conf.py"
+        },
+        {
+          "rank": 5,
+          "path": "docs/options.rst"
+        },
+        {
+          "rank": 6,
+          "path": "docs/quickstart.rst"
+        }
+      ],
+      "expected_files": [
+        "src/click/_termui_impl.py"
+      ],
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": false,
+        "first_relevant_rank": null,
+        "reciprocal_rank": 0.0,
+        "file_recall": 0.0
+      },
+      "matched_files": [],
+      "missed_files": [
+        "src/click/_termui_impl.py"
+      ],
+      "failure_analysis": {
+        "status": "analyzed",
+        "categories": [
+          "retrieval",
+          "ranking",
+          "root_cause"
+        ],
+        "reason": "前 8 个关键词未包含正文中的 _tempfilepager 或 unlink。多个通用词搜索被文档占据并截断；.rst 文档没有按 .md 的规则降分。直到第 10 次读文件才读到 _termui_impl.py:10–109 的文件头，未覆盖修复前 429–440 行；该文件未进入最终候选，未解释 mkstemp 文件描述符没有关闭。"
+      },
+      "case_path": "cases/real_issue_003.json",
+      "result_path": "real_issue_003/result.json",
+      "inputs_sha256": {
+        "case": "307f1604bbb91cdff5639e1b6e9b54d3980b2cf7066ec9d789cfaacd44c2feab",
+        "result": "391d5bf7cdc24423113e3ae0f406a1ff5799debf7f1a15ac3944450b87f91b1a"
+      }
+    }
+  ],
+  "limitations": [
+    "Scores saved outputs only; does not rerun an agent or contact a model.",
+    "A file hit does not confirm the code region or root cause.",
+    "Labels and failure analysis are manually curated; scores do not validate them."
+  ]
+}

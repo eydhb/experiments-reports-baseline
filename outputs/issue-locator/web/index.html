@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>CodeLens · 问题定位工作台</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230e7469'/%3E%3Cpath d='m16 12-8 8 8 8m8-16 8 8-8 8' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="CodeLens 首页">
+        <span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>
+        <span>CodeLens<span class="brand-subtitle">问题定位工作台</span></span>
+      </a>
+      <div class="header-status">
+        <span class="status-dot" id="service-dot"></span>
+        <span id="service-status">正在连接本地服务</span>
+        <span class="version">LOCAL · v0.1</span>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">ISSUE → CODE</p>
+          <h1 id="page-title">让问题，落到具体代码。</h1>
+          <p class="intro-description">导入仓库，描述问题，沿着搜索与阅读记录检查每一条定位依据。</p>
+        </div>
+        <span class="local-label"><span aria-hidden="true">⌘</span> 本地开发工作台</span>
+      </section>
+
+      <aside class="repository-column" aria-label="仓库管理">
+        <section class="panel repository-panel">
+          <div class="section-heading"><span class="step-number">01</span><h2>选择代码仓库</h2></div>
+          <div class="source-tabs" role="group" aria-label="仓库来源">
+            <button type="button" class="source-tab active" data-source="sample" aria-pressed="true">示例项目</button>
+            <button type="button" class="source-tab" data-source="local" aria-pressed="false">本地目录</button>
+            <button type="button" class="source-tab" data-source="github" aria-pressed="false">GitHub</button>
+          </div>
+          <form id="import-form" novalidate>
+            <div id="source-sample" class="source-panel">
+              <div class="sample-icon" aria-hidden="true">{ }</div>
+              <h3>登录服务示例</h3>
+              <p>一个包含登录入口、认证逻辑和异常处理的 Java 示例，可立即体验定位流程。</p>
+              <span class="small-label">演示代码 · 包含预设缺陷</span>
+            </div>
+            <div id="source-local" class="source-panel" hidden>
+              <label for="repo-path">仓库完整路径</label>
+              <input id="repo-path" name="path" type="text" placeholder="D:\projects\my-project" autocomplete="off" spellcheck="false" />
+              <p class="field-help">读取本机目录中的源码文件，不修改项目内容。</p>
+            </div>
+            <div id="source-github" class="source-panel" hidden>
+              <label for="repo-url">公开 GitHub 仓库地址</label>
+              <input id="repo-url" name="url" type="url" placeholder="https://github.com/owner/repo" autocomplete="off" spellcheck="false" />
+              <p class="field-help">仓库会下载到本地工作区。首次导入需要联网，建议先选择小型项目。</p>
+            </div>
+            <button class="button button-secondary full-width" id="import-button" type="submit">导入示例仓库 <span aria-hidden="true">↗</span></button>
+          </form>
+          <p id="import-message" class="feedback" role="status" aria-live="polite" hidden></p>
+          <div id="repository-details" class="repository-details" hidden>
+            <div class="repository-title"><span class="folder-icon" aria-hidden="true">▱</span><strong id="repository-name"></strong><span class="loaded-badge">已导入</span></div>
+            <p id="repository-path" class="repository-path"></p>
+            <div class="repository-stats"><span>可检索文件</span><strong id="repository-count">—</strong></div>
+            <details class="file-tree">
+              <summary>查看文件列表 <span aria-hidden="true">⌄</span></summary>
+              <ul id="repository-files"></ul>
+              <p id="files-truncated" class="field-help" hidden>文件列表已截断，显示部分条目。</p>
+            </details>
+          </div>
+        </section>
+
+        <div class="guidance">
+          <span class="guidance-icon" aria-hidden="true">i</span>
+          <div><h3>证据优先，结论有边界</h3><p>候选文件用于缩小排查范围。确认根因仍需结合异常日志、运行配置与复现结果。</p></div>
+        </div>
+      </aside>
+
+      <div class="analysis-column">
+        <section class="panel issue-panel">
+          <div class="section-heading"><span class="step-number">02</span><h2>描述你遇到的问题</h2><span class="section-hint">从现象开始</span></div>
+          <form id="analyze-form">
+            <label class="visually-hidden" for="issue">问题描述</label>
+            <textarea id="issue" name="issue" rows="3" maxlength="8000" placeholder="例如：登录接口返回 500。也可以补充请求路径、错误日志或异常类型。">登录接口返回 500</textarea>
+            <div class="query-toolbar">
+              <div class="mode-control">
+                <label for="mode">分析方式</label>
+                <select id="mode" name="mode">
+                  <option value="offline">规则检索演示</option>
+                  <option value="model" disabled>模型 Agent（未配置）</option>
+                </select>
+              </div>
+              <div class="run-controls"><span class="keyboard-hint">Ctrl ↵</span><button id="analyze-button" class="button button-primary" type="submit" disabled><span>开始定位</span><span aria-hidden="true">→</span></button></div>
+            </div>
+          </form>
+          <div class="mode-note"><span aria-hidden="true">◇</span><p id="mode-note">规则模式使用本地关键词与符号关联检索，不向模型服务发送代码。</p></div>
+          <p id="analyze-message" class="feedback" role="status" aria-live="polite" hidden></p>
+        </section>
+
+        <section class="results-section" aria-labelledby="results-heading" aria-live="polite" aria-busy="false">
+          <div class="results-header"><div class="section-heading"><span class="step-number">03</span><h2 id="results-heading" tabindex="-1">定位结果</h2><span id="result-count" class="count-badge" hidden></span></div><button type="button" class="text-button" id="export-button" hidden>导出 JSON <span aria-hidden="true">↓</span></button></div>
+          <div id="empty-state" class="empty-state">
+            <div class="empty-illustration" aria-hidden="true"><span class="empty-file"><i></i><i></i><i></i></span><span class="search-mark">⌕</span></div>
+            <h3>从一个问题，找到阅读代码的起点</h3>
+            <p>仓库就绪后，点击「开始定位」。<br />这里将展示实际搜索记录、候选代码和待验证项。</p>
+            <div class="empty-flow"><span>搜索代码</span><b>→</b><span>读取上下文</span><b>→</b><span>整理依据</span></div>
+          </div>
+          <div id="loading-state" class="loading-state panel" hidden><span class="spinner" aria-hidden="true"></span><div><h3>正在分析仓库</h3><p id="loading-description">正在执行搜索与代码阅读，完成后将展示实际工具记录。</p></div></div>
+          <div id="result-content" hidden>
+            <div class="result-overview"><div class="overview-top"><span id="result-mode" class="result-mode"></span><span id="result-timing"></span></div><p id="result-summary"></p></div>
+            <div id="result-warnings" class="warning-box" hidden></div>
+            <details class="tool-trace" open>
+              <summary><span>工具调用记录 <span id="trace-count" class="muted"></span></span><span aria-hidden="true">⌄</span></summary>
+              <ol id="trace-list"></ol>
+            </details>
+            <div id="candidates"></div>
+            <div id="global-pending" class="panel pending-panel" hidden><h3><span aria-hidden="true">□</span> 下一步验证</h3><ul id="pending-list"></ul></div>
+          </div>
+        </section>
+        <footer class="workspace-footer"><span>真实文件 · 真实行号 · 可检查的依据</span><button type="button" id="refresh-status" class="text-button">刷新服务状态</button></footer>
+      </div>
+    </main>
+  </body>
+</html>

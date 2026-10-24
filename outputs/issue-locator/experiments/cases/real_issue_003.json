@@ -1,0 +1,25 @@
+{
+  "case_id": "real_issue_003",
+  "issue_number": 1905,
+  "issue_title": "PermissionError on Windows using echo_via_pager",
+  "issue_url": "https://github.com/pallets/click/issues/1905",
+  "base_commit": "09b9d614ac79e2c97f5f486a30231be1e8fe68ad",
+  "fix_commit": "737cf793f5e5625c36e3627250beee34ee285f9d",
+  "expected_files": [
+    "src/click/_termui_impl.py"
+  ],
+  "ground_truth_notes": "已合并 PR #2036 仅修改 src/click/_termui_impl.py，因此直接作为唯一标签。",
+  "result_path": "../real_issue_003/result.json",
+  "result_sha256": "391d5bf7cdc24423113e3ae0f406a1ff5799debf7f1a15ac3944450b87f91b1a",
+  "source_manifest": "../real_issue_003/source-manifest.json",
+  "fix_evidence": "../real_issue_003/fix.json",
+  "failure_analysis": {
+    "status": "analyzed",
+    "categories": [
+      "retrieval",
+      "ranking",
+      "root_cause"
+    ],
+    "reason": "前 8 个关键词未包含正文中的 _tempfilepager 或 unlink。多个通用词搜索被文档占据并截断；.rst 文档没有按 .md 的规则降分。直到第 10 次读文件才读到 _termui_impl.py:10–109 的文件头，未覆盖修复前 429–440 行；该文件未进入最终候选，未解释 mkstemp 文件描述符没有关闭。"
+  }
+}
