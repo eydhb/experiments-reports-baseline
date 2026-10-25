@@ -1,0 +1,74 @@
+{
+  "verification_date": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "status": "passed",
+  "scope": "Deterministic evaluation of saved Agent outputs; no new Agent or model run.",
+  "baseline_path": "experiments/reports/baseline.json",
+  "baseline_sha256": "5a79c27e560d6e061e0450db67da7787c3ffefab83d3bd7b982c54da723d10c9",
+  "minimum_delivery_satisfied": true,
+  "repeat_runs": 2,
+  "json_matches_saved_baseline_byte_for_byte": true,
+  "markdown_matches_saved_report_byte_for_byte": true,
+  "manifest_hash_matches": true,
+  "summary": {
+    "case_count": 3,
+    "top_1_hits": 0,
+    "top_3_hits": 1,
+    "top_1_hit_rate": 0.0,
+    "top_3_hit_rate": 0.3333333333333333
+  },
+  "case_checks": [
+    {
+      "case_id": "real_issue_001",
+      "issue_number": 3802,
+      "minimum_fields_present": true,
+      "input_hashes_match": true,
+      "top_1_hit": false,
+      "top_3_hit": true
+    },
+    {
+      "case_id": "real_issue_002",
+      "issue_number": 936,
+      "minimum_fields_present": true,
+      "input_hashes_match": true,
+      "top_1_hit": false,
+      "top_3_hit": false
+    },
+    {
+      "case_id": "real_issue_003",
+      "issue_number": 1905,
+      "minimum_fields_present": true,
+      "input_hashes_match": true,
+      "top_1_hit": false,
+      "top_3_hit": false
+    }
+  ],
+  "tests": {
+    "command": "python -S -m unittest discover -s tests -p test_benchmark.py -v",
+    "run": 6,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "reproduce_command": "python -S -m issue_locator.benchmark --manifest experiments/baseline_cases.json --output data/verification-2026-10-25/first.json",
+  "working_directory": "outputs/issue-locator",
+  "limitations": [
+    "Saved rule-mode outputs; not a fresh model accuracy evaluation.",
+    "File-level hits do not establish correct code region or root cause."
+  ],
+  "independent_saved_evidence_audit": {
+    "status": "passed",
+    "cases_checked": 3,
+    "checks": [
+      "issue number and URL match saved issue",
+      "fix SHA matches saved fix",
+      "base SHA is the first parent of the fix",
+      "expected files match production changes excluding docs and tests",
+      "expected files are present in the base source manifest",
+      "candidate order matches raw output",
+      "Top-1 independently recomputed",
+      "Top-3 independently recomputed"
+    ],
+    "fresh_network_validation": false
+  }
+}
