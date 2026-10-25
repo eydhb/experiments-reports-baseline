@@ -1,0 +1,1 @@
+{"candidates": ["CHANGES.rst", "CONTRIBUTING.rst", "docs/commands.rst", "docs/conf.py", "docs/options.rst", "docs/quickstart.rst"], "steps": 20, "queries": ["PermissionError", "Windows", "using", "echo_via_pager", "python", "import", "click", "Traceback"]}

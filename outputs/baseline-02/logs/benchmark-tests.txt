@@ -1,0 +1,11 @@
+test_changed_output_is_rejected (test_benchmark.BenchmarkTests.test_changed_output_is_rejected) ... ok
+test_cli_repeatability_without_site_packages_and_input_protection (test_benchmark.BenchmarkTests.test_cli_repeatability_without_site_packages_and_input_protection) ... ok
+test_missing_invalid_empty_or_duplicate_cases_are_not_skipped (test_benchmark.BenchmarkTests.test_missing_invalid_empty_or_duplicate_cases_are_not_skipped) ... ok
+test_same_issue_with_another_id_is_rejected (test_benchmark.BenchmarkTests.test_same_issue_with_another_id_is_rejected) ... ok
+test_single_case_empty_candidates_and_pending_analysis (test_benchmark.BenchmarkTests.test_single_case_empty_candidates_and_pending_analysis) ... ok
+test_three_case_aggregate_and_unique_file_ranks (test_benchmark.BenchmarkTests.test_three_case_aggregate_and_unique_file_ranks) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.829s
+
+OK

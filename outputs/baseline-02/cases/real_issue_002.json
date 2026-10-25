@@ -1,0 +1,16 @@
+{
+  "case_id": "real_issue_002",
+  "issue_number": 936,
+  "issue_title": "default short help is too short",
+  "issue_url": "https://github.com/pallets/click/issues/936",
+  "base_commit": "bd597172d7d6c7bd6d0a89ea89c0fd234452b290",
+  "fix_commit": "b4d2d3202d5b81746bc93cb7a2044c5773a21afc",
+  "expected_files": [
+    "click/core.py"
+  ],
+  "ground_truth_notes": "标签为已合并 PR #1002 的唯一生产代码改动 click/core.py；排除 tests/test_commands.py。该案例是显示行为缺陷修正，不是崩溃。",
+  "result_path": "../real_issue_002/result.json",
+  "result_sha256": "7041720afad3bb0a14450518444a46506a524426dbd37b736db676ac5687efa1",
+  "source_manifest": "../real_issue_002/source-manifest.json",
+  "fix_evidence": "../real_issue_002/fix.json"
+}

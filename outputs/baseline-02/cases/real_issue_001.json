@@ -1,0 +1,16 @@
+{
+  "case_id": "real_issue_001",
+  "issue_number": 3802,
+  "issue_title": "`KeyboardInterrupt` during `click.prompt()` can race",
+  "issue_url": "https://github.com/pallets/click/issues/3802",
+  "base_commit": "b47c0529e99129d4785fecc2cb39a8ec8b4aa5f8",
+  "fix_commit": "00f257bb8e714064bea16425007543bbc0800445",
+  "expected_files": [
+    "src/click/core.py"
+  ],
+  "ground_truth_notes": "生产代码标签仅 src/click/core.py；排除新增回归测试、CHANGES.md 和 docs/exceptions.md。",
+  "result_path": "../real_issue_001/result.json",
+  "result_sha256": "230da643453d3dbf3fdaf418eabc211c975b34991b4d9f76cfbbd7b6dcd61e29",
+  "source_manifest": "../real_issue_001/source-manifest.json",
+  "fix_evidence": "../real_issue_001/fix.json"
+}

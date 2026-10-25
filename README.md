@@ -1,5 +1,7 @@
 # CodeLens · Issue 定位评测基线
 
+第二份基线已重新运行 3 次规则模式 Agent 并通过验证：Top-1 0/3、Top-3 1/3，候选与第一份一致；14 项测试通过。见 [第二份基线及复现说明](outputs/baseline-02/README.md)、[结果](outputs/baseline-02/reports/baseline-02.json) 和 [验证记录](outputs/baseline-02/reports/verification.json)。
+
 现已扩展为最小批量评测器：固定 3 个真实 Issue 的 Agent 输出，离线计算 Top-1 / Top-3。
 当前 Top-1 为 0/3，Top-3 为 1/3；参见 [baseline.json](outputs/issue-locator/experiments/reports/baseline.json)、
 [基线报告](outputs/issue-locator/experiments/reports/baseline.md) 和 [复现说明](outputs/issue-locator/experiments/BASELINE.md)。

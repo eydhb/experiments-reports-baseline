@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "scorer": "unique-file-any-hit-v1",
+  "manifest_sha256": "b043a0f47dec438277bae7d3db061c155d9538f532c8ec8214d211355a0d7df1",
+  "summary": {
+    "case_count": 3,
+    "top_1_hits": 0,
+    "top_3_hits": 1,
+    "top_1_hit_rate": 0.0,
+    "top_3_hit_rate": 0.3333333333333333
+  },
+  "cases": [
+    {
+      "case_id": "real_issue_001",
+      "repository": "pallets/click",
+      "issue_number": 3802,
+      "issue_url": "https://github.com/pallets/click/issues/3802",
+      "base_commit": "b47c0529e99129d4785fecc2cb39a8ec8b4aa5f8",
+      "fix_commit": "00f257bb8e714064bea16425007543bbc0800445",
+      "mode": "offline",
+      "ranked_candidates": [
+        {
+          "rank": 1,
+          "path": "src/click/_termui_impl.py"
+        },
+        {
+          "rank": 2,
+          "path": "src/click/core.py"
+        },
+        {
+          "rank": 3,
+          "path": "src/click/utils.py"
+        },
+        {
+          "rank": 4,
+          "path": "src/click/termui.py"
+        },
+        {
+          "rank": 5,
+          "path": "src/click/exceptions.py"
+        },
+        {
+          "rank": 6,
+          "path": "src/click/_compat.py"
+        }
+      ],
+      "expected_files": [
+        "src/click/core.py"
+      ],
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": true,
+        "first_relevant_rank": 2,
+        "reciprocal_rank": 0.5,
+        "file_recall": 1.0
+      },
+      "matched_files": [
+        "src/click/core.py"
+      ],
+      "missed_files": [],
+      "failure_analysis": {
+        "status": "pending",
+        "categories": [],
+        "reason": "Pending manual analysis."
+      },
+      "case_path": "cases/real_issue_001.json",
+      "result_path": "real_issue_001/result.json",
+      "inputs_sha256": {
+        "case": "dda525ffc89de4512216aee9cf81386c5fabce254d9db6b607893c2a64735924",
+        "result": "230da643453d3dbf3fdaf418eabc211c975b34991b4d9f76cfbbd7b6dcd61e29"
+      }
+    },
+    {
+      "case_id": "real_issue_002",
+      "repository": "pallets/click",
+      "issue_number": 936,
+      "issue_url": "https://github.com/pallets/click/issues/936",
+      "base_commit": "bd597172d7d6c7bd6d0a89ea89c0fd234452b290",
+      "fix_commit": "b4d2d3202d5b81746bc93cb7a2044c5773a21afc",
+      "mode": "offline",
+      "ranked_candidates": [
+        {
+          "rank": 1,
+          "path": "click/__init__.py"
+        },
+        {
+          "rank": 2,
+          "path": "click/_bashcomplete.py"
+        },
+        {
+          "rank": 3,
+          "path": "click/_compat.py"
+        },
+        {
+          "rank": 4,
+          "path": "click/_termui_impl.py"
+        },
+        {
+          "rank": 5,
+          "path": "click/_unicodefun.py"
+        },
+        {
+          "rank": 6,
+          "path": "click/core.py"
+        }
+      ],
+      "expected_files": [
+        "click/core.py"
+      ],
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": false,
+        "first_relevant_rank": 6,
+        "reciprocal_rank": 0.16666666666666666,
+        "file_recall": 1.0
+      },
+      "matched_files": [
+        "click/core.py"
+      ],
+      "missed_files": [],
+      "failure_analysis": {
+        "status": "pending",
+        "categories": [],
+        "reason": "Pending manual analysis."
+      },
+      "case_path": "cases/real_issue_002.json",
+      "result_path": "real_issue_002/result.json",
+      "inputs_sha256": {
+        "case": "ff2d98d53eb0c4738a06180349c4bba21e3716df2fcf4ae564e95af006a312cb",
+        "result": "7041720afad3bb0a14450518444a46506a524426dbd37b736db676ac5687efa1"
+      }
+    },
+    {
+      "case_id": "real_issue_003",
+      "repository": "pallets/click",
+      "issue_number": 1905,
+      "issue_url": "https://github.com/pallets/click/issues/1905",
+      "base_commit": "09b9d614ac79e2c97f5f486a30231be1e8fe68ad",
+      "fix_commit": "737cf793f5e5625c36e3627250beee34ee285f9d",
+      "mode": "offline",
+      "ranked_candidates": [
+        {
+          "rank": 1,
+          "path": "CHANGES.rst"
+        },
+        {
+          "rank": 2,
+          "path": "CONTRIBUTING.rst"
+        },
+        {
+          "rank": 3,
+          "path": "docs/commands.rst"
+        },
+        {
+          "rank": 4,
+          "path": "docs/conf.py"
+        },
+        {
+          "rank": 5,
+          "path": "docs/options.rst"
+        },
+        {
+          "rank": 6,
+          "path": "docs/quickstart.rst"
+        }
+      ],
+      "expected_files": [
+        "src/click/_termui_impl.py"
+      ],
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": false,
+        "first_relevant_rank": null,
+        "reciprocal_rank": 0.0,
+        "file_recall": 0.0
+      },
+      "matched_files": [],
+      "missed_files": [
+        "src/click/_termui_impl.py"
+      ],
+      "failure_analysis": {
+        "status": "pending",
+        "categories": [],
+        "reason": "Pending manual analysis."
+      },
+      "case_path": "cases/real_issue_003.json",
+      "result_path": "real_issue_003/result.json",
+      "inputs_sha256": {
+        "case": "8290140f6c49dead625ab37c34eef4dfaab942d468b09048c3387cbc115da10b",
+        "result": "60501cd90d8a86a6fd1bf2c8b0a98ad7d1f6db7809d7a0ba0aba2aa3c5f8938b"
+      }
+    }
+  ],
+  "limitations": [
+    "Scores saved outputs only; does not rerun an agent or contact a model.",
+    "A file hit does not confirm the code region or root cause.",
+    "Labels and failure analysis are manually curated; scores do not validate them."
+  ]
+}

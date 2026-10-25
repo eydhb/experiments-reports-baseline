@@ -14,3 +14,6 @@
 outputs/issue-locator/experiments/real_issue_001/* -text
 outputs/issue-locator/experiments/real_issue_002/* -text
 outputs/issue-locator/experiments/real_issue_003/* -text
+
+# Preserve baseline 02 input and report fingerprints.
+outputs/baseline-02/** -text

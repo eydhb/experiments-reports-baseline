@@ -1,0 +1,24 @@
+{
+  "html_url": "https://github.com/pallets/click/commit/b4d2d3202d5b81746bc93cb7a2044c5773a21afc",
+  "sha": "b4d2d3202d5b81746bc93cb7a2044c5773a21afc",
+  "parents": [
+    "bd597172d7d6c7bd6d0a89ea89c0fd234452b290",
+    "639daa4f43da2aa152c415a1bba35fa48aa87259"
+  ],
+  "message": "Merge pull request #1002 from fdavis/customize_short_width\n\nallow specify short width to address cmd formatting",
+  "pull_request_url": "https://github.com/pallets/click/pull/1002",
+  "pull_request_body": "add a flag to address the too short short_help width as requested in #936 \r\n\r\n",
+  "merged": true,
+  "files": [
+    {
+      "filename": "click/core.py",
+      "status": "modified",
+      "patch": "@@ -769,7 +769,12 @@ def __init__(self, name, context_settings=None, callback=None,\n         self.epilog = epilog\n         self.options_metavar = options_metavar\n         if short_help is None and help:\n-            short_help = make_default_short_help(help)\n+            if (context_settings is not None and\n+                'short_help_width' in context_settings):\n+                    short_width = context_settings.get('short_help_width')\n+                    short_help = make_default_short_help(help, short_width)\n+            else:\n+                short_help = make_default_short_help(help)\n         self.short_help = short_help\n         self.add_help_option = add_help_option\n         self.hidden = hidden"
+    },
+    {
+      "filename": "tests/test_commands.py",
+      "status": "modified",
+      "patch": "@@ -59,12 +59,18 @@ def long():\n         \"\"\"This is a long text that is too long to show as short help\n         and will be truncated instead.\"\"\"\n \n+    @cli.command(context_settings={'short_help_width': 20})\n+    def width():\n+        \"\"\"This is a long text that is too long to show as short help\n+        and will be truncated instead.\"\"\"\n+\n     result = runner.invoke(cli, ['--help'])\n     assert re.search(\n         r'Commands:\\n\\s+'\n         r'long\\s+This is a long text that is too long to show\\.\\.\\.\\n\\s+'\n         r'short\\s+This is a short text\\.\\n\\s+'\n-        r'special-chars\\s+Login and store the token in ~/.netrc\\.\\s*',\n+        r'special-chars\\s+Login and store the token in ~/.netrc\\.\\s+'\n+        r'width\\s+This is a long text\\.\\.\\.\\n\\s*',\n         result.output) is not None\n \n "
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"case_count": 3, "top_1_hits": 0, "top_3_hits": 1, "top_1_hit_rate": 0.0, "top_3_hit_rate": 0.3333333333333333}

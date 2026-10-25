@@ -1,0 +1,390 @@
+{
+  "summary": "找到 6 个候选文件。依据来自实际搜索和读取；尚未确认本次 500 的根因。",
+  "candidates": [
+    {
+      "path": "click/__init__.py",
+      "start_line": 3,
+      "end_line": 93,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 3,
+          "text": "    click"
+        },
+        {
+          "line": 6,
+          "text": "    Click is a simple Python module that wraps the stdlib's optparse to make"
+        },
+        {
+          "line": 8,
+          "text": "    a simple API that does not come with too much magic and is composable."
+        },
+        {
+          "line": 27,
+          "text": "     password_option, version_option, help_option"
+        },
+        {
+          "line": 43,
+          "text": "from .exceptions import ClickException, UsageError, BadParameter, \\"
+        },
+        {
+          "line": 48,
+          "text": "from .formatting import HelpFormatter, wrap_text"
+        },
+        {
+          "line": 65,
+          "text": "    'version_option', 'help_option',"
+        },
+        {
+          "line": 81,
+          "text": "    'ClickException', 'UsageError', 'BadParameter', 'FileError',"
+        },
+        {
+          "line": 86,
+          "text": "    'HelpFormatter', 'wrap_text',"
+        },
+        {
+          "line": 93,
+          "text": "# Controls if click should emit the warning about the use of unicode"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 13
+    },
+    {
+      "path": "click/_bashcomplete.py",
+      "start_line": 22,
+      "end_line": 45,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 22,
+          "text": "complete -F %(complete_func)s -o default %(script_names)s"
+        },
+        {
+          "line": 37,
+          "text": "def resolve_ctx(cli, prog_name, args):"
+        },
+        {
+          "line": 40,
+          "text": "    :param cli: command definition"
+        },
+        {
+          "line": 45,
+          "text": "    ctx = cli.make_context(prog_name, args, resilient_parsing=True)"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 13
+    },
+    {
+      "path": "click/_compat.py",
+      "start_line": 12,
+      "end_line": 91,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 12,
+          "text": "DEFAULT_COLUMNS = 80"
+        },
+        {
+          "line": 19,
+          "text": "    return sys.getfilesystemencoding() or sys.getdefaultencoding()"
+        },
+        {
+          "line": 43,
+          "text": "    \"\"\"Returns the default stream encoding if not found.\"\"\""
+        },
+        {
+          "line": 44,
+          "text": "    rv = getattr(stream, 'encoding', None) or sys.getdefaultencoding()"
+        },
+        {
+          "line": 91,
+          "text": "    The forcing of readable and writable flags are there because some tools"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 13
+    },
+    {
+      "path": "click/_termui_impl.py",
+      "start_line": 77,
+      "end_line": 79,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 77,
+          "text": "            if length is None:"
+        },
+        {
+          "line": 78,
+          "text": "                raise TypeError('iterable or length is required')"
+        },
+        {
+          "line": 79,
+          "text": "            iterable = range_type(length)"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 13
+    },
+    {
+      "path": "click/_unicodefun.py",
+      "start_line": 8,
+      "end_line": 91,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 8,
+          "text": "# If someone wants to vendor click, we want to ensure the"
+        },
+        {
+          "line": 12,
+          "text": "click = sys.modules[__name__.rsplit('.', 1)[0]]"
+        },
+        {
+          "line": 17,
+          "text": "    if not hasattr(sys, '_getframe'):  # not all Python implementations have it"
+        },
+        {
+          "line": 22,
+          "text": "        if frm.f_globals.get('__name__', '').startswith('click.'):"
+        },
+        {
+          "line": 35,
+          "text": "    if not PY2 or click.disable_unicode_literals_warning:"
+        },
+        {
+          "line": 41,
+          "text": "    warn(Warning('Click detected the use of the unicode_literals '"
+        },
+        {
+          "line": 46,
+          "text": "                 'http://click.pocoo.org/python3/'),"
+        },
+        {
+          "line": 71,
+          "text": "        has_c_utf8 = False"
+        },
+        {
+          "line": 82,
+          "text": "                    has_c_utf8 = True"
+        },
+        {
+          "line": 91,
+          "text": "        elif has_c_utf8:"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 13
+    },
+    {
+      "path": "click/core.py",
+      "start_line": 58,
+      "end_line": 60,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 58,
+          "text": "               'that is in chain mode.  This is not supported'"
+        },
+        {
+          "line": 59,
+          "text": "    raise RuntimeError('%s.  Command \"%s\" is set to chain and \"%s\" was '"
+        },
+        {
+          "line": 60,
+          "text": "                       'added as subcommand but it in itself is a '"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 13
+    }
+  ],
+  "pending": [
+    "提供本次失败请求的异常类型与完整堆栈。",
+    "核对接口路径、请求参数、令牌状态及复现步骤。",
+    "结合全局异常处理和运行配置验证 HTTP 500 的产生位置。"
+  ],
+  "issue": "default short help is too short\n\nMy CLI tool has many commands with help strings. These are single sentences, intended to display on the command list page. I expect that if my terminal is wide enough, `program --help` will show full help strings for the commands. Instead, they are arbitrarily shortened after reaching 45 characters, regardless of terminal width and `max_content_width` of the context (as seen in #441).\n\nI _think_ I understand the intention behind separating `help` and `short_help`, and shortening the help if no separate `short_help` exists. I'd expect one of two things, though:\n- either applying `max_content_width` to short help and shortening based on terminal size,\n- or using `short_help` in place of `help` if the latter is not specified. As in, if I want the short and long help to be the same, then the same string should be displayed both in `program --help` and `program withcommand --help`, without me having to specify it twice.\n\nMaybe also something like, `make_default_short_help` would use first line of long help, or maybe first sentence (`help.split(r'\\w\\.\\b')`)?",
+  "mode": "offline",
+  "engine": "LangGraph",
+  "trace": [
+    {
+      "tool": "list_repo_files",
+      "args": {},
+      "result_count": 98
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "default"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "short"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "help"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "too"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "CLI"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "tool"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "has"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "many"
+      },
+      "result_count": 12
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/_bashcomplete.py",
+        "start_line": 10,
+        "end_line": 109
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/_compat.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/_termui_impl.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "ClickException"
+      },
+      "result_count": 19
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/core.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/parser.py",
+        "start_line": 106,
+        "end_line": 205
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/utils.py",
+        "start_line": 3,
+        "end_line": 102
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/__init__.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 98
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/_unicodefun.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/decorators.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "click/termui.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 100
+    }
+  ],
+  "warnings": [
+    "当前为规则检索演示：使用关键词和符号关联，不是大模型语义推理，也不是完整调用图。",
+    "部分文件列表或搜索结果达到上限；结果不是全仓库穷尽分析。"
+  ],
+  "elapsed_ms": 657
+}

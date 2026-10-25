@@ -1,0 +1,16 @@
+{
+  "case_id": "real_issue_003",
+  "issue_number": 1905,
+  "issue_title": "PermissionError on Windows using echo_via_pager",
+  "issue_url": "https://github.com/pallets/click/issues/1905",
+  "base_commit": "09b9d614ac79e2c97f5f486a30231be1e8fe68ad",
+  "fix_commit": "737cf793f5e5625c36e3627250beee34ee285f9d",
+  "expected_files": [
+    "src/click/_termui_impl.py"
+  ],
+  "ground_truth_notes": "已合并 PR #2036 仅修改 src/click/_termui_impl.py，因此直接作为唯一标签。",
+  "result_path": "../real_issue_003/result.json",
+  "result_sha256": "60501cd90d8a86a6fd1bf2c8b0a98ad7d1f6db7809d7a0ba0aba2aa3c5f8938b",
+  "source_manifest": "../real_issue_003/source-manifest.json",
+  "fix_evidence": "../real_issue_003/fix.json"
+}

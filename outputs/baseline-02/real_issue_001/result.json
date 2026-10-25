@@ -1,0 +1,302 @@
+{
+  "summary": "找到 6 个候选文件。依据来自实际搜索和读取；尚未确认本次 500 的根因。",
+  "candidates": [
+    {
+      "path": "src/click/_termui_impl.py",
+      "start_line": 97,
+      "end_line": 99,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 97,
+          "text": "            if length is None:"
+        },
+        {
+          "line": 98,
+          "text": "                raise TypeError(\"iterable or length is required\")"
+        },
+        {
+          "line": 99,
+          "text": "            iterable = t.cast(\"cabc.Iterable[V]\", range(length))"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 13
+    },
+    {
+      "path": "src/click/core.py",
+      "start_line": 98,
+      "end_line": 100,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 98,
+          "text": ""
+        },
+        {
+          "line": 99,
+          "text": "    raise RuntimeError(message)"
+        },
+        {
+          "line": 100,
+          "text": ""
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 13
+    },
+    {
+      "path": "src/click/utils.py",
+      "start_line": 11,
+      "end_line": 11,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 11,
+          "text": "from types import TracebackType"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 10
+    },
+    {
+      "path": "src/click/termui.py",
+      "start_line": 183,
+      "end_line": 185,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 183,
+          "text": "    If the user aborts the input by sending an interrupt signal, this"
+        },
+        {
+          "line": 184,
+          "text": "    function will catch it and raise a :exc:`Abort` exception."
+        },
+        {
+          "line": 185,
+          "text": ""
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 9
+    },
+    {
+      "path": "src/click/exceptions.py",
+      "start_line": 35,
+      "end_line": 68,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 35,
+          "text": "class ClickException(Exception):"
+        },
+        {
+          "line": 68,
+          "text": "class UsageError(ClickException):"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 8
+    },
+    {
+      "path": "src/click/_compat.py",
+      "start_line": 10,
+      "end_line": 10,
+      "reason": "命中与问题有关的关键词或已读代码中的关联符号；已读取以下片段，需要结合调用路径确认相关性。",
+      "evidence": [
+        {
+          "line": 10,
+          "text": "from types import TracebackType"
+        }
+      ],
+      "pending": [
+        "核对报错堆栈是否经过此处，并检查当前请求触发的分支。"
+      ],
+      "score": 7
+    }
+  ],
+  "pending": [
+    "提供本次失败请求的异常类型与完整堆栈。",
+    "核对接口路径、请求参数、令牌状态及复现步骤。",
+    "结合全局异常处理和运行配置验证 HTTP 500 的产生位置。"
+  ],
+  "issue": "`KeyboardInterrupt` during `click.prompt()` can race\n\n## Bug\n\nWhen a user uses Ctrl-C during `click.prompt()`, this may cause an unhandled exception. Seen during CI on an Ubuntu 22.04 arm github runner. The same test on Ubuntu 22.04 x64, macOS arm, Windows x64/arm succeeded. This is likely to be a race that doesn't pop up every time\n\n```\n    | --- tty: Ctrl+C aborts at a prompt ---\n    | spawn /home/runner/work/ethstaker-deposit-cli/ethstaker-deposit-cli/ethstaker_deposit-cli-c082a10-linux-arm64/deposit --language english --ignore_connectivity generate-mnemonic\n    | Please choose the language of the mnemonic word list [1. 简体中文, 2. 繁體中文, 3. čeština, 4. English, 5. Français, 6. Italiano, 7. 日本語, 8. 한국어, 9. Português, 10. Español]:  [english]: ^CTraceback (most recent call last):\n    |   File \"click/core.py\", line 1490, in main\n    |   File \"click/core.py\", line 1968, in invoke\n    |   File \"click/core.py\", line 1300, in make_context\n    |   File \"click/core.py\", line 1311, in parse_args\n    |   File \"click/core.py\", line 2686, in handle_parse_result\n    |   File \"click/core.py\", line 3508, in consume_value\n    |   File \"ethstaker_deposit/utils/click.py\", line 62, in prompt_for_value\n    |   File \"click/core.py\", line 3372, in prompt_for_value\n    |   File \"click/termui.py\", line 218, in prompt\n    |   File \"click/termui.py\", line 201, in prompt_func\n    | click.exceptions.Abort\n    | \n    | During handling of the above exception, another exception occurred:\n    | \n    | Traceback (most recent call last):\n    |   File \"deposit.py\", line 128, in <module>\n    |   File \"deposit.py\", line 121, in run\n    |   File \"click/core.py\", line 1569, in __call__\n    |   File \"click/core.py\", line 1532, in main\n    |   File \"click/utils.py\", line 337, in echo\n    |   File \"click/_compat.py\", line 509, in should_strip_ansi\n    |   File \"click/_compat.py\", line 578, in isatty\n    | KeyboardInterrupt\n    | [PYI-3853:ERROR] Failed to execute script 'deposit' due to unhandled exception!\n    | \n    | [TEST FAIL] Unexpected EOF while waiting for: Aborted\n```\n\n## Replication\n\nProbably a `click.prompt()` with Ctrl-C on a slower machine, run often enough to eventually trigger this race condition. In our case it was the free github `ubuntu-22.04-arm` runner.\n\n## Expected\n\nclick handles the KeyboardInterrupt exception gracefully, regardless of timing or architecture.\n\nEnvironment:\n\n- Python version: 3.14\n- Click version: 8.4.2",
+  "mode": "offline",
+  "engine": "LangGraph",
+  "trace": [
+    {
+      "tool": "list_repo_files",
+      "args": {},
+      "result_count": 147
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "KeyboardInterrupt"
+      },
+      "result_count": 17
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "during"
+      },
+      "result_count": 32
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "click"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "prompt"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "can"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "race"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "Bug"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "When"
+      },
+      "result_count": 40
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/core.py",
+        "start_line": 9,
+        "end_line": 108
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "search_code",
+      "args": {
+        "query": "ClickException"
+      },
+      "result_count": 21
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/_termui_impl.py",
+        "start_line": 8,
+        "end_line": 107
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/utils.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/termui.py",
+        "start_line": 86,
+        "end_line": 185
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/exceptions.py",
+        "start_line": 23,
+        "end_line": 122
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/_compat.py",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/types.py",
+        "start_line": 414,
+        "end_line": 513
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/_winconsole.py",
+        "start_line": 136,
+        "end_line": 235
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": "src/click/shell_completion.py",
+        "start_line": 558,
+        "end_line": 657
+      },
+      "result_count": 100
+    },
+    {
+      "tool": "read_file",
+      "args": {
+        "path": ".github/workflows/nightly.yaml",
+        "start_line": 1,
+        "end_line": 100
+      },
+      "result_count": 69
+    }
+  ],
+  "warnings": [
+    "当前为规则检索演示：使用关键词和符号关联，不是大模型语义推理，也不是完整调用图。",
+    "部分文件列表或搜索结果达到上限；结果不是全仓库穷尽分析。"
+  ],
+  "elapsed_ms": 1640
+}

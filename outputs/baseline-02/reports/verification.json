@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-10-25T07:50:09.282297+00:00",
+  "completed_at_utc": "2026-10-25T07:50:23.460172+00:00",
+  "repository_commit": "557d83e6be8dccc994cd7fe4f29b5671f4187d28",
+  "fresh_agent_runs": 3,
+  "mode": "offline",
+  "model_calls": 0,
+  "strategy_modified": false,
+  "baseline_sha256": "8a582abecb10ca0c612370c3c4289864df312e04b176323e4c22969df62d0b49",
+  "repeat_json_byte_identical": true,
+  "repeat_markdown_byte_identical": true,
+  "case_checks": [
+    {
+      "case_id": "real_issue_001",
+      "fresh_agent_run": true,
+      "source_verified_before_and_after": true,
+      "all_candidate_evidence_verified": true,
+      "fix_metadata_passed_to_agent": false,
+      "source_file_count": 166,
+      "candidates_equal_baseline_01": true,
+      "result_byte_identical_to_baseline_01": false,
+      "run_at_utc": "2026-10-25T07:50:15.411936+00:00"
+    },
+    {
+      "case_id": "real_issue_002",
+      "fresh_agent_run": true,
+      "source_verified_before_and_after": true,
+      "all_candidate_evidence_verified": true,
+      "fix_metadata_passed_to_agent": false,
+      "source_file_count": 120,
+      "candidates_equal_baseline_01": true,
+      "result_byte_identical_to_baseline_01": false,
+      "run_at_utc": "2026-10-25T07:50:17.844372+00:00"
+    },
+    {
+      "case_id": "real_issue_003",
+      "fresh_agent_run": true,
+      "source_verified_before_and_after": true,
+      "all_candidate_evidence_verified": true,
+      "fix_metadata_passed_to_agent": false,
+      "source_file_count": 136,
+      "candidates_equal_baseline_01": true,
+      "result_byte_identical_to_baseline_01": false,
+      "run_at_utc": "2026-10-25T07:50:20.322544+00:00"
+    }
+  ],
+  "independent_metric_checks": [
+    {
+      "case_id": "real_issue_001",
+      "first_relevant_rank": 2,
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": true,
+        "first_relevant_rank": 2,
+        "reciprocal_rank": 0.5,
+        "file_recall": 1.0
+      }
+    },
+    {
+      "case_id": "real_issue_002",
+      "first_relevant_rank": 6,
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": false,
+        "first_relevant_rank": 6,
+        "reciprocal_rank": 0.16666666666666666,
+        "file_recall": 1.0
+      }
+    },
+    {
+      "case_id": "real_issue_003",
+      "first_relevant_rank": null,
+      "metrics": {
+        "top_1_hit": false,
+        "top_3_hit": false,
+        "first_relevant_rank": null,
+        "reciprocal_rank": 0.0,
+        "file_recall": 0.0
+      }
+    }
+  ],
+  "baseline_01_summary": {
+    "case_count": 3,
+    "top_1_hits": 0,
+    "top_3_hits": 1,
+    "top_1_hit_rate": 0.0,
+    "top_3_hit_rate": 0.3333333333333333
+  },
+  "baseline_02_summary": {
+    "case_count": 3,
+    "top_1_hits": 0,
+    "top_3_hits": 1,
+    "top_1_hit_rate": 0.0,
+    "top_3_hit_rate": 0.3333333333333333
+  },
+  "tests": {
+    "benchmark": {
+      "run": 6,
+      "passed": 6
+    },
+    "agent": {
+      "run": 8,
+      "passed": 8
+    }
+  },
+  "limitations": [
+    "Same three Click cases; not cross-project accuracy.",
+    "Offline rule-mode agent; no model evaluation.",
+    "File hits do not establish correct code region or root cause.",
+    "Ground-truth labels inherited from baseline 01; not independently relabeled."
+  ],
+  "timezone": "Asia/Shanghai",
+  "completed_at_local": "2026-10-25T15:50:23.460172+08:00",
+  "result_differences_vs_baseline_01": {
+    "real_issue_001": [
+      "elapsed_ms"
+    ],
+    "real_issue_002": [
+      "elapsed_ms"
+    ],
+    "real_issue_003": [
+      "elapsed_ms"
+    ]
+  }
+}

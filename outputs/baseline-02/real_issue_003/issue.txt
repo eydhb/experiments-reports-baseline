@@ -1,0 +1,24 @@
+PermissionError on Windows using echo_via_pager
+
+```python
+import click
+click.echo_via_pager('2')
+2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "F:\scoop\apps\miniconda3\current\envs\main\lib\site-packages\click\termui.py", line 302, in echo_via_pager
+    return pager(itertools.chain(text_generator, "\n"), color)
+  File "F:\scoop\apps\miniconda3\current\envs\main\lib\site-packages\click\_termui_impl.py", line 357, in pager
+    return _tempfilepager(generator, "more <", color)
+  File "F:\scoop\apps\miniconda3\current\envs\main\lib\site-packages\click\_termui_impl.py", line 440, in _tempfilepager
+    os.unlink(filename)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'R:\\Temp\\tmpn3vjxjwz'
+```
+
+Click should use the system's pager to display the input object without error
+
+Environment:
+
+- Python version: 3.9.4
+- Click version: 8.0.0 (the issue does NOT occur with Click 7.1.2!)
+- OS: Windows 10 (the issue does not NOT occur on Linux or Cygwin!)

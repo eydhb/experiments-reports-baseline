@@ -1,0 +1,1 @@
+{"candidates": ["src/click/_termui_impl.py", "src/click/core.py", "src/click/utils.py", "src/click/termui.py", "src/click/exceptions.py", "src/click/_compat.py"], "steps": 20, "queries": ["KeyboardInterrupt", "during", "click", "prompt", "can", "race", "Bug", "When"]}

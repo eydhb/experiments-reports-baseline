@@ -1,0 +1,1 @@
+{"candidates": ["click/__init__.py", "click/_bashcomplete.py", "click/_compat.py", "click/_termui_impl.py", "click/_unicodefun.py", "click/core.py"], "steps": 20, "queries": ["default", "short", "help", "too", "CLI", "tool", "has", "many"]}
